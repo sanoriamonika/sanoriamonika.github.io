@@ -1,0 +1,191 @@
+:root{
+  --maxw: 980px;
+  --pad: 16px;
+  --fg: #1a1a1a;
+  --bg: #ffffff;
+  --muted: #60646c;
+  --link: #0b57d0;
+  --accent: #0b57d0;
+  --border: #e5e7eb;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{font-size:16px}
+body{
+  color:var(--fg);
+  background:var(--bg);
+  font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+}
+a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline}
+img{max-width:100%; height:auto}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 var(--pad)}
+
+header{position:sticky; top:0; z-index:10; background:var(--bg); border-bottom:1px solid var(--border)}
+nav{display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding:10px 0}
+.brand{font-weight:800; letter-spacing:.2px; margin-right:auto}
+nav a.active{border-bottom:2px solid var(--accent); padding-bottom:4px}
+
+.hero{padding: 36px 0 10px}
+h1,h2,h3{line-height:1.25; margin: 18px 0 8px}
+h1{font-size: clamp(28px, 2.6vw + 16px, 40px)}
+h2{font-size: clamp(22px, 1.4vw + 16px, 28px)}
+h3{font-size: clamp(18px, 1.1vw + 14px, 22px)}
+p{margin:.4rem 0 1rem}
+ul{margin:.3rem 0 1rem 1.2rem}
+
+.grid{display:grid; gap:16px}
+.grid.cols-2{grid-template-columns: repeat(1,minmax(0,1fr))}
+@media (min-width: 820px){ .grid.cols-2{grid-template-columns: repeat(2,minmax(0,1fr))} }
+
+.card{border:1px solid var(--border); border-radius:10px; padding:14px}
+.badge{display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:.9rem; color:var(--muted)}
+.notice{background:#f7faff; border:1px solid #e7f0ff; padding:10px 12px; border-radius:8px}
+
+footer{border-top:1px solid var(--border); margin-top: 36px; padding: 16px 0; color:var(--muted); font-size:.95rem}
+
+.pub{margin-bottom:12px}
+.pub .title{font-weight:600}
+.pub .meta{color:var(--muted); font-size:.95rem}
+
+table{width:100%; border-collapse:collapse}
+th,td{border-bottom:1px solid var(--border); padding:8px 6px; text-align:left}
+
+kbd{background:#f6f8fa; border:1px solid var(--border); padding:2px 6px; border-radius:6px}
+code, pre{font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-radius:8px; overflow:auto}
+
+.profile-photo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-float {
+  float: left;
+  margin: 10px 20px 0 0;
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* CV layout */
+.cv-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin:10px 0 16px}
+.cv-actions .btn{border:1px solid var(--border);background:#fff;padding:8px 12px;border-radius:8px;cursor:pointer}
+.cv-grid{display:grid;gap:18px;grid-template-columns:1fr}
+.cv-side h2,.cv-main h2{margin-top:1rem}
+.cv-list{list-style:none;margin:.3rem 0 1rem;padding:0}
+.cv-list li{margin:.25rem 0}
+.cv-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:.3rem 0 1rem;padding:0}
+.cv-tags li{border:1px solid var(--border);border-radius:999px;padding:2px 8px;font-size:.9rem;color:var(--muted)}
+.cv-entries{list-style:none;margin:.3rem 0 1rem;padding:0}
+.cv-row{display:flex;justify-content:space-between;gap:12px}
+.cv-dates{color:var(--muted);white-space:nowrap}
+.pub{margin-bottom:10px}
+.pub .title{font-weight:600}
+.pub .meta{color:var(--muted);font-size:.95rem}
+
+@media (min-width: 900px){ .cv-grid{grid-template-columns:280px 1fr} }
+
+@media print {
+  header.container, footer, nav, .cv-actions { display: none !important; }
+  .cv-header { display: block !important; }
+  body { background: white; color: black; }
+  .container { max-width: none; }
+  .cv-grid { grid-template-columns: 280px 1fr; }
+  a { color: black; text-decoration: none; }
+}
+
+/* Share buttons */
+.post .share-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.post .share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  color: #333;
+  border: 1px solid #d1d5db;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.post .share-btn:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.post .share-btn[aria-label="Share on X"]:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.post .share-btn[aria-label="Share on LinkedIn"]:hover {
+  background-color: #0a66c2;
+  color: #fff;
+  border-color: #0a66c2;
+}
+
+.post .share-btn[aria-label="Share via Email"]:hover {
+  background-color: #6b7280;
+  color: #fff;
+  border-color: #6b7280;
+}
+
+.post .share-btn.copy-link:hover {
+  background-color: #10b981;
+  color: #fff;
+  border-color: #10b981;
+}
+
+/* news update */
+.news-list { list-style: none; padding-left: 0; margin: .3rem 0 0; }
+.news-list li { margin: .25rem 0; }
+.news-date { color: var(--muted); margin-right: 8px; font-size: .95rem; }
+.news-label {
+  margin-left: 8px; padding: 2px 6px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: .8rem; color: var(--muted);
+}
+
+/* news page */
+.news-archive { margin-top: .5rem; }
+.news-year { margin: 1.2rem 0 .4rem; font-size: 1.25rem; }
+.news-item { display: flex; align-items: center; gap: 10px; margin: .3rem 0; }
+.news-date { color: var(--muted); min-width: 64px; text-align: right; }
+.news-link { text-decoration: none; }
+.news-label {
+  margin-left: 6px; padding: 2px 6px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: .8rem; color: var(--muted);
+}
+
+/* News items = black, Blog posts = blue */
+.news-item-link,
+.news-list .news-item-link,
+.news-archive .news-item-link {
+  color: var(--fg) !important; /* Black for news */
+  text-decoration: none;
+}
+
+.blog-post-link,
+.news-list .blog-post-link,
+.news-archive .blog-post-link {
+  color: var(--link) !important; /* Blue for blog posts */
+  text-decoration: none;
+}
+
+.news-item-link:hover,
+.blog-post-link:hover {
+  text-decoration: underline;
+}
+
+.news-item-text {
+  color: var(--fg);
+}
