@@ -223,14 +223,13 @@ main.container td {
 
 /* Optional: consistent column widths */
 main.container th:nth-child(1),
-main.container td:nth-child(1) { width: 35%; } /* Title */
+main.container td:nth-child(1) { width: 35% !important; } /* Title */
 main.container th:nth-child(2),
-main.container td:nth-child(2) { width: 20%; } /* Author/Speaker */
+main.container td:nth-child(2) { width: 20% !important; } /* Author/Speaker */
 main.container th:nth-child(3),
-main.container td:nth-child(3) { width: 10%; } /* Type */
+main.container td:nth-child(3) { width: 10% !important; } /* Type */
 main.container th:nth-child(4),
-main.container td:nth-child(4) { width: 35%; } /* Notes */
-
+main.container td:nth-child(4) { width: 35% !important; } /* Notes */
 /* Optional: styling tweaks */
 /* main.container thead {
   background-color: #f8f8f8;
