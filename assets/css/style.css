@@ -202,3 +202,45 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
 .news-item-text {
   color: var(--fg);
 }
+
+/* Make sure tables stay within page container */
+main.container table {
+  width: 100%;          /* Fill container width */
+  max-width: 100%;      /* Never exceed container */
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+
+/* Table borders and alignment */
+main.container th,
+main.container td {
+  /* border: 1px solid #ddd; */
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Optional: consistent column widths */
+main.container th:nth-child(1),
+main.container td:nth-child(1) { width: 35%; } /* Title */
+main.container th:nth-child(2),
+main.container td:nth-child(2) { width: 20%; } /* Author/Speaker */
+main.container th:nth-child(3),
+main.container td:nth-child(3) { width: 10%; } /* Type */
+main.container th:nth-child(4),
+main.container td:nth-child(4) { width: 35%; } /* Notes */
+
+/* Optional: styling tweaks */
+/* main.container thead {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+main.container tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+main.container tr:hover {
+  background-color: #f0f7ff; 
+} *//* subtle highlight */
