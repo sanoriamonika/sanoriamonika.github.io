@@ -231,8 +231,8 @@ main.container td:nth-child(3) { width: 10% !important; } /* Type */
 main.container th:nth-child(4),
 main.container td:nth-child(4) { width: 35% !important; } /* Notes */
 
-/* Figure tweeks */
- .figure {
+/* Base figure styling */
+.figure {
   width: 240px;
 }
 
@@ -250,19 +250,20 @@ main.container td:nth-child(4) { width: 35% !important; } /* Notes */
   margin-top: 4px;
 }
 
-/* modifiers for float */
+/* Floats */
 .figure.left {
   float: left;
-  margin: 10px 15px 10px 0;   /* spacing on right side */
+  margin: 10px 15px 10px 0;
 }
 
 .figure.right {
   float: right;
-  margin: 10px 0 10px 15px;   /* spacing on left side */
+  margin: 10px 0 10px 15px;
 }
 
- body { counter-reset: fig; }
-.figure-left .figcaption::before {
+/* Auto-number captions */
+body { counter-reset: fig; }
+.figure .figcaption::before {
   counter-increment: fig;
   content: "Figure " counter(fig) ": ";
   font-weight: 600;
@@ -270,14 +271,15 @@ main.container td:nth-child(4) { width: 35% !important; } /* Notes */
   color: inherit;
 }
 
+/* Responsive fallback */
 @media (max-width: 600px) {
-  .figure-left {
+  .figure.left, .figure.right {
     float: none;
     width: auto;
     margin: 10px 0;
   }
-  .figure-left img {
+  .figure img {
     width: 100%;
-    max-width: 320px;        /* cap size if you like */
+    max-width: 320px;
   }
 }
