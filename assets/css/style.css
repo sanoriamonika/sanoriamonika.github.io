@@ -233,12 +233,12 @@ main.container td:nth-child(4) { width: 35% !important; } /* Notes */
 
 /* Base figure styling */
 .figure {
-  width: 240px;
+  width: 340px;
 }
 
 .figure img {
   display: block;
-  width: 220px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -259,6 +259,28 @@ main.container td:nth-child(4) { width: 35% !important; } /* Notes */
 .figure.right {
   float: right;
   margin: 10px 0 10px 15px;
+}
+
+/* Optional figure sizes */
+.figure.small {
+  width: 260px;
+}
+.figure.small img {
+  width: 240px;
+}
+
+.figure.medium {
+  width: 520px;
+}
+.figure.medium img {
+  width: 500px;
+}
+
+.figure.large {
+  width: 880px;
+}
+.figure.large img {
+  width: 860px;
 }
 
 /* Auto-number captions */
@@ -283,3 +305,4 @@ body { counter-reset: fig; }
     max-width: 320px;
   }
 }
+
