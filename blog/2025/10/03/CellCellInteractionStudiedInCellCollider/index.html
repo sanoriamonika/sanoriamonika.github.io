@@ -88,12 +88,44 @@
 <h4 id="polarity-and-complexity"><strong>Polarity and Complexity</strong></h4>
 <p>Cells also exhibit <strong>polarity</strong> — they are not circularly symmetric. One side acts as the front, the opposite as the back, and the adhesion and surface dynamics differ drastically between the two ends. This adds yet another layer of complexity to cell–cell interactions.</p>
 
-<p>Recent work of these authors aims to understand what happens when cells interact with each other (<a href="https://doi.org/10.1073/pnas.2016602118">PNAS, 2021</a>) and which types of interactions dominate such encounters (<a href="https://doi.org/10.1103/3hhj-rt1n">PRX Life, 2025</a>). They created a <em>cell collider</em> (see <a href="https://www.pnas.org/doi/full/10.1073/pnas.2016602118#supplementary-materials">Video S5 (PNAS)</a>) and studied the trajectories of these cells and their goal to infer some sort of scholastic trajectories law that can explain their collision motion more previously with the hope that it could be used sometime in collective dynamics to get better information about the system.</p>
+<div class="figure left">
+  <blockquote class="twitter-tweet">
+    <a href="https://twitter.com/d_brueckner/status/1113804217872015360"></a>
+  </blockquote>
+  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<p>Modeling how cells collide and interact is far from simple.</p>
+
+<p>In this study, the authors approach the problem by observing cells in a <strong>controlled, dumbbell-shaped adhesive geometry</strong>. From these experiments, they record the <strong>trajectories of individual cells</strong> and use them to construct an <strong>underdamped Langevin inference (ULI) model</strong>.</p>
+
+<p>The idea is to learn directly from experimental data — to infer the underlying <strong>forces, accelerations, and velocity relationships</strong> that govern cell motion, and then reproduce those behaviors in simulations.</p>
+
+<p>This approach is reminiscent of <strong>Einstein’s formulation of Brownian dynamics</strong>, but here the challenge operates at a much finer biological scale and involves far more complex, active materials — living cells.</p>
+
+<p>In earlier work, the authors focused on <strong>single-cell motion</strong> within this confined geometry and developed an inferred model that described individual cell behavior.</p>
+
+<p>In their more recent study, they extend this framework to <strong>cell–cell interactions</strong>, comparing <strong>non-cancerous</strong> and <strong>cancerous breast epithelial cells</strong>.</p>
+
+<p>By analyzing trajectories from their “<strong>cell collider</strong>” experiments, they discovered striking behavioral differences:</p>
+
+<ul>
+  <li>
+    <p><strong>Non-cancerous cells</strong> tend to <strong>retract</strong> upon contact, showing friction-like responses.</p>
+  </li>
+  <li>
+    <p><strong>Cancerous cells</strong>, on the other hand, tend to <strong>slide past each other</strong>, effectively <strong>exchanging positions</strong> after collision.</p>
+  </li>
+</ul>
+
+<p>To capture these observations, the authors derived an <strong>interaction function</strong> that encodes the distinct behaviors of the two cell types during collisions.</p>
+
+<p>This function, integrated within the ULI framework, forms a <strong>data-driven model</strong> that links experimental trajectories to effective physical laws.</p>
 
 <hr />
 <h4 id="reflections">Reflections</h4>
 <ul>
-  <li></li>
+  <li>This work — beginning with their study in <a href="https://doi.org/10.1073/pnas.2016602118"><em>PNAS, 2021</em></a> and extended in <a href="https://doi.org/10.1103/3hhj-rt1n"><em>PRX Life, 2025</em></a> — seeks to uncover how cell–cell interactions emerge from mechanical and stochastic principles.</li>
+  <li>By inferring “stochastic laws of motion” directly from experimental data, the authors move a step closer to connecting <strong>microscopic collisions</strong> with <strong>collective cell migration</strong>, offering a framework that bridges data, dynamics, and biology.</li>
 </ul>
 
 <hr />
@@ -101,7 +133,7 @@
 <ul>
   <li>Single cell in stochastic dynamics in two state device: <a href="https://www.nature.com/articles/s41567-019-0445-4">Stochastic nonlinear dynamics of confined cell migration in two-state systems</a></li>
   <li>Theoratical model by Camley’s group: <a href="https://journals.aps.org/prxlife/abstract/10.1103/PRXLife.2.043020">Inferring Nonlinear Dynamics of Cell Migration</a></li>
-  <li></li>
+  <li><a href="https://doi.org/10.1103/3hhj-rt1n">Data-Driven Theory Reveals Protrusion and Polarity Interactions Governing Collision Behavior of Distinct Motile Cells</a></li>
 </ul>
 
 <hr />
