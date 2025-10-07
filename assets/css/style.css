@@ -305,3 +305,17 @@ body { counter-reset: fig; }
     max-width: 320px;
   }
 }
+/* Post next and back button */
+/* .post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+.post-navigation a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.post-navigation a:hover {
+  text-decoration: underline;
+} */
