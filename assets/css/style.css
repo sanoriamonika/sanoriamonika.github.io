@@ -379,9 +379,7 @@ body { counter-reset: fig; }
   text-decoration: underline;
 }
 
-/* tag list */
-
-/* tags  */
+/* tag list *//* tags  */
 .tag-list {
   list-style: none;
   padding: 0;
