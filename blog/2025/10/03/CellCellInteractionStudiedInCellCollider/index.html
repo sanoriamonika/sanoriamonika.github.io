@@ -25,129 +25,8 @@
   </div>
 </header>
 
-<!-- <main class="container">
-  <article class="post">
-    <h1 class="post-title">Paper Summary: Learning the dynamics of cell–cell interactions in confined cell migration</h1>
-    
-      <p class="post-meta"><em>October 03, 2025</em></p>
-    
-
-    <div class="post-content">
-      <ul>
-  <li>
-    <p>Two hard balls collide — what happens?</p>
-  </li>
-  <li>
-    <p>What happens if two soft balls collide? How does their shape change? How does their surface fluctuate?</p>
-  </li>
-  <li>
-    <p>Now, what if there is a hard ball inside a soft ball, and these two balls collide with each other — how do their trajectories change? How does the surface fluctuate now?</p>
-  </li>
-  <li>
-    <p>What if the hard ball is not completely rigid but has some elasticity, though less than that of the soft ball — what happens then?</p>
-  </li>
-  <li>
-    <p>Now, what if these materials have piezoelectric-like properties and show some kind of attractive and repulsive forces between each other?</p>
-  </li>
-</ul>
-
-<p>Such interesting problems to think about — every layer brings new complexity.</p>
-
-<p>Now imagine <strong>two cells colliding</strong> with each other — this is another level of a ball game. They are <em>adaptive materials</em>, ever-evolving. There are hundreds of thousands of processes happening inside a cell at any given time. It is converting ATP to ADP, allowing ions to diffuse, performing endocytosis to engulf larger particles, and exocytosis to release waste materials. There is continuous transport of cargo between the cell interior and its surface for these processes. Meanwhile, RNA is synthesizing new proteins from DNA through transcription and translation, and the Golgi apparatus is sending them to where they are needed. Chromosomes may even be aligning into their characteristic shape just before cell division.</p>
-
-<p>Now imagine — the cell sees another cell approaching, about to collide. What will it do? How will it behave? What will its trajectory look like, and how will its surface fluctuate?</p>
-
-<h4 id="the-cellular-architecture"><strong>The Cellular Architecture</strong></h4>
-
-<p>A cell is far more intricate than a “hard core and soft shell.” It has <em>building blocks</em>. Its outer layer — the <strong>cytoplasm</strong> — is highly elastic. It can deform from a 3D shape to a 2D-like shape, almost like a “super material,” with the constraint that its volume remains constant at all times. The cytoplasm is filled with <strong>actomyosin networks, microtubules, and organelles</strong>. Actin and myosin form a dynamic, contractile network near the cell membrane — a <strong>lipid bilayer</strong> embedded with various proteins. These proteins mediate interactions with the environment and act as <strong>ion channels</strong>. The actomyosin cortex forms parallel and cross-linked structures that continuously reorganize — polymerizing and depolymerizing — as the cell forms protrusions to explore new regions. These protrusions extend the network in particular directions, allowing the cell to explore and sense its environment for potential connections.</p>
-
-<h4 id="the-cell-surface-and-adhesion-machinery"><strong>The Cell Surface and Adhesion Machinery</strong></h4>
-<p>In addition to these internal actomyosin structures, the <strong>cell membrane</strong> has functional proteins (<a href="https://en.wikipedia.org/wiki/Membrane_protein">cell surface proteins</a>) that include <em>signaling proteins</em>, <em>transport proteins</em>, and <em>adhesion molecules</em>.</p>
-
-<p>These <strong>cell adhesion molecules (CAMs)</strong> mediate binding to either the <strong>extracellular matrix (ECM)</strong> or other cells (<a href="https://en.wikipedia.org/wiki/Cell_junction#:~:text=The%20molecules%20responsible%20for%20creating,integrins%2C%20and%20the%20immunoglobulin%20superfamily.">cell junctions</a>).</p>
-
-<p>CAMs are mainly divided into four categories depending on the type of interaction:</p>
-
-<ul>
-  <li>
-    <p><strong>Immunoglobulin Superfamily (IgSF CAMs)</strong> — cell–cell and cell–ECM binding (calcium-independent)</p>
-  </li>
-  <li>
-    <p><strong>Cadherins</strong> — cell–cell binding, especially in epithelial tissues (calcium-dependent)</p>
-  </li>
-  <li>
-    <p><strong>Selectins</strong> — cell–cell binding in immune cells (calcium-dependent)</p>
-  </li>
-  <li>
-    <p><strong>Integrins</strong> — cell–ECM binding (calcium-dependent)</p>
-  </li>
-</ul>
-
-<p>How these molecules form bonds and how long they remain connected is still an active area of research.</p>
-
-<h4 id="polarity-and-complexity"><strong>Polarity and Complexity</strong></h4>
-<p>Cells also exhibit <strong>polarity</strong> — they are not circularly symmetric. One side acts as the front, the opposite as the back, and the adhesion and surface dynamics differ drastically between the two ends. This adds yet another layer of complexity to cell–cell interactions.</p>
-
-<div class="figure left">
-  <blockquote class="twitter-tweet">
-    <a href="https://twitter.com/d_brueckner/status/1113804217872015360"></a>
-  </blockquote>
-  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<p>Modeling how cells collide and interact is far from simple.</p>
-
-<p>In this study, the authors approach the problem by observing cells in a <strong>controlled, dumbbell-shaped adhesive geometry</strong>. From these experiments, they record the <strong>trajectories of individual cells</strong> and use them to construct an <strong>underdamped Langevin inference (ULI) model</strong>.</p>
-
-<p>The idea is to learn directly from experimental data — to infer the underlying <strong>forces, accelerations, and velocity relationships</strong> that govern cell motion, and then reproduce those behaviors in simulations.</p>
-
-<p>This approach is reminiscent of <strong>Einstein’s formulation of Brownian dynamics</strong>, but here the challenge operates at a much finer biological scale and involves far more complex, active materials — living cells.</p>
-
-<p>In earlier work, the authors focused on <strong>single-cell motion</strong> within this confined geometry and developed an inferred model that described individual cell behavior.</p>
-
-<p>In their more recent study, they extend this framework to <strong>cell–cell interactions</strong>, comparing <strong>non-cancerous</strong> and <strong>cancerous breast epithelial cells</strong>.</p>
-
-<p>By analyzing trajectories from their “<strong>cell collider</strong>” experiments, they discovered striking behavioral differences:</p>
-
-<ul>
-  <li>
-    <p><strong>Non-cancerous cells</strong> tend to <strong>retract</strong> upon contact, showing friction-like responses.</p>
-  </li>
-  <li>
-    <p><strong>Cancerous cells</strong>, on the other hand, tend to <strong>slide past each other</strong>, effectively <strong>exchanging positions</strong> after collision.</p>
-  </li>
-</ul>
-
-<p>To capture these observations, the authors derived an <strong>interaction function</strong> that encodes the distinct behaviors of the two cell types during collisions.</p>
-
-<p>This function, integrated within the ULI framework, forms a <strong>data-driven model</strong> that links experimental trajectories to effective physical laws.</p>
-
-<hr />
-<h4 id="reflections">Reflections</h4>
-<ul>
-  <li>This work — beginning with their study in <a href="https://doi.org/10.1073/pnas.2016602118"><em>PNAS, 2021</em></a> and extended in <a href="https://doi.org/10.1103/3hhj-rt1n"><em>PRX Life, 2025</em></a> — seeks to uncover how cell–cell interactions emerge from mechanical and stochastic principles.</li>
-  <li>By inferring “stochastic laws of motion” directly from experimental data, the authors move a step closer to connecting <strong>microscopic collisions</strong> with <strong>collective cell migration</strong>, offering a framework that bridges data, dynamics, and biology.</li>
-</ul>
-
-<hr />
-<h4 id="resources">Resources</h4>
-<ul>
-  <li>Single cell in stochastic dynamics in two state device: <a href="https://www.nature.com/articles/s41567-019-0445-4">Stochastic nonlinear dynamics of confined cell migration in two-state systems</a></li>
-  <li>Theoratical model by Camley’s group: <a href="https://journals.aps.org/prxlife/abstract/10.1103/PRXLife.2.043020">Inferring Nonlinear Dynamics of Cell Migration</a></li>
-  <li><a href="https://doi.org/10.1103/3hhj-rt1n">Data-Driven Theory Reveals Protrusion and Polarity Interactions Governing Collision Behavior of Distinct Motile Cells</a></li>
-</ul>
-
-<hr />
-<h3 id="citation">Citation</h3>
-
-<p><strong>Authors</strong>: David B. Bruckner,Nicolas Arlt, Alexandra Fink, Pierre Ronceray, Joachim O. Ra ̈ dler, and Chase P. Broedersz
-<strong>Published in</strong>: PNAS 2021
-<strong>DOI/Link</strong>: <a href="https://doi.org/10.1073/pnas.2016602118">https://doi.org/10.1073/pnas.2016602118</a></p>
-
-    </div>
-  </article> -->
-  <main class="container" role="main">
+<main class="container" role="main">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    
     <header class="post-header">
       <h1 class="post-title" itemprop="headline">Paper Summary: Learning the dynamics of cell–cell interactions in confined cell migration</h1>
 
@@ -158,7 +37,7 @@
           </time>
         </p>
       
-      
+
       
         <p class="post-tags">
           
@@ -290,26 +169,18 @@
 <strong>DOI/Link</strong>: <a href="https://doi.org/10.1073/pnas.2016602118">https://doi.org/10.1073/pnas.2016602118</a></p>
 
     </div>
-    
   </article>
 
-  <!-- add share button -->
-  <!-- <div class="post-navigation">
-    
-      <a class="prev" href="/blog/2025/10/02/OrderedCellPhase/">← Paper Summary: Active cell divisions generate fourfold orientationally ordered phase in living tissue</a>
-    
-    
-      <a class="next" href="/blog/2025/10/05/VisualOfCellularWorld/">Weekend Special: Visuals of Cellular World →</a>
-    
-  </div> -->
+  <!-- Post navigation -->
   <nav class="post-nav">
-  
-    <a class="icon-nav" href="/blog/2025/10/02/OrderedCellPhase/" title="Previous post">←</a>
-  
-  
-    <a class="icon-nav" href="/blog/2025/10/05/VisualOfCellularWorld/" title="Next post">→</a>
-  
-</nav>
+    
+      <a class="icon-nav" href="/blog/2025/10/02/OrderedCellPhase/" title="Previous post">←</a>
+    
+    
+      <a class="icon-nav" href="/blog/2025/10/05/VisualOfCellularWorld/" title="Next post">→</a>
+    
+  </nav>
+
   <!-- Share buttons -->
   <div class="share-buttons">
     <!-- X -->
@@ -340,11 +211,7 @@
       </svg>
     </button>
   </div>
-
-
-
 </main>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("a[href^='http']");
