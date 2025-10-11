@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Monika Sanoria, PhD</title>
-  <meta name="description" content="">
+  <meta name="description" content="Active matter, cell cluster dynamics, and soft active particle modeling by Monika Sanoria.">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -12,15 +12,15 @@
 <header>
   <div class="container">
     <nav>
-      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
-      <a href="/" data-nav="/">Home</a>
-      <a href="/research.html" data-nav="/research.html">Research</a>
-      <a href="/publications.html" data-nav="/publications.html">Publications</a>
-      <a href="/talks.html" data-nav="/talks.html">Talks</a>
-      <a href="/resources.html" data-nav="/resources.html">Resources</a>
-      <a href="/blog/" data-nav="/blog/">Blog</a>
-      <a href="/cv.html" data-nav="/cv.html">CV</a>
-      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+      <a class="brand" href="/">Monika Sanoria, PhD</a>
+      <a href="/">Home</a>
+      <a class="active" href="/research.html">Research</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/talks.html">Talks</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/blog/">Blog</a>
+      <a href="/cv.html">CV</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -28,19 +28,47 @@
 <main class="container">
 
 <h1>Research</h1>
-<p>I study how tiny moving particles, like cells or artificial active particles, interact and organize themselves. My research focuses on understanding how these particles move, cluster, and sometimes separate under different conditions. I explore how softness, external forces, and surrounding environments influence their collective behavior.
 
-One of my key areas of interest is motility‑induced phase separation (MIPS), where moving particles spontaneously form clusters. I have shown that when particles are soft, they can create porous, connected structures instead of just dense clusters. Another major focus is on how cancerous cell clusters respond to chemical signals and move together, which is important for understanding diseases.
+<p>My research explores how self-propelled particles and cells organize, deform, and move collectively in complex environments. I combine computational modeling with theoretical analysis to uncover the physical principles governing active matter systems, from synthetic colloidal particles to living cells. My work bridges physics and biology, revealing how simple interaction rules and feedback mechanisms give rise to emergent collective behaviors with implications for understanding biological processes and designing novel materials.</p>
 
-My work combines physics, biology, and computational models to uncover new principles governing self‑organization in active matter systems.</p>
+<h2>Softness-Dependent Phase Separation in Active Brownian Particles</h2>
 
-<h2>Focus Areas</h2>
+<p>During my PhD, I investigated how particle softness fundamentally alters motility-induced phase separation (MIPS) in active Brownian particles. While hard active particles form dense, compact clusters, I discovered that soft particles create porous, interconnected networks that continuously reorganize. My work revealed that the interplay between elasticity and self-propulsion controls transitions between compact, fluid-like, and percolating states. Using Brownian dynamics simulations and statistical analysis, I identified a novel percolation transition in these systems and characterized it by comparing critical exponents with literature values, confirming its distinct universality class.</p>
+
+<figure class="figure left">
+  <img src="/assets/img/Plot1.png" alt="Softness-dependent phase separation in active Brownian particles">
+  <figcaption><strong>Phase behavior of soft active particles.</strong> Hexatic order and cluster formation showing transitions from disordered (A) to porous (B) to compact (C) clustering as activity increases.</figcaption>
+</figure>
+
+<figure class="figure left">
+  <img src="/assets/img/Plot2.pdf" alt="Percolation transition analysis">
+  <figcaption><strong>Percolation transition in soft active matter.</strong> Finite-size scaling analysis reveals critical behavior with Pe꜀≈550 and critical exponents ν≈1.33, β≈0.14, γ≈2.5.</figcaption>
+</figure>
+
+<div style="clear: both;"></div>
+
+<h2>Chemotactic Migration and Instabilities in Cell Clusters</h2>
+
+<p>My current postdoctoral research focuses on understanding how multicellular clusters migrate in response to chemical gradients. Using particle-based computational models informed by experimental observations of malignant lymphocyte clusters, I study chemotactic instabilities where clusters exhibit shape deformations, rotation, and fragmentation depending on gradient strength and cluster size. A particularly striking aspect of my current work is the counterintuitive behavior observed at high gradient strengths: while single cells exhibit chemorepulsion and move away from the gradient source, larger clusters display chemoattraction and migrate up the gradient. I am investigating the physical mechanisms underlying this size-dependent reversal, revealing how collective effects and inter-cellular interactions enable clusters to maintain forward migration even under conditions that repel individual cells - behavior with critical implications for understanding cancer metastasis and immune cell trafficking.</p>
+
+<figure class="figure large left">
+  <img src="/assets/img/CollectiveCellDynamics.pdf" alt="Chemotactic migration of cell clusters">
+  <figcaption><strong>Cluster breakup dynamics under chemotactic gradients.</strong> Experimental time-lapse (a) and simulations (b) show cluster fragmentation from symmetric to elongated shapes. Breaking frequency (c,d) and probability (e) increase with gradient strength and cluster size.</figcaption>
+</figure>
+
+<div style="clear: both;"></div>
+
+<h2>Active Polymers and Coordinated Motion</h2>
+
+<p>In parallel, I develop active polymer and follower-chain models to understand how coordinated locomotion emerges in elongated active systems, with applications to biological filaments like microtubules and robotic systems. These minimal models incorporate the effects of chirality on active motion and explore escape time dynamics of flexible active swimmers. By studying how local interactions and geometric constraints shape collective behavior along the chain, this work aims to uncover fundamental principles governing living and synthetic active systems.</p>
+
+<h2>Research Focus Areas</h2>
 <ul>
-  <li>Motility‑Induced Phase Separation (MIPS)</li>
-  <li>Percolation transitions in active matter</li>
-  <li>Soft active particles and porous clustering</li>
-  <li>Collective cell migration and chemotaxis in cancer</li>
-  <li>Computational & theoretical biophysics of self‑organization</li>
+  <li><strong>Motility-Induced Phase Separation (MIPS)</strong> — Understanding how self-propulsion drives spontaneous clustering and phase separation</li>
+  <li><strong>Percolation Transitions</strong> — Characterizing connectivity and structural transitions in active matter systems</li>
+  <li><strong>Soft Active Particles</strong> — Exploring how particle deformability creates porous, network-like structures</li>
+  <li><strong>Collective Cell Migration</strong> — Modeling chemotactic behavior and instabilities in multicellular clusters</li>
+  <li><strong>Active Polymers</strong> — Investigating coordination mechanisms and locomotion strategies in flexible active chains</li>
 </ul>
 
 </main>
@@ -50,7 +78,7 @@ My work combines physics, biology, and computational models to uncover new princ
     © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
-<script src="/assets/js/main.js"></script>
 
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
