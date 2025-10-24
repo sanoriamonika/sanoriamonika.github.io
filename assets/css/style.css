@@ -610,3 +610,23 @@ body {
   font-style: normal;
   color: inherit;
 }
+
+/* Note Box */
+.note-box {
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin: 2rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.note-box h4 {
+  margin-top: 0;
+  color: #0b57d0;
+  font-weight: 600;
+}
+.note-box p {
+  margin: 0.3rem 0 0;
+  color: #333;
+  line-height: 1.5;
+}
