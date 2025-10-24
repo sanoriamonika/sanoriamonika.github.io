@@ -283,6 +283,36 @@ main.container td:nth-child(4) { width: 35% !important; } /* Notes */
   width: 860px;
 }
 
+/* youtube shorts embed*/
+
+
+  /* Base video style */
+  .video {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    margin: 0 auto;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  /* Aspect ratios */
+  .ar-16x9 { aspect-ratio: 16 / 9; }
+  .ar-9x16 { aspect-ratio: 9 / 16; }
+
+  /* Size classes — control these only */
+  .video-small { max-width: 300px; }
+  .video-medium { max-width: 450px; }
+  .video-large { max-width: 700px; }
+
+
+
 /* Auto-number captions */
 body { counter-reset: fig; }
 .figure .figcaption::before {
@@ -414,4 +444,169 @@ body { counter-reset: fig; }
   color: #6b7280;
   font-size: 0.8em;
 }
+/* =============================== */
+/* Enhanced Figure Layout (Left, Right, Center, Auto) */
+/* =============================== */
 
+.figure {
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+  max-width: 720px;
+  float: none; /* Default centered alignment */
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figure img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.figure figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.4em;
+  line-height: 1.4;
+}
+
+/* Alignment variants */
+.figure.left {
+  float: left;
+  width: 45%;
+  margin: 0.8em 1.5em 0.8em 0;
+  text-align: center;
+}
+
+.figure.right {
+  float: right;
+  width: 45%;
+  margin: 0.8em 0 0.8em 1.5em;
+  text-align: center;
+}
+
+/* Size variants */
+.figure.small {
+  width: 30%;
+  min-width: 220px;
+}
+
+.figure.medium {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 1em 1%;
+  text-align: center;
+}
+
+.figure.large {
+  width: 90%;
+}
+
+/* Two medium figures side-by-side automatically */
+@media (min-width: 900px) {
+  .figure.medium:nth-of-type(2n+1) {
+    margin-right: 2%;
+  }
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 700px) {
+  .figure,
+  .figure.left,
+  .figure.right,
+  .figure.medium,
+  .figure.small,
+  .figure.large {
+    float: none;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* =============================== */
+/* Enhanced Video Styling          */
+/* =============================== */
+
+/* Base video container */
+.video {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Aspect ratios */
+.ar-16x9 { aspect-ratio: 16 / 9; }
+.ar-9x16 { aspect-ratio: 9 / 16; }
+
+/* Size variants */
+.video.small  { max-width: 180px; }
+.video.medium { max-width: 48%; margin: 1em 1%; }
+.video.large  { max-width: 720px; }
+
+/* Two medium videos side by side */
+@media (min-width: 900px) {
+  .video.medium:nth-of-type(2n+1) { margin-right: 2%; }
+}
+
+/* Responsive stacking */
+@media (max-width: 700px) {
+  .video, .video.small, .video.medium, .video.large {
+    max-width: 100%;
+    margin: 1em 0;
+  }
+}
+/* ========================================== */
+/* Separate numbering for images and videos   */
+/* ========================================== */
+
+/* Reset independent counters */
+body {
+  counter-reset: fig videofig;
+}
+
+/* Regular image figures (default) */
+.figure:not(.video-figure) .figcaption::before {
+  counter-increment: fig;
+  content: "Figure " counter(fig) ": ";
+  font-weight: 600;
+  font-style: normal;
+  color: inherit;
+}
+
+/* Video figures get their own sequence */
+.video-figure .figcaption::before {
+  counter-increment: videofig;
+  content: "Video " counter(videofig) ": ";
+  font-weight: 600;
+  font-style: normal;
+  color: inherit;
+}
