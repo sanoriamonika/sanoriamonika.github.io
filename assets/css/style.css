@@ -592,15 +592,14 @@ body:not(.production) .dev-only-banner {
 /* Status badge styling */
 .post-status {
   display: inline-block;
-  padding: 4px 12px;
-  border-radius: 6px;
+  padding: 3px 8px;
+  border-radius: 4px;
   font-size: 0.7em;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-left: 12px;
+  letter-spacing: 0.5px;
+  margin-left: 8px;
   vertical-align: middle;
-  line-height: 1.5;
 }
 
 /* Draft status - yellow/orange */
@@ -616,29 +615,51 @@ body.production .post-draft {
 }
 
 /* =============================== */
-/* BLOG LIST STYLING               */
+/* COMPACT BLOG LIST STYLING       */
 /* =============================== */
 
-/* Weekly blog list */
+/* Main blog container */
+main.container > h2 {
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Weekly blog list - compact style */
 main.container > ul {
   list-style: none;
-  padding: 0;
-  margin: 1.5em 0;
+  padding-left: 2em;
+  margin: 0.5em 0 2em 0;
 }
 
 main.container > ul li {
-  margin: 0.5em 0;
-  padding: 0.5em 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  margin: 0.4em 0;
+  padding: 0;
+  display: block;
+  line-height: 1.6;
+}
+
+/* Bullet circles */
+main.container > ul li::before {
+  content: "○";
+  color: var(--link);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+}
+
+/* Draft posts get different bullet */
+body:not(.production) main.container > ul li.post-draft::before {
+  content: "◐";
+  color: #f59e0b;
 }
 
 main.container > ul li a {
   color: var(--link);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 main.container > ul li a:hover {
@@ -646,8 +667,8 @@ main.container > ul li a:hover {
 }
 
 main.container > ul li .date {
-  color: var(--muted);
-  font-size: 0.9em;
+  color: var(--fg);
+  font-weight: normal;
   white-space: nowrap;
 }
 
@@ -655,37 +676,30 @@ main.container > ul li .date {
 main.container h3 {
   margin-top: 2em;
   margin-bottom: 0.5em;
-  padding-bottom: 0.3em;
-  border-bottom: 2px solid var(--border);
+  font-size: 1.6em;
+  font-weight: 700;
   color: var(--fg);
-  font-size: 1.2em;
+  border-bottom: none;
 }
 
 main.container h3:first-of-type {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
-/* Status badge in list */
+/* Status badge in compact list */
 main.container > ul li .post-status {
   font-size: 0.65em;
-  padding: 3px 8px;
+  padding: 2px 6px;
   margin: 0 4px;
 }
 
-/* Dim draft posts in development */
+/* Dim draft posts slightly in development */
 body:not(.production) main.container > ul li.post-draft {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 body:not(.production) main.container > ul li.post-draft:hover {
   opacity: 1;
-}
-
-/* Add indicator icon for draft posts */
-body:not(.production) main.container > ul li.post-draft::before {
-  content: "📝";
-  margin-right: 6px;
-  font-size: 0.9em;
 }
 
 /* =============================== */
@@ -693,13 +707,13 @@ body:not(.production) main.container > ul li.post-draft::before {
 /* =============================== */
 
 main.container > div[style*="background: #f3f4f6"] {
-  margin-top: 2em;
-  padding: 14px 16px;
+  margin-top: 2.5em;
+  padding: 12px 16px;
   background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
   border: 1px solid #d1d5db;
   border-left: 4px solid #6b7280;
   border-radius: 8px;
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: #374151;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
@@ -714,18 +728,15 @@ main.container > div[style*="background: #f3f4f6"] strong {
 /* =============================== */
 
 @media (max-width: 600px) {
+  main.container > ul {
+    padding-left: 1.5em;
+  }
+  
   main.container > ul li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+    line-height: 1.8;
   }
   
-  main.container > ul li .post-status {
-    margin-left: 0;
-  }
-  
-  body:not(.production) main.container > ul li.post-draft::before {
-    margin-right: 4px;
-    font-size: 0.8em;
+  main.container h3 {
+    font-size: 1.4em;
   }
 }
