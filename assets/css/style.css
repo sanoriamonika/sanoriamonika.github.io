@@ -16,6 +16,7 @@ body{
   color:var(--fg);
   background:var(--bg);
   font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+  counter-reset: fig videofig;
 }
 a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline}
 img{max-width:100%; height:auto}
@@ -80,9 +81,6 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
 .cv-entries{list-style:none;margin:.3rem 0 1rem;padding:0}
 .cv-row{display:flex;justify-content:space-between;gap:12px}
 .cv-dates{color:var(--muted);white-space:nowrap}
-.pub{margin-bottom:10px}
-.pub .title{font-weight:600}
-.pub .meta{color:var(--muted);font-size:.95rem}
 
 @media (min-width: 900px){ .cv-grid{grid-template-columns:280px 1fr} }
 
@@ -145,20 +143,18 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
   color: #fff;
   border-color: #10b981;
 }
-/* .post-content {
-  text-align: justify;
-  line-height: 1.6;
-} */
+
 .post-title { margin: 0 0 0.25rem; font-size: 1.8rem; line-height: 1.2; }
 .post-meta { margin: 0 0 1rem; color: #555; }
 
 .post-content { 
-  text-align: left; /*justify*/
+  text-align: left;
   line-height: 1.6;
 }
 
 /* Safety: ensure nothing hides the title accidentally */
 .post h1, .post-title { display: block !important; }
+
 /* news update */
 .news-list { list-style: none; padding-left: 0; margin: .3rem 0 0; }
 .news-list li { margin: .25rem 0; }
@@ -174,23 +170,19 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
 .news-item { display: flex; align-items: center; gap: 10px; margin: .3rem 0; }
 .news-date { color: var(--muted); min-width: 64px; text-align: right; }
 .news-link { text-decoration: none; }
-.news-label {
-  margin-left: 6px; padding: 2px 6px; border: 1px solid var(--border);
-  border-radius: 999px; font-size: .8rem; color: var(--muted);
-}
 
 /* News items = black, Blog posts = blue */
 .news-item-link,
 .news-list .news-item-link,
 .news-archive .news-item-link {
-  color: var(--fg) !important; /* Black for news */
+  color: var(--fg) !important;
   text-decoration: none;
 }
 
 .blog-post-link,
 .news-list .blog-post-link,
 .news-archive .blog-post-link {
-  color: var(--link) !important; /* Blue for blog posts */
+  color: var(--link) !important;
   text-decoration: none;
 }
 
@@ -205,117 +197,229 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
 
 /* Make sure tables stay within page container */
 main.container table {
-  width: 100%;          /* Fill container width */
-  max-width: 100%;      /* Never exceed container */
+  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 1.5em 0;
   font-size: 0.95rem;
 }
 
-/* Table borders and alignment */
 main.container th,
 main.container td {
-  /* border: 1px solid #ddd; */
   padding: 8px 12px;
   text-align: left;
   vertical-align: top;
 }
 
-/* Optional: consistent column widths */
 main.container th:nth-child(1),
-main.container td:nth-child(1) { width: 35% !important; } /* Title */
+main.container td:nth-child(1) { width: 35% !important; }
 main.container th:nth-child(2),
-main.container td:nth-child(2) { width: 20% !important; } /* Author/Speaker */
+main.container td:nth-child(2) { width: 20% !important; }
 main.container th:nth-child(3),
-main.container td:nth-child(3) { width: 10% !important; } /* Type */
+main.container td:nth-child(3) { width: 10% !important; }
 main.container th:nth-child(4),
-main.container td:nth-child(4) { width: 35% !important; } /* Notes */
+main.container td:nth-child(4) { width: 35% !important; }
 
-/* Base figure styling */
+/* =============================== */
+/* GALLERY - Video Row Layout      */
+/* =============================== */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 2em 0;
+  justify-content: flex-start;
+}
+
+/* =============================== */
+/* VIDEO FIGURES                   */
+/* =============================== */
+
+.video-figure {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px; /* Default width */
+}
+
+/* SIZE CONTROL - Add these classes to video-figure */
+.video-figure.small {
+  width: 200px;
+}
+
+.video-figure.medium {
+  width: 300px;
+}
+
+.video-figure.large {
+  width: 450px;
+}
+
+.video-figure.xlarge {
+  width: 600px;
+}
+
+/* Caption styling */
+.video-figure figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Auto-numbering for video captions */
+.video-figure figcaption::before {
+  counter-increment: videofig;
+  content: "Video " counter(videofig) ": ";
+  font-weight: 600;
+  font-style: normal;
+  color: inherit;
+}
+
+/* =============================== */
+/* VIDEO CONTAINER WITH ASPECT RATIO */
+/* =============================== */
+
+.video {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* =============================== */
+/* ASPECT RATIO CONTROL            */
+/* Control aspect ratio by adding classes to .video div */
+/* =============================== */
+
+/* Vertical video (YouTube Shorts, TikTok style) - 9:16 */
+.video.ar-9x16 {
+  aspect-ratio: 9 / 16;
+}
+
+/* Horizontal video (Standard YouTube) - 16:9 */
+.video.ar-16x9 {
+  aspect-ratio: 16 / 9;
+}
+
+/* Square video (Instagram style) - 1:1 */
+.video.ar-1x1 {
+  aspect-ratio: 1 / 1;
+}
+
+/* Widescreen - 21:9 */
+.video.ar-21x9 {
+  aspect-ratio: 21 / 9;
+}
+
+/* Classic 4:3 */
+.video.ar-4x3 {
+  aspect-ratio: 4 / 3;
+}
+
+/* Width is now controlled by size classes on video-figure */
+
+/* =============================== */
+/* RESPONSIVE BREAKPOINTS          */
+/* =============================== */
+
+/* Desktop - multiple videos per row */
+@media (min-width: 900px) {
+  .gallery {
+    justify-content: flex-start;
+  }
+}
+
+/* Tablet - adjust sizing */
+@media (min-width: 600px) and (max-width: 899px) {
+  .video-figure.small {
+    width: 180px;
+  }
+  
+  .video-figure.medium {
+    width: 280px;
+  }
+  
+  .video-figure.large {
+    width: calc(50% - 10px);
+  }
+  
+  .video-figure.xlarge {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Mobile - stack vertically */
+@media (max-width: 599px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-figure,
+  .video-figure.small,
+  .video-figure.medium,
+  .video-figure.large,
+  .video-figure.xlarge {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* =============================== */
+/* REGULAR IMAGE FIGURES           */
+/* (Keep your existing figure styles) */
+/* =============================== */
+
 .figure {
-  width: 340px;
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+  max-width: 720px;
 }
 
 .figure img {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.figure .figcaption {
-  display: block;
-  font-style: italic;
+.figure img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.figure figcaption {
   font-size: 0.9em;
   color: #555;
-  margin-top: 4px;
+  margin-top: 0.4em;
+  line-height: 1.4;
+  font-style: italic;
 }
 
-/* Floats */
-.figure.left {
-  float: left;
-  margin: 10px 15px 10px 0;
-}
-
-.figure.right {
-  float: right;
-  margin: 10px 0 10px 15px;
-}
-
-/* Optional figure sizes */
-.figure.small {
-  width: 260px;
-}
-.figure.small img {
-  width: 240px;
-}
-
-.figure.medium {
-  width: 520px;
-}
-.figure.medium img {
-  width: 500px;
-}
-
-.figure.large {
-  width: 880px;
-}
-.figure.large img {
-  width: 860px;
-}
-
-/* youtube shorts embed*/
-
-
-  /* Base video style */
-  .video {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 6px rgba(0,0,0,0.15);
-    margin: 0 auto;
-  }
-
-  .video iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-  }
-
-  /* Aspect ratios */
-  .ar-16x9 { aspect-ratio: 16 / 9; }
-  .ar-9x16 { aspect-ratio: 9 / 16; }
-
-  /* Size classes — control these only */
-  .video-small { max-width: 300px; }
-  .video-medium { max-width: 450px; }
-  .video-large { max-width: 700px; }
-
-
-
-/* Auto-number captions */
-body { counter-reset: fig; }
-.figure .figcaption::before {
+/* Regular image figures auto-numbering */
+.figure:not(.video-figure) figcaption::before {
   counter-increment: fig;
   content: "Figure " counter(fig) ": ";
   font-weight: 600;
@@ -323,33 +427,51 @@ body { counter-reset: fig; }
   color: inherit;
 }
 
-/* Responsive fallback */
-@media (max-width: 600px) {
-  .figure.left, .figure.right {
+.figure.left {
+  float: left;
+  width: 45%;
+  margin: 0.8em 1.5em 0.8em 0;
+}
+
+.figure.right {
+  float: right;
+  width: 45%;
+  margin: 0.8em 0 0.8em 1.5em;
+}
+
+.figure.small {
+  width: 30%;
+  min-width: 220px;
+}
+
+.figure.medium {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 1em 1%;
+}
+
+.figure.large {
+  width: 90%;
+}
+
+@media (max-width: 700px) {
+  .figure,
+  .figure.left,
+  .figure.right,
+  .figure.medium,
+  .figure.small,
+  .figure.large {
     float: none;
-    width: auto;
-    margin: 10px 0;
-  }
-  .figure img {
     width: 100%;
-    max-width: 320px;
+    margin: 1em auto;
   }
 }
-/* Post next and back button */
-/* .post-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-.post-navigation a {
-  color: #0066cc;
-  text-decoration: none;
-}
-.post-navigation a:hover {
-  text-decoration: underline;
-} */
- /* Blog title */
+
+/* =============================== */
+/* Additional Styling              */
+/* =============================== */
+
 .post-tags {
   margin: 0.5em 0 1.5em;
 }
@@ -357,30 +479,6 @@ body { counter-reset: fig; }
 .post-tags .tag {
   background-color: #eef2ff;
   color: #334155;
-  font-size: 0.8em;
-  padding: 2px 8px;
-  border-radius: 8px;
-  margin-right: 4px;
-  text-decoration: none;
-}
-
-.post-tags .tag:hover {
-  background-color: #e0e7ff;
-  color: #1e3a8a;
-}
-.post-meta {
-  color: #6b7280;
-  font-size: 0.9em;
-  margin-bottom: 0.3em;
-}
-
-.post-tags {
-  margin: 0.2em 0 1.5em;
-}
-
-.post-tags .tag {
-  background-color: #eef2ff;
-  color: #374151;
   font-size: 0.8em;
   padding: 3px 8px;
   border-radius: 8px;
@@ -392,7 +490,7 @@ body { counter-reset: fig; }
   background-color: #e0e7ff;
   color: #1e3a8a;
 }
-/* next and previous post */
+
 .post-nav {
   display: flex;
   justify-content: space-between;
@@ -409,7 +507,6 @@ body { counter-reset: fig; }
   text-decoration: underline;
 }
 
-/* tag list *//* tags  */
 .tag-list {
   list-style: none;
   padding: 0;
@@ -444,174 +541,7 @@ body { counter-reset: fig; }
   color: #6b7280;
   font-size: 0.8em;
 }
-/* =============================== */
-/* Enhanced Figure Layout (Left, Right, Center, Auto) */
-/* =============================== */
 
-.figure {
-  display: block;
-  text-align: center;
-  margin: 2em auto;
-  max-width: 720px;
-  float: none; /* Default centered alignment */
-}
-
-.figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.figure img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.figure figcaption {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 0.4em;
-  line-height: 1.4;
-}
-
-/* Alignment variants */
-.figure.left {
-  float: left;
-  width: 45%;
-  margin: 0.8em 1.5em 0.8em 0;
-  text-align: center;
-}
-
-.figure.right {
-  float: right;
-  width: 45%;
-  margin: 0.8em 0 0.8em 1.5em;
-  text-align: center;
-}
-
-/* Size variants */
-.figure.small {
-  width: 30%;
-  min-width: 220px;
-}
-
-.figure.medium {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-  margin: 1em 1%;
-  text-align: center;
-}
-
-.figure.large {
-  width: 90%;
-}
-
-/* Two medium figures side-by-side automatically */
-@media (min-width: 900px) {
-  .figure.medium:nth-of-type(2n+1) {
-    margin-right: 2%;
-  }
-}
-
-/* Responsive stacking for mobile */
-@media (max-width: 700px) {
-  .figure,
-  .figure.left,
-  .figure.right,
-  .figure.medium,
-  .figure.small,
-  .figure.large {
-    float: none;
-    width: 100%;
-    margin: 1em 0;
-  }
-
-  .figure img {
-    width: 100%;
-    height: auto;
-  }
-}
-/* =============================== */
-/* Enhanced Video Styling          */
-/* =============================== */
-
-/* Base video container */
-.video {
-  position: relative;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Aspect ratios */
-.ar-16x9 { aspect-ratio: 16 / 9; }
-.ar-9x16 { aspect-ratio: 9 / 16; }
-
-/* Size variants */
-.video.small  { max-width: 180px; }
-.video.medium { max-width: 48%; margin: 1em 1%; }
-.video.large  { max-width: 720px; }
-
-/* Two medium videos side by side */
-@media (min-width: 900px) {
-  .video.medium:nth-of-type(2n+1) { margin-right: 2%; }
-}
-
-/* Responsive stacking */
-@media (max-width: 700px) {
-  .video, .video.small, .video.medium, .video.large {
-    max-width: 100%;
-    margin: 1em 0;
-  }
-}
-/* ========================================== */
-/* Separate numbering for images and videos   */
-/* ========================================== */
-
-/* Reset independent counters */
-body {
-  counter-reset: fig videofig;
-}
-
-/* Regular image figures (default) */
-.figure:not(.video-figure) .figcaption::before {
-  counter-increment: fig;
-  content: "Figure " counter(fig) ": ";
-  font-weight: 600;
-  font-style: normal;
-  color: inherit;
-}
-
-/* Video figures get their own sequence */
-.video-figure .figcaption::before {
-  counter-increment: videofig;
-  content: "Video " counter(videofig) ": ";
-  font-weight: 600;
-  font-style: normal;
-  color: inherit;
-}
-
-/* Note Box */
 .note-box {
   border: 1px solid #e5e7eb;
   background: #f9fafb;
@@ -620,13 +550,182 @@ body {
   margin: 2rem 0;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
+
 .note-box h4 {
   margin-top: 0;
   color: #0b57d0;
   font-weight: 600;
 }
+
 .note-box p {
   margin: 0.3rem 0 0;
   color: #333;
   line-height: 1.5;
+}
+
+/* =============================== */
+/* BLOG POST STATUS SYSTEM         */
+/* =============================== */
+
+/* Development warning banner for draft posts */
+.dev-only-banner {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-left: 6px solid #d97706;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 0 0 30px 0;
+  display: none;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.1);
+}
+
+/* Only show banner in development mode */
+body:not(.production) .dev-only-banner {
+  display: block;
+}
+
+.dev-only-banner strong {
+  color: #92400e;
+  font-weight: 700;
+}
+
+/* Status badge styling */
+.post-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-left: 12px;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+/* Draft status - yellow/orange */
+.post-status.draft {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
+  border: 1px solid #fbbf24;
+}
+
+/* Hide draft posts in production */
+body.production .post-draft {
+  display: none !important;
+}
+
+/* =============================== */
+/* BLOG LIST STYLING               */
+/* =============================== */
+
+/* Weekly blog list */
+main.container > ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+main.container > ul li {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+main.container > ul li a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main.container > ul li a:hover {
+  text-decoration: underline;
+}
+
+main.container > ul li .date {
+  color: var(--muted);
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Week headers */
+main.container h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--border);
+  color: var(--fg);
+  font-size: 1.2em;
+}
+
+main.container h3:first-of-type {
+  margin-top: 1em;
+}
+
+/* Status badge in list */
+main.container > ul li .post-status {
+  font-size: 0.65em;
+  padding: 3px 8px;
+  margin: 0 4px;
+}
+
+/* Dim draft posts in development */
+body:not(.production) main.container > ul li.post-draft {
+  opacity: 0.7;
+}
+
+body:not(.production) main.container > ul li.post-draft:hover {
+  opacity: 1;
+}
+
+/* Add indicator icon for draft posts */
+body:not(.production) main.container > ul li.post-draft::before {
+  content: "📝";
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+/* =============================== */
+/* DEV MODE INDICATOR              */
+/* =============================== */
+
+main.container > div[style*="background: #f3f4f6"] {
+  margin-top: 2em;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+  border: 1px solid #d1d5db;
+  border-left: 4px solid #6b7280;
+  border-radius: 8px;
+  font-size: 0.9em;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+main.container > div[style*="background: #f3f4f6"] strong {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+/* =============================== */
+/* RESPONSIVE ADJUSTMENTS          */
+/* =============================== */
+
+@media (max-width: 600px) {
+  main.container > ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  main.container > ul li .post-status {
+    margin-left: 0;
+  }
+  
+  body:not(.production) main.container > ul li.post-draft::before {
+    margin-right: 4px;
+    font-size: 0.8em;
+  }
 }
