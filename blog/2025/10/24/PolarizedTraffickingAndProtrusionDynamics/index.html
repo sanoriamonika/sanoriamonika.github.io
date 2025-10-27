@@ -53,7 +53,21 @@
           
             <a href="/tags/#protrusion" class="tag">Protrusion</a>
           
+            <a href="/tags/#actin" class="tag">Actin</a>
+          
+            <a href="/tags/#cytoskeleton" class="tag">Cytoskeleton</a>
+          
+            <a href="/tags/#microtubule" class="tag">Microtubule</a>
+          
+            <a href="/tags/#integrin" class="tag">Integrin</a>
+          
             <a href="/tags/#dynamics" class="tag">Dynamics</a>
+          
+            <a href="/tags/#polarizedtrafficking" class="tag">PolarizedTrafficking</a>
+          
+            <a href="/tags/#gtpase" class="tag">GTPase</a>
+          
+            <a href="/tags/#golgi" class="tag">Golgi</a>
           
             <a href="/tags/#papersummary" class="tag">PaperSummary</a>
           
@@ -62,94 +76,84 @@
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      <h3 id="-quick-summary">🧭 Quick Summary</h3>
-<p>What is this paper about in one or two lines?</p>
+      <p>Cells that move on their own must first <em>break their internal symmetry</em> to decide which side will be the “front” and which will be the “back.” Once this symmetry is broken, the cell can start moving in the chosen direction.
+But how does the cell make this decision? Scientists think there is a kind of <em>“symmetry test”</em> inside the cell — a feedback between forming a <em>protrusion</em> (the leading edge) and establishing <em>cell polarity</em> (the internal front–back organization).</p>
+
+<p>Inside the cell, many organelles work together to support this process. The <em>Golgi apparatus</em> produces and sends out proteins and vesicles that help the cell function and move. These vesicles often travel along an internal axis connecting the <em>nucleus</em> and the <em>Golgi</em>. So, researchers wondered:</p>
+<ul>
+  <li>Does the nucleus–Golgi (NG) axis decide where the front of the cell will be,</li>
+  <li>or does the formation of a front (protrusion) determine how this axis aligns?</li>
+</ul>
+
 <blockquote>
-  <p>Example: Slime molds use two chemorepellents — one large protein and one small molecule — that control Ras activity differently.</p>
+  <p>The role of the Golgi apparatus is like that of a post office. It receives proteins and lipids from the endoplasmic reticulum (ER), modifies them, and sends them to where they are needed inside or outside the cell.</p>
 </blockquote>
 
-<h3 id="-the-system">🔬 The System</h3>
-<p>What kind of system is studied?</p>
-<ul>
-  <li>Organism / model / setup</li>
-  <li>Key components (cells, molecules, forces)</li>
-  <li>Why it’s interesting</li>
-</ul>
-
-<figure class="figure medium">
-  <img src="your-image.jpg" alt="System overview" />
-  <figcaption>The system studied in this paper.</figcaption>
-</figure>
-
-<h3 id="️-method--approach">⚙️ Method &amp; Approach</h3>
-<p>How did they explore it?</p>
-<ul>
-  <li>Experimental / simulation design</li>
-  <li>Key technique or idea</li>
-</ul>
-
-<p>🎥 Optional:</p>
-
-<figure class="figure video-figure medium">
-  <div class="video medium ar-16x9">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Experiment" allowfullscreen=""></iframe>
-  </div>
-  <em class="figcaption">Visualizing the main experiment —
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Watch</a>
-  </em>
-</figure>
-
-<h3 id="-main-findings">📈 Main Findings</h3>
-<ul>
-  <li>What did they discover?</li>
-  <li>Which result surprised you?</li>
-  <li>One figure that captures the core idea</li>
-</ul>
-
-<figure class="figure left small">
-<img src="your-image.jpg" alt="Describe the image" />
-<em class="figcaption"> Description of the image — <a href="https://source-link.com" target="_blank">Source</a></em>
-</figure>
-
-<figure class="video-figure small">
-  <div class="video ar-9x16">
-    <iframe src="https://www.youtube.com/embed/IXCxzGlXOXo" title="Vesicle" allowfullscreen="">
-    </iframe>
-  </div>
-  <figcaption>Vesicle — <a href="https://www.youtube.com/shorts/IXCxzGlXOXo?feature=share" target="_blank">Watch</a>
+<figure class="figure medium left">
+  <img src="https://iiif.elifesciences.org/lax/69229%2Felife-69229-fig6-v2.tif/full/1234,/0/default.webp" alt="Model coupling protrusive activity and polarity reproduces persistent migration" style="max-height: 66vh; width: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />  
+  <figcaption>
+   A minimal physical model coupling protrusive activity and cell polarity reproduces persistent migration.  
+   (A) Sequence of events showing Golgi (yellow), microtubules (violet), and vesicles (white).  
+   (B–C) Simulated membrane dynamics from localized Cdc42 activation and RhoGTPase signaling.  
+   (D) Synthetic morphodynamic maps showing increasing protrusion frequency (top to bottom).  
+   (E–F) Feedback implementation: <em>P<sub>polarized</sub></em> defines the likelihood of protrusions forming along the polarity axis; κ represents the influence of protrusions on polarity.  
+   (G) Model outputs: morphodynamic maps, trajectories, and directional autocorrelation for different feedback strengths.  
+   (H) Phase diagrams of persistence time, protrusive unicity, and alignment index show model–experiment agreement at the blue dot (persistence time ≈ 2 h).  
+   From Vaidžiulytė K. et al., “Persistent cell migration emerges from a coupling between protrusion dynamics and polarized trafficking,” <em>eLife</em> 11:e69229 (2022).  
+   <br />© The Authors / <em>eLife</em>. Used under the article’s open-access licence.
   </figcaption>
 </figure>
 
-<div style="clear: both;"></div>
+<h4 id="the-experiment">The Experiment</h4>
 
-<h3 id="-mechanism-or-idea">🧠 Mechanism or Idea</h3>
-<p>How do these results make sense?</p>
+<p>To answer this, scientists observed living cells under powerful microscopes.</p>
+
 <blockquote>
-  <p>Example: The protein suppresses Ras on the contact side; the small molecule redirects Ras activity.</p>
+  <p>Typical mammalian cells are about <em>10–30 µm</em> in diameter; the Golgi and nucleus measure approximately <em>1–3 µm</em> and <em>5–10 µm</em>, respectively. Therefore, they used microscopes with magnifications of around <em>100×</em> or higher.</p>
 </blockquote>
+
+<p>They studied freely migrating <em>RPE1 cells</em>, known for their <em>reproducible internal organization</em>. Most live-cell imaging was performed using <em>inverted fluorescence</em> and <em>differential interference contrast (DIC)</em> microscopy (typical magnifications 10×–100×).</p>
+
+<p>They tracked how the <em>Golgi apparatus</em> and <em>nucleus</em> aligned during the formation of protrusions. Then, to test cause and effect, they <em>artificially disturbed the cell’s protrusions</em>, disrupting its polarity, and watched how the orientation of the nucleus–Golgi axis changed.</p>
+
+<h4 id="key-players-in-the-feedback-mechanism">Key Players in the Feedback Mechanism</h4>
+
+<ul>
+  <li>
+    <p><em>Protrusion dynamics</em>: Protrusions are powered by the actin cytoskeleton. The small GTPase <em>Cdc42</em> acts as a key regulator, promoting actin polymerization at the leading edge. <em>Experimental evidence shows that artificially activating Cdc42 can direct the cell’s migration.</em>__</p>
+  </li>
+  <li>
+    <p><em>Polarized trafficking</em>: The Golgi apparatus, oriented toward the direction of migration, directs the flow of vesicles to the cell front.</p>
+  </li>
+  <li>
+    <p><em>Microtubules</em> are essential for this process. When disrupted with the drug <em>Nocodazole</em>, cells could still form protrusions but lost their long-term directional persistence. The trafficking of Golgi-derived vesicles, marked by the protein <em>Rab6</em>, became random.</p>
+  </li>
+  <li>
+    <p><em>Integrin recycling</em>: Integrins—proteins that form adhesions with the extracellular matrix—are critical cargo for polarized trafficking. They are recycled via endosomes and delivered back to the leading edge, providing the cell with traction to move forward. The dynamic regulation of integrin trafficking balances cell adhesion and migration.</p>
+  </li>
+</ul>
+
+<p>The researchers developed a <em>minimal computational model</em> for persistent cell migration based on a <em>positive feedback loop</em>.
+It uses two coupled <em>stochastic differential equations</em> to describe the interaction between the cell’s internal polarity axis (NG axis) and its leading-edge protrusions.
+This model shows that the dynamic coupling between <em>protrusive activity</em> and <em>polarized trafficking</em> is sufficient to generate the <em>persistent, directional migration</em> observed in cells.</p>
+
+<p>The NG axis does not predict the direction of movement but reorients once a direction is established.
+If the NG axis initially points elsewhere and a protrusion forms in a perpendicular direction, the model predicts that <em>trafficking shifts first</em> toward the new protrusion (after ~20 min), and then, over a longer timescale (1–3 hr), the <em>NG axis rotates and aligns</em> with it. They are <em>not</em> simultaneous — there is a temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignment</strong></p>
+
+<div style="clear: both;"></div>
 
 <hr />
 
 <h3 id="-reflection">💭 Reflection</h3>
-<ul>
-  <li>What helped you remember this system?</li>
-  <li>What image or metaphor comes to mind?
-    <blockquote>
-      <p><em>Feels like two invisible hands steering the same cell in opposite ways.</em></p>
-    </blockquote>
-  </li>
-</ul>
-
-<hr />
-<h4 id="resources">Resources</h4>
-<p>-</p>
+<p>A vehicle needs to move. It first decides which direction to go, then the resources required for movement are directed that way, and finally, the driver turns the wheel to follow that path.
+Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignment</strong></p>
 
 <hr />
 
 <h3 id="citation">Citation</h3>
-<p><strong>Authors:</strong> Kotryna Vaidžiulytė, Anne-Sophie Macé, Aude Battistella, William Beng, Kristine Schauer, Mathieu Coppey
-<strong>Journal:</strong> eLife, March 2022
-<strong>DOI:</strong> <a href="https://doi.org/10.7554/eLife.69229">10.7554/eLife.69229</a></p>
+<p><em>Authors:</em> Kotryna Vaidžiulytė, Anne-Sophie Macé, Aude Battistella, William Beng, Kristine Schauer, Mathieu Coppey
+<em>Journal:</em> eLife, March 2022
+<em>DOI:</em> <a href="https://doi.org/10.7554/eLife.69229">10.7554/eLife.69229</a></p>
 
     </div>
   </article>
