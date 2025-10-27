@@ -620,7 +620,7 @@ body.production .post-draft {
 
 /* Main blog container */
 main.container > h2 {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
   font-size: 2em;
   font-weight: 700;
 }
@@ -629,14 +629,14 @@ main.container > h2 {
 main.container > ul {
   list-style: none;
   padding-left: 2em;
-  margin: 0.5em 0 2em 0;
+  margin: 0.3em 0 1.2em 0;  /* Reduced bottom margin */
 }
 
 main.container > ul li {
-  margin: 0.4em 0;
+  margin: 0.35em 0;  /* Slightly tighter spacing */
   padding: 0;
   display: block;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Bullet circles */
@@ -672,11 +672,11 @@ main.container > ul li .date {
   white-space: nowrap;
 }
 
-/* Week headers */
+/* Week headers - COMPACT spacing */
 main.container h3 {
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  font-size: 1.6em;
+  margin-top: 1.2em;     /* Reduced from 2em */
+  margin-bottom: 0.3em;  /* Reduced from 0.5em */
+  font-size: 1.5em;      /* Slightly smaller */
   font-weight: 700;
   color: var(--fg);
   border-bottom: none;
@@ -707,7 +707,7 @@ body:not(.production) main.container > ul li.post-draft:hover {
 /* =============================== */
 
 main.container > div[style*="background: #f3f4f6"] {
-  margin-top: 2.5em;
+  margin-top: 2em;
   padding: 12px 16px;
   background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
   border: 1px solid #d1d5db;
@@ -733,10 +733,11 @@ main.container > div[style*="background: #f3f4f6"] strong {
   }
   
   main.container > ul li {
-    line-height: 1.8;
+    line-height: 1.6;
   }
   
   main.container h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin-top: 1em;
   }
 }
