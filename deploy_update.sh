@@ -81,7 +81,7 @@ build_website() {
     
     # Check if it's a Jekyll project (look for _config.yml first)
     if [ -f "_config.yml" ] || [ -f "_config.yaml" ]; then
-        print_status "Building Jekyll site..."
+        print_status "Building Jekyll site in PRODUCTION mode..."
         
         # Clean build if requested
         if [ "$CLEAN_BUILD" = true ]; then
@@ -96,9 +96,9 @@ build_website() {
         # Check if bundler is available
         if command -v bundle &> /dev/null; then
             bundle install
-            bundle exec jekyll build
+            JEKYLL_ENV=production bundle exec jekyll build
         else
-            jekyll build
+            JEKYLL_ENV=production jekyll build
         fi
         BUILD_DIR="$PRIVATE_DIR/_site"
         
@@ -257,6 +257,7 @@ deploy_to_github() {
     print_status "Deployment complete!"
     print_status "Changes have been pushed to GitHub!"
     print_status "Wait 1-2 minutes for GitHub Pages to rebuild..."
+    print_status "Draft posts have been filtered out in production build."
 }
 
 # Clean up function
@@ -281,6 +282,7 @@ main() {
     print_status "Build and deploy completed successfully!"
     print_status "Your website should be available at: https://sanoriamonika.github.io"
     print_status "Wait 1-2 minutes for GitHub Pages to update..."
+    print_status "Draft posts are hidden in production."
 }
 
 # Handle script interruption
