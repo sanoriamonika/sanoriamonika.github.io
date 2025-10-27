@@ -628,8 +628,8 @@ main.container > h2 {
 /* Weekly blog list - compact style */
 main.container > ul {
   list-style: none;
-  padding-left: 2em;
-  margin: 0.3em 0 1.2em 0;  /* Reduced bottom margin */
+  padding-left: 3em;
+  margin: 0.1em 0 0.2em 0;  /* Reduced top margin from 0.3em to 0.1em */
 }
 
 main.container > ul li {
@@ -674,9 +674,9 @@ main.container > ul li .date {
 
 /* Week headers - COMPACT spacing */
 main.container h3 {
-  margin-top: 1.2em;     /* Reduced from 2em */
-  margin-bottom: 0.3em;  /* Reduced from 0.5em */
-  font-size: 1.5em;      /* Slightly smaller */
+  margin-top: 1.2em;     /* Space above week header */
+  margin-bottom: 0.2em;  /* Reduced from 0.3em - tighter gap to first post */
+  font-size: 1.5em;
   font-weight: 700;
   color: var(--fg);
   border-bottom: none;
