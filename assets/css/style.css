@@ -641,7 +641,8 @@ main.container > ul li {
 
 /* Bullet circles */
 main.container > ul li::before {
-  content: "○";
+  /* content: "○"; */
+  content: "•";
   color: var(--link);
   font-weight: bold;
   display: inline-block;
@@ -649,7 +650,16 @@ main.container > ul li::before {
   margin-left: -1.5em;
   margin-right: 0.5em;
 }
-
+.week-group li:before {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.6rem;
+  width: 4px;
+  height: 4px;
+  background-color: #6b7280;
+  border-radius: 50%;
+}
 /* Draft posts get different bullet */
 body:not(.production) main.container > ul li.post-draft::before {
   content: "◐";
