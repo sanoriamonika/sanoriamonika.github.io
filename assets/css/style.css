@@ -751,14 +751,59 @@ main.container > div[style*="background: #f3f4f6"] strong {
     margin-top: 1em;
   }
 }
-#google_translate_element {
+/* Floating translate button container */
+#translate-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ffffffcc;
-  border-radius: 8px;
-  padding: 5px 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  top: 100px;
+  right: 25px;
   z-index: 9999;
-  font-size: 0.9em;
+  font-family: 'Inter', sans-serif;
+}
+
+/* The round button */
+#translate-button {
+  background: #ffffffee;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+#translate-button:hover {
+  background: #f3f6ff;
+  transform: scale(1.05);
+}
+
+/* Dropdown menu */
+#translate-menu {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-top: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Clean up Google widget dropdown look */
+.goog-te-combo {
+  width: 140px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+}
+.goog-te-combo:focus {
+  outline: none;
+  border-color: #8da2ff;
+}
+
+/* Hide the ugly Google banner */
+.goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
 }
