@@ -6,11 +6,11 @@
   <title>Paper Summary: Persistent cell migration emerges from a coupling between protrusion dynamics and polarized trafficking — Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/translate.css">
   <meta name="google" content="notranslate">
 </head>
+
 <body>
-<!-- Google Translate Button
-<div id="google_translate_element"></div> -->
 <header>
   <div class="container">
     <nav>
@@ -27,18 +27,21 @@
   </div>
 </header>
 
+<!-- 🌐 Translation Button -->
+<div class="container">
+  <div id="translate-container">
+    <button id="translate-button" title="Change Language">🌐 Language</button>
+    <div id="translate-menu">
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+</div>
+
 <main class="container" role="main">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <h2 class="post-title" itemprop="headline">Paper Summary: Persistent cell migration emerges from a coupling between protrusion dynamics and polarized trafficking</h2>
 
-      <!-- 
-        <p class="post-meta">
-          <time datetime="2025-10-24T00:00:00-04:00" itemprop="datePublished">
-            October 24, 2025
-          </time>
-        </p>
-       -->
       
       <p class="post-meta">
         <span class="meta-date">October 24, 2025</span>
@@ -47,33 +50,34 @@
           <span class="meta-updated">Updated October 27, 2025</span>
         
       </p>
-       
       
-        <p class="post-tags">
-          
-            <a href="/tags/#polarity" class="tag">Polarity</a>
-          
-            <a href="/tags/#protrusion" class="tag">Protrusion</a>
-          
-            <a href="/tags/#actin" class="tag">Actin</a>
-          
-            <a href="/tags/#cytoskeleton" class="tag">Cytoskeleton</a>
-          
-            <a href="/tags/#microtubule" class="tag">Microtubule</a>
-          
-            <a href="/tags/#integrin" class="tag">Integrin</a>
-          
-            <a href="/tags/#dynamics" class="tag">Dynamics</a>
-          
-            <a href="/tags/#polarizedtrafficking" class="tag">PolarizedTrafficking</a>
-          
-            <a href="/tags/#gtpase" class="tag">GTPase</a>
-          
-            <a href="/tags/#golgi" class="tag">Golgi</a>
-          
-            <a href="/tags/#papersummary" class="tag">PaperSummary</a>
-          
-        </p>
+
+      
+      <p class="post-tags">
+        
+          <a href="/tags/#polarity" class="tag">Polarity</a>
+        
+          <a href="/tags/#protrusion" class="tag">Protrusion</a>
+        
+          <a href="/tags/#actin" class="tag">Actin</a>
+        
+          <a href="/tags/#cytoskeleton" class="tag">Cytoskeleton</a>
+        
+          <a href="/tags/#microtubule" class="tag">Microtubule</a>
+        
+          <a href="/tags/#integrin" class="tag">Integrin</a>
+        
+          <a href="/tags/#dynamics" class="tag">Dynamics</a>
+        
+          <a href="/tags/#polarizedtrafficking" class="tag">PolarizedTrafficking</a>
+        
+          <a href="/tags/#gtpase" class="tag">GTPase</a>
+        
+          <a href="/tags/#golgi" class="tag">Golgi</a>
+        
+          <a href="/tags/#papersummary" class="tag">PaperSummary</a>
+        
+      </p>
       
     </header>
 
@@ -157,6 +161,7 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
 
     </div>
   </article>
+
   <!-- Post navigation -->
   <nav class="post-nav">
     
@@ -198,32 +203,14 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
     </button>
   </div>
 </main>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("a[href^='http']");
-    links.forEach(link => {
-      if (!link.href.includes(window.location.hostname)) {
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
-      }
-    });
-  });
-</script>
 
 <footer>
   <div class="container">
     © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
+
 <script src="/assets/js/main.js"></script>
-<!-- Translation -->
-<!-- 🌐 Google Translate Button -->
-<div id="translate-container">
-  <button id="translate-button" title="Change Language">🌐 Language</button>
-  <div id="translate-menu">
-    <div id="google_translate_element"></div>
-  </div>
-</div>
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
@@ -237,16 +224,12 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
     );
   }
 
-  // Toggle dropdown visibility
   document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("translate-button");
     const menu = document.getElementById("translate-menu");
 
     btn.addEventListener("click", () => {
-      // toggle menu visibility
       menu.style.display = menu.style.display === "block" ? "none" : "block";
-
-      // lazy-load translate script on first click
       if (!window.googleTranslateLoaded) {
         const s = document.createElement("script");
         s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -255,7 +238,6 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
       }
     });
 
-    // close the menu if clicked outside
     document.addEventListener("click", (e) => {
       if (!btn.contains(e.target) && !menu.contains(e.target)) {
         menu.style.display = "none";
@@ -263,5 +245,6 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
     });
   });
 </script>
+
 </body>
 </html>

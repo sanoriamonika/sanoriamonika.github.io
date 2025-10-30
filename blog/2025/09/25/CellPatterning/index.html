@@ -6,11 +6,11 @@
   <title>Review Summary: Patterning in motion: Cell interfaces guide mesenchymal collective migration and morphogenesis — Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/translate.css">
   <meta name="google" content="notranslate">
 </head>
+
 <body>
-<!-- Google Translate Button
-<div id="google_translate_element"></div> -->
 <header>
   <div class="container">
     <nav>
@@ -27,40 +27,44 @@
   </div>
 </header>
 
+<!-- 🌐 Translation Button -->
+<div class="container">
+  <div id="translate-container">
+    <button id="translate-button" title="Change Language">🌐 Language</button>
+    <div id="translate-menu">
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+</div>
+
 <main class="container" role="main">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <h2 class="post-title" itemprop="headline">Review Summary: Patterning in motion: Cell interfaces guide mesenchymal collective migration and morphogenesis</h2>
 
-      <!-- 
-        <p class="post-meta">
-          <time datetime="2025-09-25T00:00:00-04:00" itemprop="datePublished">
-            September 25, 2025
-          </time>
-        </p>
-       -->
       
       <p class="post-meta">
         <span class="meta-date">September 25, 2025</span>
         
       </p>
-       
       
-        <p class="post-tags">
-          
-            <a href="/tags/#embryogenesis" class="tag">Embryogenesis</a>
-          
-            <a href="/tags/#mesenchymal" class="tag">Mesenchymal</a>
-          
-            <a href="/tags/#mesoderm" class="tag">Mesoderm</a>
-          
-            <a href="/tags/#cellinterfaces" class="tag">CellInterfaces</a>
-          
-            <a href="/tags/#collectivemigration" class="tag">CollectiveMigration</a>
-          
-            <a href="/tags/#reviewsummary" class="tag">ReviewSummary</a>
-          
-        </p>
+
+      
+      <p class="post-tags">
+        
+          <a href="/tags/#embryogenesis" class="tag">Embryogenesis</a>
+        
+          <a href="/tags/#mesenchymal" class="tag">Mesenchymal</a>
+        
+          <a href="/tags/#mesoderm" class="tag">Mesoderm</a>
+        
+          <a href="/tags/#cellinterfaces" class="tag">CellInterfaces</a>
+        
+          <a href="/tags/#collectivemigration" class="tag">CollectiveMigration</a>
+        
+          <a href="/tags/#reviewsummary" class="tag">ReviewSummary</a>
+        
+      </p>
       
     </header>
 
@@ -112,6 +116,7 @@
 
     </div>
   </article>
+
   <!-- Post navigation -->
   <nav class="post-nav">
     
@@ -153,32 +158,14 @@
     </button>
   </div>
 </main>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("a[href^='http']");
-    links.forEach(link => {
-      if (!link.href.includes(window.location.hostname)) {
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
-      }
-    });
-  });
-</script>
 
 <footer>
   <div class="container">
     © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
+
 <script src="/assets/js/main.js"></script>
-<!-- Translation -->
-<!-- 🌐 Google Translate Button -->
-<div id="translate-container">
-  <button id="translate-button" title="Change Language">🌐 Language</button>
-  <div id="translate-menu">
-    <div id="google_translate_element"></div>
-  </div>
-</div>
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
@@ -192,16 +179,12 @@
     );
   }
 
-  // Toggle dropdown visibility
   document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("translate-button");
     const menu = document.getElementById("translate-menu");
 
     btn.addEventListener("click", () => {
-      // toggle menu visibility
       menu.style.display = menu.style.display === "block" ? "none" : "block";
-
-      // lazy-load translate script on first click
       if (!window.googleTranslateLoaded) {
         const s = document.createElement("script");
         s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -210,7 +193,6 @@
       }
     });
 
-    // close the menu if clicked outside
     document.addEventListener("click", (e) => {
       if (!btn.contains(e.target) && !menu.contains(e.target)) {
         menu.style.display = "none";
@@ -218,5 +200,6 @@
     });
   });
 </script>
+
 </body>
 </html>
