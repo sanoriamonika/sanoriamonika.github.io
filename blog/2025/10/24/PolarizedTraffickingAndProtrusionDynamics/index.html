@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
+<!-- Google Translate Button -->
+<div id="google_translate_element"></div>
 <header>
   <div class="container">
     <nav>
@@ -143,13 +144,11 @@ If the NG axis initially points elsewhere and a protrusion forms in a perpendicu
 <div style="clear: both;"></div>
 
 <hr />
-
 <h4 id="reflection">Reflection</h4>
 <p>A vehicle needs to move. It first decides which direction to go, then the resources required for movement are directed that way, and finally, the driver turns the wheel to follow that path.
 Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignment</strong></p>
 
 <hr />
-
 <h3 id="citation">Citation</h3>
 <p><em>Authors:</em> Kotryna Vaidžiulytė, Anne-Sophie Macé, Aude Battistella, William Beng, Kristine Schauer, Mathieu Coppey
 <em>Journal:</em> eLife, March 2022
@@ -216,6 +215,22 @@ Temporal hierarchy: → <strong>Protrusion → Trafficking shift → NG alignmen
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>
-
+<!-- Translation -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" 
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!--  -->
 </body>
 </html>

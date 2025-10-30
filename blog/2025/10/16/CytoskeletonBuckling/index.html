@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
+<!-- Google Translate Button -->
+<div id="google_translate_element"></div>
 <header>
   <div class="container">
     <nav>
@@ -173,6 +174,22 @@ They found that the gel develops three distinct types of shapes depending on its
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>
-
+<!-- Translation -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" 
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!--  -->
 </body>
 </html>

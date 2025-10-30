@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
+<!-- Google Translate Button -->
+<div id="google_translate_element"></div>
 <header>
   <div class="container">
     <nav>
@@ -169,6 +170,22 @@ DOI/Link: <a href="https://doi.org/10.1039/d3sm00211j">https://doi.org/10.1039/d
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>
-
+<!-- Translation -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" 
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!--  -->
 </body>
 </html>
