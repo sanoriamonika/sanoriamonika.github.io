@@ -196,9 +196,21 @@ DOI/Link: <a href="https://doi.org/10.1039/d3sm00211j">https://doi.org/10.1039/d
   document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("translate-button");
     const menu = document.getElementById("translate-menu");
+
     btn.addEventListener("click", () => {
+      // toggle menu visibility
       menu.style.display = menu.style.display === "block" ? "none" : "block";
+
+      // lazy-load translate script on first click
+      if (!window.googleTranslateLoaded) {
+        const s = document.createElement("script");
+        s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(s);
+        window.googleTranslateLoaded = true;
+      }
     });
+
+    // close the menu if clicked outside
     document.addEventListener("click", (e) => {
       if (!btn.contains(e.target) && !menu.contains(e.target)) {
         menu.style.display = "none";
@@ -206,8 +218,5 @@ DOI/Link: <a href="https://doi.org/10.1039/d3sm00211j">https://doi.org/10.1039/d
     });
   });
 </script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!--  -->
 </body>
 </html>

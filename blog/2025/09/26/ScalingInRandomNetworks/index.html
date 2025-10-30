@@ -181,9 +181,21 @@
   document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("translate-button");
     const menu = document.getElementById("translate-menu");
+
     btn.addEventListener("click", () => {
+      // toggle menu visibility
       menu.style.display = menu.style.display === "block" ? "none" : "block";
+
+      // lazy-load translate script on first click
+      if (!window.googleTranslateLoaded) {
+        const s = document.createElement("script");
+        s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(s);
+        window.googleTranslateLoaded = true;
+      }
     });
+
+    // close the menu if clicked outside
     document.addEventListener("click", (e) => {
       if (!btn.contains(e.target) && !menu.contains(e.target)) {
         menu.style.display = "none";
@@ -191,8 +203,5 @@
     });
   });
 </script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!--  -->
 </body>
 </html>
