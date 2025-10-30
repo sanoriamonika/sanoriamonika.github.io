@@ -807,3 +807,16 @@ main.container > div[style*="background: #f3f4f6"] strong {
 .goog-te-gadget {
   color: transparent !important;
 }
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+} 
+
+body {
+  top: 0px !important;
+}
+
+/* Optional: hide white space sometimes left at top */
+.goog-te-banner {
+  display: none !important;
+}
