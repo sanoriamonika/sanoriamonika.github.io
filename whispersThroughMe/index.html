@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Monika Sanoria, PhD</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="production">
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<style>
+.whispers-header {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.whispers-intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.category-filter {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    background: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.category-tag:hover,
+.category-tag.active {
+    background: #4A90E2;
+    color: white;
+    border-color: #4A90E2;
+}
+
+.posts-container {
+    margin-top: 2rem;
+}
+
+.post-entry {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-left: 3px solid #4A90E2;
+    background: #fafafa;
+    transition: transform 0.2s;
+    border-radius: 4px;
+}
+
+.post-entry:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    flex-wrap: wrap;
+}
+
+.post-category {
+    background: #4A90E2;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.post-date {
+    color: #888;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    line-height: 1.3;
+}
+
+.post-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: #4A90E2;
+}
+
+.post-excerpt {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0.8rem;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #999;
+    font-style: italic;
+}
+
+.no-posts code {
+    background: #f5f5f5;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #666;
+}
+</style>
+
+<div class="whispers-header">
+    <h1>Whispers Through Me</h1>
+    <p class="whispers-intro">
+        A private space for thoughts that echo in the quiet moments—
+        reflections on existence, meaning, and the human experience.
+    </p>
+</div>
+
+<div class="category-filter">
+    <span class="category-tag active" data-category="all">All</span>
+    <span class="category-tag" data-category="existence">Existence</span>
+    <span class="category-tag" data-category="meaning">Meaning & Purpose</span>
+    <span class="category-tag" data-category="consciousness">Consciousness</span>
+    <span class="category-tag" data-category="human-nature">Human Nature</span>
+    <span class="category-tag" data-category="time">Time & Mortality</span>
+    <span class="category-tag" data-category="connection">Connection & Solitude</span>
+    <span class="category-tag" data-category="identity">Identity & Self</span>
+    <span class="category-tag" data-category="wonder">Wonder & Mystery</span>
+</div>
+
+<div class="posts-container">
+    
+        
+        
+        <article class="post-entry" data-category="existence">
+            <div class="post-meta">
+                <span class="post-category">Existence</span>
+                <span class="post-date">November 05, 2025</span>
+            </div>
+            <h2 class="post-title">
+                <a href="/whispersThroughMe/firstDraft/">On the Nature of Questions</a>
+            </h2>
+            
+            <p class="post-excerpt">Perhaps the questions we ask reveal more about us than the answers we seek.</p>
+            
+        </article>
+        
+    
+</div>
+
+<script>
+// Category filtering
+document.querySelectorAll('.category-tag').forEach(tag => {
+    tag.addEventListener('click', function() {
+        // Update active state
+        document.querySelectorAll('.category-tag').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        
+        const category = this.dataset.category;
+        
+        // Filter posts
+        document.querySelectorAll('.post-entry').forEach(post => {
+            if (category === 'all' || post.dataset.category === category) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+  Logging at level: debug
+    Jekyll Version: 4.4.1
+Configuration file: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_config.yml
+            Source: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src
+       Destination: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+           Reading: /_layouts/defaults.html
+           Reading: /_layouts/post.html
+           Reading: /_layouts/whisper.html
+       EntryFilter: excluded /README.md
+       EntryFilter: excluded /Gemfile
+       EntryFilter: excluded /Gemfile.lock
+       EntryFilter: excluded /.jekyll-cache
+           Reading: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+           Reading: _posts/2025-09-22-first-post.md
+           Reading: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+           Reading: _posts/2025-09-24-Whole-body connectome.md
+           Reading: _posts/2025-09-25-CellPatterning.md
+           Reading: _posts/2025-09-26-ScalingInRandomNetworks.md
+           Reading: _posts/2025-09-29-FormationOfMotileCellClusters.md
+           Reading: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+           Reading: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+           Reading: _posts/2025-10-02-OrderedCellPhase.md
+           Reading: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+           Reading: _posts/2025-10-05-VisualOfCellularWorld.md
+           Reading: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+           Reading: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+           Reading: _posts/2025-10-08-SmallWorldNetworks.md
+           Reading: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+           Reading: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+           Reading: _posts/2025-10-11-VisualOfCellularWorld.md
+           Reading: _posts/2025-10-15-OnBeingTheRightSize.md
+           Reading: _posts/2025-10-16-CytoskeletonBuckling.md
+           Reading: _posts/2025-10-18-VisualOfCellularWorld3.md
+           Reading: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+           Reading: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+           Reading: _posts/2025-10-26-VisualOfCellularWorld4.md
+           Reading: _posts/2025-10-27-FlokingByTurningAway.md
+           Reading: _posts/2025-10-29-genome.md
+           Reading: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+           Reading: _posts/2025-11-03-evolution.md
+           Reading: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+           Reading: details/SlimeMold.md
+           Reading: blog/index.html
+           Reading: whispersThroughMe/index.html
+           Reading: tags.html
+           Reading: index.html
+           Reading: news.html
+           Reading: _whispersThroughMe/2025-11-01-firstDraft.md
+           Reading: _data/site.json
+         Rendering: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+  Pre-Render Hooks: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+  Rendering Markup: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+Post-Convert Hooks: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+  Rendering Layout: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
+         Rendering: _posts/2025-09-22-first-post.md
+  Pre-Render Hooks: _posts/2025-09-22-first-post.md
+  Rendering Markup: _posts/2025-09-22-first-post.md
+Post-Convert Hooks: _posts/2025-09-22-first-post.md
+  Rendering Layout: _posts/2025-09-22-first-post.md
+         Rendering: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+  Pre-Render Hooks: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+  Rendering Markup: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+Post-Convert Hooks: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+  Rendering Layout: _posts/2025-09-23-emergence-of-efficient-channel-networks.md
+         Rendering: _posts/2025-09-24-Whole-body connectome.md
+  Pre-Render Hooks: _posts/2025-09-24-Whole-body connectome.md
+  Rendering Liquid: _posts/2025-09-24-Whole-body connectome.md
+  Rendering Markup: _posts/2025-09-24-Whole-body connectome.md
+Post-Convert Hooks: _posts/2025-09-24-Whole-body connectome.md
+  Rendering Layout: _posts/2025-09-24-Whole-body connectome.md
+         Rendering: _posts/2025-09-25-CellPatterning.md
+  Pre-Render Hooks: _posts/2025-09-25-CellPatterning.md
+  Rendering Markup: _posts/2025-09-25-CellPatterning.md
+Post-Convert Hooks: _posts/2025-09-25-CellPatterning.md
+  Rendering Layout: _posts/2025-09-25-CellPatterning.md
+         Rendering: _posts/2025-09-26-ScalingInRandomNetworks.md
+  Pre-Render Hooks: _posts/2025-09-26-ScalingInRandomNetworks.md
+  Rendering Markup: _posts/2025-09-26-ScalingInRandomNetworks.md
+Post-Convert Hooks: _posts/2025-09-26-ScalingInRandomNetworks.md
+  Rendering Layout: _posts/2025-09-26-ScalingInRandomNetworks.md
+         Rendering: _posts/2025-09-29-FormationOfMotileCellClusters.md
+  Pre-Render Hooks: _posts/2025-09-29-FormationOfMotileCellClusters.md
+  Rendering Markup: _posts/2025-09-29-FormationOfMotileCellClusters.md
+Post-Convert Hooks: _posts/2025-09-29-FormationOfMotileCellClusters.md
+  Rendering Layout: _posts/2025-09-29-FormationOfMotileCellClusters.md
+         Rendering: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+  Pre-Render Hooks: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+  Rendering Markup: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+Post-Convert Hooks: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+  Rendering Layout: _posts/2025-09-30-GeometryEffectsOnEColiMigration.md
+         Rendering: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+  Pre-Render Hooks: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+  Rendering Markup: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+Post-Convert Hooks: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+  Rendering Layout: _posts/2025-10-01-EndocytosisCollectiveCellProperties.md
+         Rendering: _posts/2025-10-02-OrderedCellPhase.md
+  Pre-Render Hooks: _posts/2025-10-02-OrderedCellPhase.md
+  Rendering Markup: _posts/2025-10-02-OrderedCellPhase.md
+Post-Convert Hooks: _posts/2025-10-02-OrderedCellPhase.md
+  Rendering Layout: _posts/2025-10-02-OrderedCellPhase.md
+         Rendering: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+  Pre-Render Hooks: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+  Rendering Markup: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+Post-Convert Hooks: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+  Rendering Layout: _posts/2025-10-03-CellCellInteractionStudiedInCellCollider.md
+         Rendering: _posts/2025-10-05-VisualOfCellularWorld.md
+  Pre-Render Hooks: _posts/2025-10-05-VisualOfCellularWorld.md
+  Rendering Markup: _posts/2025-10-05-VisualOfCellularWorld.md
+Post-Convert Hooks: _posts/2025-10-05-VisualOfCellularWorld.md
+  Rendering Layout: _posts/2025-10-05-VisualOfCellularWorld.md
+         Rendering: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+  Pre-Render Hooks: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+  Rendering Liquid: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+  Rendering Markup: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+Post-Convert Hooks: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+  Rendering Layout: _posts/2025-10-06-ProtrusionAndPolarityCollisionCellBehavior.md
+         Rendering: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+  Pre-Render Hooks: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+  Rendering Markup: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+Post-Convert Hooks: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+  Rendering Layout: _posts/2025-10-07-TregCellsNobelPriceInMedicines.md
+         Rendering: _posts/2025-10-08-SmallWorldNetworks.md
+  Pre-Render Hooks: _posts/2025-10-08-SmallWorldNetworks.md
+  Rendering Markup: _posts/2025-10-08-SmallWorldNetworks.md
+Post-Convert Hooks: _posts/2025-10-08-SmallWorldNetworks.md
+  Rendering Layout: _posts/2025-10-08-SmallWorldNetworks.md
+         Rendering: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+  Pre-Render Hooks: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+  Rendering Markup: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+Post-Convert Hooks: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+  Rendering Layout: _posts/2025-10-09-ATPIndependentUltraFastContraction.md
+         Rendering: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+  Pre-Render Hooks: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+  Rendering Markup: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+Post-Convert Hooks: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+  Rendering Layout: _posts/2025-10-10-EscapeDynamicsOfWorms.md
+         Rendering: _posts/2025-10-11-VisualOfCellularWorld.md
+  Pre-Render Hooks: _posts/2025-10-11-VisualOfCellularWorld.md
+  Rendering Markup: _posts/2025-10-11-VisualOfCellularWorld.md
+Post-Convert Hooks: _posts/2025-10-11-VisualOfCellularWorld.md
+  Rendering Layout: _posts/2025-10-11-VisualOfCellularWorld.md
+         Rendering: _posts/2025-10-15-OnBeingTheRightSize.md
+  Pre-Render Hooks: _posts/2025-10-15-OnBeingTheRightSize.md
+  Rendering Markup: _posts/2025-10-15-OnBeingTheRightSize.md
+Post-Convert Hooks: _posts/2025-10-15-OnBeingTheRightSize.md
+  Rendering Layout: _posts/2025-10-15-OnBeingTheRightSize.md
+         Rendering: _posts/2025-10-16-CytoskeletonBuckling.md
+  Pre-Render Hooks: _posts/2025-10-16-CytoskeletonBuckling.md
+  Rendering Markup: _posts/2025-10-16-CytoskeletonBuckling.md
+Post-Convert Hooks: _posts/2025-10-16-CytoskeletonBuckling.md
+  Rendering Layout: _posts/2025-10-16-CytoskeletonBuckling.md
+         Rendering: _posts/2025-10-18-VisualOfCellularWorld3.md
+  Pre-Render Hooks: _posts/2025-10-18-VisualOfCellularWorld3.md
+  Rendering Markup: _posts/2025-10-18-VisualOfCellularWorld3.md
+Post-Convert Hooks: _posts/2025-10-18-VisualOfCellularWorld3.md
+  Rendering Layout: _posts/2025-10-18-VisualOfCellularWorld3.md
+         Rendering: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+  Pre-Render Hooks: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+  Rendering Markup: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+Post-Convert Hooks: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+  Rendering Layout: _posts/2025-10-22-Chemorepulsion_SlimeMold.md
+         Rendering: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+  Pre-Render Hooks: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+  Rendering Markup: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+Post-Convert Hooks: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+  Rendering Layout: _posts/2025-10-24-PolarizedTraffickingAndProtrusionDynamics.md
+         Rendering: _posts/2025-10-26-VisualOfCellularWorld4.md
+  Pre-Render Hooks: _posts/2025-10-26-VisualOfCellularWorld4.md
+  Rendering Markup: _posts/2025-10-26-VisualOfCellularWorld4.md
+Post-Convert Hooks: _posts/2025-10-26-VisualOfCellularWorld4.md
+  Rendering Layout: _posts/2025-10-26-VisualOfCellularWorld4.md
+         Rendering: _posts/2025-10-27-FlokingByTurningAway.md
+  Pre-Render Hooks: _posts/2025-10-27-FlokingByTurningAway.md
+  Rendering Markup: _posts/2025-10-27-FlokingByTurningAway.md
+Post-Convert Hooks: _posts/2025-10-27-FlokingByTurningAway.md
+  Rendering Layout: _posts/2025-10-27-FlokingByTurningAway.md
+         Rendering: _posts/2025-10-29-genome.md
+  Pre-Render Hooks: _posts/2025-10-29-genome.md
+  Rendering Markup: _posts/2025-10-29-genome.md
+Post-Convert Hooks: _posts/2025-10-29-genome.md
+  Rendering Layout: _posts/2025-10-29-genome.md
+         Rendering: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+  Pre-Render Hooks: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+  Rendering Liquid: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+  Rendering Markup: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+Post-Convert Hooks: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+  Rendering Layout: _posts/2025-10-31-ClassesSmallWorldNetworks.md
+         Rendering: _posts/2025-11-03-evolution.md
+  Pre-Render Hooks: _posts/2025-11-03-evolution.md
+  Rendering Liquid: _posts/2025-11-03-evolution.md
+  Rendering Markup: _posts/2025-11-03-evolution.md
+Post-Convert Hooks: _posts/2025-11-03-evolution.md
+  Rendering Layout: _posts/2025-11-03-evolution.md
+         Rendering: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+  Pre-Render Hooks: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+  Rendering Markup: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+Post-Convert Hooks: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+  Rendering Layout: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+         Rendering: _whispersThroughMe/2025-11-01-firstDraft.md
+  Pre-Render Hooks: _whispersThroughMe/2025-11-01-firstDraft.md
+  Rendering Markup: _whispersThroughMe/2025-11-01-firstDraft.md
+Post-Convert Hooks: _whispersThroughMe/2025-11-01-firstDraft.md
+  Rendering Layout: _whispersThroughMe/2025-11-01-firstDraft.md
+         Rendering: details/SlimeMold.md
+  Pre-Render Hooks: details/SlimeMold.md
+  Rendering Markup: details/SlimeMold.md
+Post-Convert Hooks: details/SlimeMold.md
+  Rendering Layout: details/SlimeMold.md
+         Rendering: blog/index.html
+  Pre-Render Hooks: blog/index.html
+  Rendering Liquid: blog/index.html
+  Rendering Markup: blog/index.html
+Post-Convert Hooks: blog/index.html
+  Rendering Layout: blog/index.html
+         Rendering: whispersThroughMe/index.html
+  Pre-Render Hooks: whispersThroughMe/index.html
+  Rendering Liquid: whispersThroughMe/index.html
+  Rendering Markup: whispersThroughMe/index.html
+Post-Convert Hooks: whispersThroughMe/index.html
+  Rendering Layout: whispersThroughMe/index.html
+[33m     Build Warning: Layout 'default' requested in whispersThroughMe/index.html does not exist.[0m
+         Rendering: index.html
+  Pre-Render Hooks: index.html
+  Rendering Liquid: index.html
+  Rendering Markup: index.html
+Post-Convert Hooks: index.html
+  Rendering Layout: index.html
+         Rendering: news.html
+  Pre-Render Hooks: news.html
+  Rendering Liquid: news.html
+  Rendering Markup: news.html
+Post-Convert Hooks: news.html
+  Rendering Layout: news.html
+         Rendering: tags.html
+  Pre-Render Hooks: tags.html
+  Rendering Liquid: tags.html
+  Rendering Markup: tags.html
+Post-Convert Hooks: tags.html
+  Rendering Layout: tags.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/details/SlimeMold/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/news/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/tags/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2024/10/19/PeacePrize2024NihonHidankyo/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/22/first-post/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/23/emergence-of-efficient-channel-networks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/24/Whole-body-connectome/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/25/CellPatterning/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/26/ScalingInRandomNetworks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/29/FormationOfMotileCellClusters/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/09/30/GeometryEffectsOnEColiMigration/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/01/EndocytosisCollectiveCellProperties/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/02/OrderedCellPhase/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/03/CellCellInteractionStudiedInCellCollider/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/04/VisualOfCellularWorld/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/06/ProtrusionAndPolarityCollisionCellBehavior/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/07/TregCellsNobelPriceInMedicines/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/08/SmallWorldNetworks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/09/ATPIndependentUltraFastContraction/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/10/EscapeDynamicsOfWorms/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/11/VisualOfCellularWorld/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/15/OnBeingTheRightSize/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/16/CytoskeletonBuckling/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/18/VisualOfCellularWorld3/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/22/Chemorepulsion_SlimeMold/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/24/PolarizedTraffickingAndProtrusionDynamics/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/25/VisualOfCellularWorld4/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/27/FlokingByTurningAway/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/29/genome/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/31/ClassesSmallWorldNetworks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/03/evolution/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/05/BiologicalSmallWorldNetworks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/firstDraft/index.html
+                    done in 0.079 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
