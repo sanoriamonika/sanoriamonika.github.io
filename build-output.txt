@@ -40,14 +40,46 @@ Configuration file: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/mo
            Reading: _posts/2025-10-29-genome.md
            Reading: _posts/2025-10-31-ClassesSmallWorldNetworks.md
            Reading: _posts/2025-11-03-evolution.md
-           Reading: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
+           Reading: _posts/2025-11-05-PerspectiveCollective.md
+           Reading: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
            Reading: details/SlimeMold.md
            Reading: blog/index.html
            Reading: whispersThroughMe/index.html
            Reading: tags.html
            Reading: index.html
            Reading: news.html
-           Reading: _whispersThroughMe/2025-11-01-firstDraft.md
+           Reading: _whispersThroughMe/20231103_my_research.md
+           Reading: _whispersThroughMe/2024-10-24-Dynamics.md
+           Reading: _whispersThroughMe/2024-12-19-future.md
+           Reading: _whispersThroughMe/2025-10-25-LStarting new.md
+           Reading: _whispersThroughMe/2025-10-25-Level.md
+           Reading: _whispersThroughMe/2025-11-07JetLag.md
+           Reading: _whispersThroughMe/BlackTalentGoUnnoticed.md
+           Reading: _whispersThroughMe/BodyTalks.md
+           Reading: _whispersThroughMe/CultureAndFamily.md
+           Reading: _whispersThroughMe/DecisionMaking.md
+           Reading: _whispersThroughMe/DesireForConversation.md
+           Reading: _whispersThroughMe/EmbraceSuffering.md
+           Reading: _whispersThroughMe/InspirationFromHumanBody.md
+           Reading: _whispersThroughMe/Labor exchange- human morality.md
+           Reading: _whispersThroughMe/LiveTogether.md
+           Reading: _whispersThroughMe/MarketNotFairGame.md
+           Reading: _whispersThroughMe/MikeClassOverwhelming.md
+           Reading: _whispersThroughMe/ModelChangeLocalToGlobal.md
+           Reading: _whispersThroughMe/NeemKaroliBaba.md
+           Reading: _whispersThroughMe/NoOneThinksOfYou.md
+           Reading: _whispersThroughMe/Protecting.md
+           Reading: _whispersThroughMe/SirShreePrinciple_english.md
+           Reading: _whispersThroughMe/StartFromBeginning.md
+           Reading: _whispersThroughMe/ThinkBigPhilosopher.md
+           Reading: _whispersThroughMe/Three type of people.md
+           Reading: _whispersThroughMe/Vipassana2024.md
+           Reading: _whispersThroughMe/WIndowOfSoul.md
+           Reading: _whispersThroughMe/WhatIsMyPeriority-.md
+           Reading: _whispersThroughMe/Why cant we sit still.md
+           Reading: _whispersThroughMe/WhyTalk.md
+           Reading: _whispersThroughMe/WhyWeWantToWork.md
+           Reading: _whispersThroughMe/choteKadam.md
            Reading: _data/site.json
          Rendering: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
   Pre-Render Hooks: _posts/2024-10-19-PeacePrize2024NihonHidankyo.md
@@ -193,16 +225,176 @@ Post-Convert Hooks: _posts/2025-10-31-ClassesSmallWorldNetworks.md
   Rendering Markup: _posts/2025-11-03-evolution.md
 Post-Convert Hooks: _posts/2025-11-03-evolution.md
   Rendering Layout: _posts/2025-11-03-evolution.md
-         Rendering: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
-  Pre-Render Hooks: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
-  Rendering Markup: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
-Post-Convert Hooks: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
-  Rendering Layout: _posts/2025-11-05-BiologicalSmallWorldNetworks.md
-         Rendering: _whispersThroughMe/2025-11-01-firstDraft.md
-  Pre-Render Hooks: _whispersThroughMe/2025-11-01-firstDraft.md
-  Rendering Markup: _whispersThroughMe/2025-11-01-firstDraft.md
-Post-Convert Hooks: _whispersThroughMe/2025-11-01-firstDraft.md
-  Rendering Layout: _whispersThroughMe/2025-11-01-firstDraft.md
+         Rendering: _posts/2025-11-05-PerspectiveCollective.md
+  Pre-Render Hooks: _posts/2025-11-05-PerspectiveCollective.md
+  Rendering Markup: _posts/2025-11-05-PerspectiveCollective.md
+Post-Convert Hooks: _posts/2025-11-05-PerspectiveCollective.md
+  Rendering Layout: _posts/2025-11-05-PerspectiveCollective.md
+         Rendering: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
+  Pre-Render Hooks: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
+  Rendering Markup: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
+Post-Convert Hooks: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
+  Rendering Layout: _posts/2025-11-07-BiologicalSmallWorldNetworks.md
+         Rendering: _whispersThroughMe/BlackTalentGoUnnoticed.md
+  Pre-Render Hooks: _whispersThroughMe/BlackTalentGoUnnoticed.md
+  Rendering Markup: _whispersThroughMe/BlackTalentGoUnnoticed.md
+Post-Convert Hooks: _whispersThroughMe/BlackTalentGoUnnoticed.md
+  Rendering Layout: _whispersThroughMe/BlackTalentGoUnnoticed.md
+         Rendering: _whispersThroughMe/BodyTalks.md
+  Pre-Render Hooks: _whispersThroughMe/BodyTalks.md
+  Rendering Markup: _whispersThroughMe/BodyTalks.md
+Post-Convert Hooks: _whispersThroughMe/BodyTalks.md
+  Rendering Layout: _whispersThroughMe/BodyTalks.md
+         Rendering: _whispersThroughMe/LiveTogether.md
+  Pre-Render Hooks: _whispersThroughMe/LiveTogether.md
+  Rendering Markup: _whispersThroughMe/LiveTogether.md
+Post-Convert Hooks: _whispersThroughMe/LiveTogether.md
+  Rendering Layout: _whispersThroughMe/LiveTogether.md
+         Rendering: _whispersThroughMe/MikeClassOverwhelming.md
+  Pre-Render Hooks: _whispersThroughMe/MikeClassOverwhelming.md
+  Rendering Markup: _whispersThroughMe/MikeClassOverwhelming.md
+Post-Convert Hooks: _whispersThroughMe/MikeClassOverwhelming.md
+  Rendering Layout: _whispersThroughMe/MikeClassOverwhelming.md
+         Rendering: _whispersThroughMe/NeemKaroliBaba.md
+  Pre-Render Hooks: _whispersThroughMe/NeemKaroliBaba.md
+  Rendering Markup: _whispersThroughMe/NeemKaroliBaba.md
+Post-Convert Hooks: _whispersThroughMe/NeemKaroliBaba.md
+  Rendering Layout: _whispersThroughMe/NeemKaroliBaba.md
+         Rendering: _whispersThroughMe/NoOneThinksOfYou.md
+  Pre-Render Hooks: _whispersThroughMe/NoOneThinksOfYou.md
+  Rendering Markup: _whispersThroughMe/NoOneThinksOfYou.md
+Post-Convert Hooks: _whispersThroughMe/NoOneThinksOfYou.md
+  Rendering Layout: _whispersThroughMe/NoOneThinksOfYou.md
+         Rendering: _whispersThroughMe/Protecting.md
+  Pre-Render Hooks: _whispersThroughMe/Protecting.md
+  Rendering Markup: _whispersThroughMe/Protecting.md
+Post-Convert Hooks: _whispersThroughMe/Protecting.md
+  Rendering Layout: _whispersThroughMe/Protecting.md
+         Rendering: _whispersThroughMe/ThinkBigPhilosopher.md
+  Pre-Render Hooks: _whispersThroughMe/ThinkBigPhilosopher.md
+  Rendering Markup: _whispersThroughMe/ThinkBigPhilosopher.md
+Post-Convert Hooks: _whispersThroughMe/ThinkBigPhilosopher.md
+  Rendering Layout: _whispersThroughMe/ThinkBigPhilosopher.md
+         Rendering: _whispersThroughMe/Three type of people.md
+  Pre-Render Hooks: _whispersThroughMe/Three type of people.md
+  Rendering Markup: _whispersThroughMe/Three type of people.md
+Post-Convert Hooks: _whispersThroughMe/Three type of people.md
+  Rendering Layout: _whispersThroughMe/Three type of people.md
+         Rendering: _whispersThroughMe/WhyTalk.md
+  Pre-Render Hooks: _whispersThroughMe/WhyTalk.md
+  Rendering Markup: _whispersThroughMe/WhyTalk.md
+Post-Convert Hooks: _whispersThroughMe/WhyTalk.md
+  Rendering Layout: _whispersThroughMe/WhyTalk.md
+         Rendering: _whispersThroughMe/DesireForConversation.md
+  Pre-Render Hooks: _whispersThroughMe/DesireForConversation.md
+  Rendering Markup: _whispersThroughMe/DesireForConversation.md
+Post-Convert Hooks: _whispersThroughMe/DesireForConversation.md
+  Rendering Layout: _whispersThroughMe/DesireForConversation.md
+         Rendering: _whispersThroughMe/EmbraceSuffering.md
+  Pre-Render Hooks: _whispersThroughMe/EmbraceSuffering.md
+  Rendering Markup: _whispersThroughMe/EmbraceSuffering.md
+Post-Convert Hooks: _whispersThroughMe/EmbraceSuffering.md
+  Rendering Layout: _whispersThroughMe/EmbraceSuffering.md
+         Rendering: _whispersThroughMe/CultureAndFamily.md
+  Pre-Render Hooks: _whispersThroughMe/CultureAndFamily.md
+  Rendering Markup: _whispersThroughMe/CultureAndFamily.md
+Post-Convert Hooks: _whispersThroughMe/CultureAndFamily.md
+  Rendering Layout: _whispersThroughMe/CultureAndFamily.md
+         Rendering: _whispersThroughMe/DecisionMaking.md
+  Pre-Render Hooks: _whispersThroughMe/DecisionMaking.md
+  Rendering Markup: _whispersThroughMe/DecisionMaking.md
+Post-Convert Hooks: _whispersThroughMe/DecisionMaking.md
+  Rendering Layout: _whispersThroughMe/DecisionMaking.md
+         Rendering: _whispersThroughMe/MarketNotFairGame.md
+  Pre-Render Hooks: _whispersThroughMe/MarketNotFairGame.md
+  Rendering Markup: _whispersThroughMe/MarketNotFairGame.md
+Post-Convert Hooks: _whispersThroughMe/MarketNotFairGame.md
+  Rendering Layout: _whispersThroughMe/MarketNotFairGame.md
+         Rendering: _whispersThroughMe/ModelChangeLocalToGlobal.md
+  Pre-Render Hooks: _whispersThroughMe/ModelChangeLocalToGlobal.md
+  Rendering Markup: _whispersThroughMe/ModelChangeLocalToGlobal.md
+Post-Convert Hooks: _whispersThroughMe/ModelChangeLocalToGlobal.md
+  Rendering Layout: _whispersThroughMe/ModelChangeLocalToGlobal.md
+         Rendering: _whispersThroughMe/WIndowOfSoul.md
+  Pre-Render Hooks: _whispersThroughMe/WIndowOfSoul.md
+  Rendering Markup: _whispersThroughMe/WIndowOfSoul.md
+Post-Convert Hooks: _whispersThroughMe/WIndowOfSoul.md
+  Rendering Layout: _whispersThroughMe/WIndowOfSoul.md
+         Rendering: _whispersThroughMe/choteKadam.md
+  Pre-Render Hooks: _whispersThroughMe/choteKadam.md
+  Rendering Markup: _whispersThroughMe/choteKadam.md
+Post-Convert Hooks: _whispersThroughMe/choteKadam.md
+  Rendering Layout: _whispersThroughMe/choteKadam.md
+         Rendering: _whispersThroughMe/InspirationFromHumanBody.md
+  Pre-Render Hooks: _whispersThroughMe/InspirationFromHumanBody.md
+  Rendering Markup: _whispersThroughMe/InspirationFromHumanBody.md
+Post-Convert Hooks: _whispersThroughMe/InspirationFromHumanBody.md
+  Rendering Layout: _whispersThroughMe/InspirationFromHumanBody.md
+         Rendering: _whispersThroughMe/Labor exchange- human morality.md
+  Pre-Render Hooks: _whispersThroughMe/Labor exchange- human morality.md
+  Rendering Markup: _whispersThroughMe/Labor exchange- human morality.md
+Post-Convert Hooks: _whispersThroughMe/Labor exchange- human morality.md
+  Rendering Layout: _whispersThroughMe/Labor exchange- human morality.md
+         Rendering: _whispersThroughMe/WhatIsMyPeriority-.md
+  Pre-Render Hooks: _whispersThroughMe/WhatIsMyPeriority-.md
+  Rendering Markup: _whispersThroughMe/WhatIsMyPeriority-.md
+Post-Convert Hooks: _whispersThroughMe/WhatIsMyPeriority-.md
+  Rendering Layout: _whispersThroughMe/WhatIsMyPeriority-.md
+         Rendering: _whispersThroughMe/Why cant we sit still.md
+  Pre-Render Hooks: _whispersThroughMe/Why cant we sit still.md
+  Rendering Markup: _whispersThroughMe/Why cant we sit still.md
+Post-Convert Hooks: _whispersThroughMe/Why cant we sit still.md
+  Rendering Layout: _whispersThroughMe/Why cant we sit still.md
+         Rendering: _whispersThroughMe/WhyWeWantToWork.md
+  Pre-Render Hooks: _whispersThroughMe/WhyWeWantToWork.md
+  Rendering Markup: _whispersThroughMe/WhyWeWantToWork.md
+Post-Convert Hooks: _whispersThroughMe/WhyWeWantToWork.md
+  Rendering Layout: _whispersThroughMe/WhyWeWantToWork.md
+         Rendering: _whispersThroughMe/SirShreePrinciple_english.md
+  Pre-Render Hooks: _whispersThroughMe/SirShreePrinciple_english.md
+  Rendering Markup: _whispersThroughMe/SirShreePrinciple_english.md
+Post-Convert Hooks: _whispersThroughMe/SirShreePrinciple_english.md
+  Rendering Layout: _whispersThroughMe/SirShreePrinciple_english.md
+         Rendering: _whispersThroughMe/StartFromBeginning.md
+  Pre-Render Hooks: _whispersThroughMe/StartFromBeginning.md
+  Rendering Markup: _whispersThroughMe/StartFromBeginning.md
+Post-Convert Hooks: _whispersThroughMe/StartFromBeginning.md
+  Rendering Layout: _whispersThroughMe/StartFromBeginning.md
+         Rendering: _whispersThroughMe/Vipassana2024.md
+  Pre-Render Hooks: _whispersThroughMe/Vipassana2024.md
+  Rendering Markup: _whispersThroughMe/Vipassana2024.md
+Post-Convert Hooks: _whispersThroughMe/Vipassana2024.md
+  Rendering Layout: _whispersThroughMe/Vipassana2024.md
+         Rendering: _whispersThroughMe/2024-12-19-future.md
+  Pre-Render Hooks: _whispersThroughMe/2024-12-19-future.md
+  Rendering Markup: _whispersThroughMe/2024-12-19-future.md
+Post-Convert Hooks: _whispersThroughMe/2024-12-19-future.md
+  Rendering Layout: _whispersThroughMe/2024-12-19-future.md
+         Rendering: _whispersThroughMe/2025-10-25-LStarting new.md
+  Pre-Render Hooks: _whispersThroughMe/2025-10-25-LStarting new.md
+  Rendering Markup: _whispersThroughMe/2025-10-25-LStarting new.md
+Post-Convert Hooks: _whispersThroughMe/2025-10-25-LStarting new.md
+  Rendering Layout: _whispersThroughMe/2025-10-25-LStarting new.md
+         Rendering: _whispersThroughMe/2024-10-24-Dynamics.md
+  Pre-Render Hooks: _whispersThroughMe/2024-10-24-Dynamics.md
+  Rendering Markup: _whispersThroughMe/2024-10-24-Dynamics.md
+Post-Convert Hooks: _whispersThroughMe/2024-10-24-Dynamics.md
+  Rendering Layout: _whispersThroughMe/2024-10-24-Dynamics.md
+         Rendering: _whispersThroughMe/20231103_my_research.md
+  Pre-Render Hooks: _whispersThroughMe/20231103_my_research.md
+  Rendering Markup: _whispersThroughMe/20231103_my_research.md
+Post-Convert Hooks: _whispersThroughMe/20231103_my_research.md
+  Rendering Layout: _whispersThroughMe/20231103_my_research.md
+         Rendering: _whispersThroughMe/2025-10-25-Level.md
+  Pre-Render Hooks: _whispersThroughMe/2025-10-25-Level.md
+  Rendering Markup: _whispersThroughMe/2025-10-25-Level.md
+Post-Convert Hooks: _whispersThroughMe/2025-10-25-Level.md
+  Rendering Layout: _whispersThroughMe/2025-10-25-Level.md
+         Rendering: _whispersThroughMe/2025-11-07JetLag.md
+  Pre-Render Hooks: _whispersThroughMe/2025-11-07JetLag.md
+  Rendering Markup: _whispersThroughMe/2025-11-07JetLag.md
+Post-Convert Hooks: _whispersThroughMe/2025-11-07JetLag.md
+  Rendering Layout: _whispersThroughMe/2025-11-07JetLag.md
          Rendering: details/SlimeMold.md
   Pre-Render Hooks: details/SlimeMold.md
   Rendering Markup: details/SlimeMold.md
@@ -220,7 +412,6 @@ Post-Convert Hooks: blog/index.html
   Rendering Markup: whispersThroughMe/index.html
 Post-Convert Hooks: whispersThroughMe/index.html
   Rendering Layout: whispersThroughMe/index.html
-[33m     Build Warning: Layout 'default' requested in whispersThroughMe/index.html does not exist.[0m
          Rendering: index.html
   Pre-Render Hooks: index.html
   Rendering Liquid: index.html
@@ -273,7 +464,39 @@ Post-Convert Hooks: tags.html
            Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/29/genome/index.html
            Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/10/31/ClassesSmallWorldNetworks/index.html
            Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/03/evolution/index.html
-           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/05/BiologicalSmallWorldNetworks/index.html
-           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/firstDraft/index.html
-                    done in 0.079 seconds.
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/05/PerspectiveCollective/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/blog/2025/11/07/BiologicalSmallWorldNetworks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/BlackTalentGoUnnoticed/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/BodyTalks/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/LiveTogether/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/MikeClassOverwhelming/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/NeemKaroliBaba/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/NoOneThinksOfYou/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Protecting/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/ThinkBigPhilosopher/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Three-type-of-people/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/WhyTalk/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/DesireForConversation/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/EmbraceSuffering/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/CultureAndFamily/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/DecisionMaking/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/MarketNotFairGame/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/ModelChangeLocalToGlobal/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/WIndowOfSoul/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/choteKadam/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/InspirationFromHumanBody/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Labor-exchange-human-morality/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/WhatIsMyPeriority/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Why-cant-we-sit-still/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/WhyWeWantToWork/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/SirShreePrinciple_english/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/StartFromBeginning/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Vipassana2024/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/future/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/LStarting-new/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Dynamics/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/20231103_my_research/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/Level/index.html
+           Writing: /Users/msanoria/Box Sync/[02]MineDocumentation/06_Website/monikaWebsite-src/_site/whispersThroughMe/2025-11-07JetLag/index.html
+                    done in 0.175 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
