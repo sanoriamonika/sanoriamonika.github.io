@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Summary: Emergence of Scaling in Random Networks — Monika Sanoria, PhD</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/translate.css">
+  <meta name="google" content="notranslate">
+  <!-- MathJax Configuration -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+
+      <!-- 🌐 Language button inside nav -->
+      <a id="translate-button" class="nav-lang" title="Change language">🌐</a>
+      <div id="translate-menu">
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 class="post-title" itemprop="headline">Paper Summary: Emergence of Scaling in Random Networks</h2>
+
+      
+      <p class="post-meta">
+        <span class="meta-date">September 26, 2025</span>
+        
+      </p>
+      
+
+      
+      <p class="post-tags">
+        
+          <a href="/tags/#emergence" class="tag">Emergence</a>
+        
+          <a href="/tags/#powerlaw" class="tag">PowerLaw</a>
+        
+          <a href="/tags/#network" class="tag">Network</a>
+        
+          <a href="/tags/#scalefree" class="tag">ScaleFree</a>
+        
+          <a href="/tags/#papersummary" class="tag">PaperSummary</a>
+        
+      </p>
+      
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      <p>We see natural phenomena all around us all the times, and sometimes things seem connected. Is there a hidden law they are following? Is there a common pattern emerging? The authors of this paper exploring similar question and show that completely unrelated systems can display <strong>scale-free behavior</strong>.</p>
+
+<p>To understand scale-free behavior, let us first understand networks and scaling.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Small_Network.png" alt="Small Network" style="width:220px; float:left; margin:10px 10px 10px 10px;" />A network is a special case of graph theory where links and nodes have attributes. Each network consists of <strong>nodes (vertices)</strong> and <strong>links (edges)</strong> connecting these nodes. In real systems, a node can represent a human and a link can represent social relationships; another example is nodes as water sources and links as connecting channels or pipes.</p>
+
+<p><strong>Scaling</strong> means enlarging or shrinking an object or its attributes. If a property does not change with scaling, it is called <strong>scale invariance</strong> or <strong>scale-free behavior</strong>. To quantify scale-free behavior, we plot the quantity versus its frequency on a log–log scale. If the distribution follows a power law, we know the system is scale-free. Physically, this means system properties remain the same across length scales: the system looks the same when units are removed.</p>
+
+<p>The authors challenged the prevailing network theory models used at the time, such as random networks theory and small-world models. They argued that these earlier theories missed a crucial element of real networks and therefore could not predict observed behavior. According to the authors, in real systems new nodes are continuously added, and each new node tends to form <strong>preferential connections</strong> with nodes that already have higher connectivity (the “rich-get-richer” effect).</p>
+
+<p>They tested this hypothesis and found that the model produces a power-law degree distribution with an exponent of about <strong>2.9</strong>, while real networks they studied had exponents around <strong>2 &lt; γ &lt; 3</strong>. They also showed that using only one of their assumptions fails to reproduce the results; both assumptions—growth and preferential attachment—are necessary. The real networks reported in the paper included <strong>actor collaboration networks</strong> and <strong>transportation networks</strong>. The study highlighted the “rich-get-richer” mechanism as a general principle of network growth, suggesting it is a kind of natural law.</p>
+
+<hr />
+<h4 id="reflections">Reflections</h4>
+<ul>
+  <li>The connection here is that <strong>preferential growth</strong> is the principle nature often follows, leading to scale-free behavior.</li>
+  <li>However, newer studies explore this idea further using <strong>cellular automata rules</strong> [<a href="https://yourdomain/blog/2025/09/24/paper-summary/">Blog</a>]. They find that growth should not be purely random, nor should it be fully deterministic. Instead, both randomness and determinism must contribute in balance to produce realistic network structures.</li>
+  <li>Moreover, the authors of this newer [1] study argue that <strong>not all real networks are scale-free</strong>. Some networks do not follow power-law scaling but instead exhibit <strong>lognormal degree distributions</strong>, showing that scale-freeness is not a universal law of nature but one possible outcome among others.</li>
+</ul>
+
+<hr />
+<h4 id="resources">Resources</h4>
+<ol>
+  <li>Broido, A.D., Clauset, A. <a href="https://doi.org/10.1038/s41467-019-08746-5"><em>Scale-free networks are rare</em></a> <em>Nat Commun</em> (2019).</li>
+</ol>
+
+<hr />
+<h3 id="citation">Citation</h3>
+<p><strong>Authors</strong>: Albert-L ́aszl ́o Barab ́asi and R ́eka Albert
+<strong>Published in</strong>: Science, Oct 1999
+<strong>DOI/Link</strong>: <a href="https://doi.org/10.1126/science.286.5439.509">https://doi.org/10.1126/science.286.5439.509</a></p>
+
+    </div>
+  </article>
+
+  <!-- Post navigation -->
+  <nav class="post-nav">
+    
+      <a class="icon-nav" href="/blog/2025/09/25/CellPatterning/" title="Previous post">←</a>
+    
+    
+      <a class="icon-nav" href="/blog/2025/09/29/FormationOfMotileCellClusters/" title="Next post">→</a>
+    
+  </nav>
+
+  <!-- Share buttons -->
+  <div class="share-buttons">
+    <!-- X -->
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F09%2F26%2FScalingInRandomNetworks%2F&text=Paper+Summary%3A+Emergence+of+Scaling+in+Random+Networks"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on X">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
+      </svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F09%2F26%2FScalingInRandomNetworks%2F"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1c-1.5 0-2.6-1.1-2.6-2.6C-.2 1.9.9.8 2.4.8c1.5 0 2.58 1.1 2.58 2.7zM.4 24h4V7.9h-4V24zm7.6-16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-4V7.9z"/>
+      </svg>
+    </a>
+    <!-- Email -->
+    <a href="mailto:?subject=Paper Summary: Emergence of Scaling in Random Networks&body=https://sanoriamonika.github.io/blog/2025/09/26/ScalingInRandomNetworks/"
+       class="share-btn" aria-label="Share via Email">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("translate-button");
+    const menu = document.getElementById("translate-menu");
+
+    btn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (!window.googleTranslateLoaded) {
+        const s = document.createElement("script");
+        s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(s);
+        window.googleTranslateLoaded = true;
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>

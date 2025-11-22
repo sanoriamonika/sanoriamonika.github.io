@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Summary: Escape dynamics of confined undulating worms — Monika Sanoria, PhD</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/translate.css">
+  <meta name="google" content="notranslate">
+  <!-- MathJax Configuration -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+
+      <!-- 🌐 Language button inside nav -->
+      <a id="translate-button" class="nav-lang" title="Change language">🌐</a>
+      <div id="translate-menu">
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 class="post-title" itemprop="headline">Paper Summary: Escape dynamics of confined undulating worms</h2>
+
+      
+      <p class="post-meta">
+        <span class="meta-date">October 10, 2025</span>
+        
+      </p>
+      
+
+      
+      <p class="post-tags">
+        
+          <a href="/tags/#escape" class="tag">Escape</a>
+        
+          <a href="/tags/#papersummary" class="tag">PaperSummary</a>
+        
+      </p>
+      
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      <div class="figure left">
+  <div class="video-container">
+    <iframe width="300" height="400" src="https://www.youtube.com/embed/JynxT1DtR2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+    <em class="figcaption">
+      California blackworm (*Lumbriculus variegatus*) movement — source: 
+      <a href="https://youtube.com/shorts/JynxT1DtR2E" target="_blank">YouTube</a>
+    </em>
+  </div>
+</div>
+
+<p>Escape is an interesting problem. Life exists in a complex environment, and over time it has found efficient ways to navigate through it. If we can understand those natural strategies, we can use them to build smarter materials and tools. Many of our designs, from planes to medical devices, are inspired by such living systems.</p>
+
+<div class="figure small right">
+  <img src="https://www.tandfonline.com/cms/asset/a3e874a8-7843-434c-9db5-7fbdd54ec02d/tadr_a_687139_o_f0002g.jpg" alt="Illustration of undulatory and peristaltic motion from Taylor &amp; Francis Online" />
+  <em class="figcaption">
+    Peristaltic Crawling Adapted from <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2012.687139#d1e397" target="_blank" rel="noopener noreferrer">
+    Taylor &amp; Francis Online</a>.
+  </em>
+</div>
+<p>The authors study one such system: <em>Lumbriculus variegatus</em>, also called the California blackworm, a common freshwater worm and a favorite food of fish (Figure 1). These worms show <strong>peristaltic motion</strong> when moving on hard surfaces (Figure 2) and <strong>undulatory motion</strong> when swimming in fluid (Figure 3). In their experiments, the worms often used a mix of both kinds of movement.</p>
+
+<p>To explore how these worms escape confined spaces, the researchers built two circular chambers connected by a narrow channel made of acrylic. They observed how the worm’s head aligned with the boundaries, how its body followed, and what that revealed about its angular motion. They analyzed when the worm enters the channel, when it actually passes through, and what happens during that process. Their results showed that the body’s angular motion is correlated with its body angle but not with the head angle.</p>
+
+<div class="figure medium left">
+  <img src="https://s2.smu.edu/propulsion/Pages/Images/dogfish.gif" alt="Undulatory swimming of dogfish" />
+  <em class="figcaption">
+    Undulatory motion in dogfish (<a href="https://s2.smu.edu/propulsion/Pages/undulatory.htm" target="_blank">source: SMU Propulsion</a>)
+  </em>
+</div>
+<p>They also used a simple <em>active Brownian particle model</em> to test whether random fluctuations alone could reproduce the escape dynamics. The model confirmed that sometimes, because of stochastic behavior, a particle can change its direction and show similar escape-time patterns as the worms.</p>
+
+<p>Interestingly, even though the California blackworm has sensory nerves throughout its body, they were not strongly involved in the search for the opening. The search was mainly guided by the head.</p>
+
+<hr />
+<h4 id="reflections">Reflections</h4>
+<ul>
+  <li>A full model is needed to capture the complete body dynamics of the worm. The head, being the decision-making part, can be modeled to move slower than the rest of the body. This slower motion allows it to sense, process, and choose direction, while the following segments respond faster.
+<!-- - The body segments can be assigned a higher probability of aligning within the head’s sensory cone, representing their natural tendency to follow the head’s lead. --></li>
+</ul>
+
+<hr />
+<h4 id="resources">Resources</h4>
+<ul>
+  <li><a href="https://s2.smu.edu/propulsion/Pages/undulatory.htm">Undulatory motion</a></li>
+</ul>
+
+<hr />
+<h3 id="citation">Citation</h3>
+<p>Authors: Animesh Biswas and Arshad Kudrolli
+Published in: Soft Matter, May 2023
+DOI/Link: <a href="https://doi.org/10.1039/d3sm00211j">https://doi.org/10.1039/d3sm00211j</a></p>
+
+    </div>
+  </article>
+
+  <!-- Post navigation -->
+  <nav class="post-nav">
+    
+      <a class="icon-nav" href="/blog/2025/10/09/ATPIndependentUltraFastContraction/" title="Previous post">←</a>
+    
+    
+      <a class="icon-nav" href="/blog/2025/10/11/VisualOfCellularWorld/" title="Next post">→</a>
+    
+  </nav>
+
+  <!-- Share buttons -->
+  <div class="share-buttons">
+    <!-- X -->
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F10%2F10%2FEscapeDynamicsOfWorms%2F&text=Paper+Summary%3A+Escape+dynamics+of+confined+undulating+worms"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on X">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
+      </svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F10%2F10%2FEscapeDynamicsOfWorms%2F"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1c-1.5 0-2.6-1.1-2.6-2.6C-.2 1.9.9.8 2.4.8c1.5 0 2.58 1.1 2.58 2.7zM.4 24h4V7.9h-4V24zm7.6-16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-4V7.9z"/>
+      </svg>
+    </a>
+    <!-- Email -->
+    <a href="mailto:?subject=Paper Summary: Escape dynamics of confined undulating worms&body=https://sanoriamonika.github.io/blog/2025/10/10/EscapeDynamicsOfWorms/"
+       class="share-btn" aria-label="Share via Email">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("translate-button");
+    const menu = document.getElementById("translate-menu");
+
+    btn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (!window.googleTranslateLoaded) {
+        const s = document.createElement("script");
+        s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(s);
+        window.googleTranslateLoaded = true;
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>

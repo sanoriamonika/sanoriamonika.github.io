@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Summary: Classes of small-world networks — Monika Sanoria, PhD</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/translate.css">
+  <meta name="google" content="notranslate">
+  <!-- MathJax Configuration -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+
+      <!-- 🌐 Language button inside nav -->
+      <a id="translate-button" class="nav-lang" title="Change language">🌐</a>
+      <div id="translate-menu">
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 class="post-title" itemprop="headline">Paper Summary: Classes of small-world networks</h2>
+
+      
+      <p class="post-meta">
+        <span class="meta-date">October 31, 2025</span>
+        
+          <span class="meta-divider"> • </span>
+          <span class="meta-updated">Updated November 02, 2025</span>
+        
+      </p>
+      
+
+      
+      <p class="post-tags">
+        
+          <a href="/tags/#scalefreenetwork" class="tag">ScaleFreeNetwork</a>
+        
+          <a href="/tags/#singlescalenetwork" class="tag">SingleScaleNetwork</a>
+        
+          <a href="/tags/#emergence" class="tag">Emergence</a>
+        
+          <a href="/tags/#network" class="tag">Network</a>
+        
+          <a href="/tags/#papersummary" class="tag">PaperSummary</a>
+        
+      </p>
+      
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      <div class="figure right small">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/CrawlingCelegans.gif" alt="C. Elegan" />
+  <figcaption>
+    Crawling <em>Caenorhabditis elegans</em> observed under a microscope.
+    Image source:    <a href="https://commons.wikimedia.org/wiki/File:CrawlingCelegans.gif" target="_blank" rel="noopener">
+     Wikimedia Commons </a>, licensed under  <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">   CC BY-SA 3.0  </a>.
+  </figcaption>
+</div>
+<p>Small-world networks is a phenomenon that reveals that even though it seems we live in a very large world, each of us is, on average, only about six connections away from anyone else. This indicates that the world is actually quite “small.”
+Scientists have long tried to explain how systems are connected, either using completely random networks or completely ordered ones. However, neither of these extremes accurately described real-world systems.</p>
+
+<p>Watts and Strogatz showed that adding just a few random connections to an ordered network makes it behave much more like real systems. They demonstrated this using diverse examples, from biological neural networks to technological and social systems.
+Later, Albert and Barabási introduced the concept of <em>emergent networks</em> that grow through the rule of <em>preferential attachment</em> where new nodes are more likely to connect to already well-connected nodes.</p>
+<div class="figure left small">
+    <img src="https://www.pnas.org/cms/10.1073/pnas.200327197/asset/9845d06f-5034-420b-9118-b09273d09adc/assets/graphic/pq2003271002.jpeg" />
+  <figcaption> Connectivity patterns in social networks. (a,b) Movie actor network showing power-law behavior for moderate connections but truncation at high values. (c,d) Acquaintance and friendship networks showing Gaussian decay, indicating a single connectivity scale.
+    Image available in <em>PNAS</em> publication: <a href="https://www.pnas.org/doi/10.1073/pnas.200327197" target="_blank" rel="noopener noreferrer">10.1073/pnas.200327197</a>.
+  </figcaption>
+</div>
+<p>Their contribution was orthogonal but complementary in shifting focus from <em>network topology (Watts–Strogatz)</em> to <em>network growth and degree distribution</em>.
+ They found that such networks exhibit <em>scale-free</em> behavior. Using examples such as collaborations among movie actors and the C. elegans neural network, they concluded that many natural systems tend to evolve toward scale-free connectivity.</p>
+
+<p>While Watts and Strogatz focused on the <em>degree of randomness</em> required to make a network resemble real-world systems, Barabási and Albert focused on the <em>emergent rules</em> that give rise to naturally occurring network structures.</p>
+
+<p>Building on both perspectives, Amaral and colleagues asked: <em>What types of small-world networks actually exist in nature?</em> They examined many of the same real-world systems studied by Watts–Strogatz and Barabási–Albert, along with additional examples, and classified them into three main types:</p>
+
+<p>– 1) Scale-free networks
+– 2) Broad-scale networks
+– 3) Single-scale networks</p>
+
+<p>When comparing these three types, the authors found that each is shaped by <em>different constraints</em> on how new nodes can connect — such as cost, capacity, or aging effects. These limitations explain why not all real-world networks follow perfect power-law scaling: some, like air-traffic or technological networks, deviate toward exponential or single-scale behavior. Such deviations reflect how real systems balance <em>efficiency, cost, and physical limits</em> in forming optimal network structures.</p>
+
+<div style="clear: both;"></div>
+
+<hr />
+<h4 id="reflections">Reflections</h4>
+<ul>
+  <li>The central question is whether we truly live in a scale-free world of connections, or whether real systems deviate from this ideal. We find that in actual networks, various limitations such as spatial and temporal constraints in air-traffic systems or aging effects in actor collaborations  alter the ideal scale-free nature of networks, causing them to deviate toward broad-scale or single-scale structures.</li>
+</ul>
+
+<hr />
+<h4 id="resources">Resources</h4>
+<ul>
+  <li>[1] Blog Post on Duncan J. Watts &amp; Steven H. Strogatz’s  (<a href="/blog/2025/10/08/SmallWorldNetworks/">small-world networks</a>)</li>
+  <li>[2] Blog Post on Albert‑László Barabási’s (<a href="/blog/2025/09/26/ScalingInRandomNetworks/">emergent networks</a>)</li>
+</ul>
+
+<hr />
+<h3 id="citation">Citation</h3>
+<p>Authors: <a href="https://www.pnas.org/doi/10.1073/pnas.200327197#con1">L. A. N. Amaral</a>, <a href="https://www.pnas.org/doi/10.1073/pnas.200327197#con2">A. Scala</a>, <a href="https://www.pnas.org/doi/10.1073/pnas.200327197#con3">M. Barthélémy</a>, and <a href="https://www.pnas.org/doi/10.1073/pnas.200327197#con4">H. E. Stanley</a>
+Published in: PNAS, Sep 2000
+DOI/Link: <a href="https://doi.org/10.1073/pnas.200327197">10.1073/pnas.200327197</a></p>
+
+    </div>
+  </article>
+
+  <!-- Post navigation -->
+  <nav class="post-nav">
+    
+      <a class="icon-nav" href="/blog/2025/10/29/genome/" title="Previous post">←</a>
+    
+    
+      <a class="icon-nav" href="/blog/2025/11/03/evolution/" title="Next post">→</a>
+    
+  </nav>
+
+  <!-- Share buttons -->
+  <div class="share-buttons">
+    <!-- X -->
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F10%2F31%2FClassesSmallWorldNetworks%2F&text=Paper+Summary%3A+Classes+of+small-world+networks"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on X">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
+      </svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F10%2F31%2FClassesSmallWorldNetworks%2F"
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1c-1.5 0-2.6-1.1-2.6-2.6C-.2 1.9.9.8 2.4.8c1.5 0 2.58 1.1 2.58 2.7zM.4 24h4V7.9h-4V24zm7.6-16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-4V7.9z"/>
+      </svg>
+    </a>
+    <!-- Email -->
+    <a href="mailto:?subject=Paper Summary: Classes of small-world networks&body=https://sanoriamonika.github.io/blog/2025/10/31/ClassesSmallWorldNetworks/"
+       class="share-btn" aria-label="Share via Email">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("translate-button");
+    const menu = document.getElementById("translate-menu");
+
+    btn.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (!window.googleTranslateLoaded) {
+        const s = document.createElement("script");
+        s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(s);
+        window.googleTranslateLoaded = true;
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>
