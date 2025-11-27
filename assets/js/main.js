@@ -18,3 +18,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* =============================== */
+/* DOUBLE-CLICK IMAGE ZOOM FEATURE */
+/* =============================== */
+
+document.addEventListener("DOMContentLoaded", function() {
+  let zoomedImg = null;
+  let overlay = null;
+
+  function zoomImage(img) {
+    // If already zoomed, unzoom
+    if (zoomedImg) {
+      return unzoomImage();
+    }
+
+    zoomedImg = img;
+    img.classList.add("img-zoomed");
+
+    overlay = document.createElement("div");
+    overlay.className = "img-zoom-overlay";
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", unzoomImage);
+  }
+
+  function unzoomImage() {
+    if (!zoomedImg) return;
+
+    zoomedImg.classList.remove("img-zoomed");
+    zoomedImg = null;
+
+    if (overlay) {
+      overlay.remove();
+      overlay = null;
+    }
+  }
+
+  // Attach to all images inside your .figure blocks
+  document.querySelectorAll(".figure img").forEach(img => {
+    img.addEventListener("dblclick", () => zoomImage(img));
+  });
+});
