@@ -93,7 +93,10 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
   a { color: black; text-decoration: none; }
 }
 
-/* Share buttons */
+/* =============================== */
+/* SHARE BUTTONS                   */
+/* =============================== */
+
 .post .share-buttons {
   margin-top: 1.5rem;
   display: flex;
@@ -113,41 +116,112 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
   border: 1px solid #d1d5db;
   transition: background 0.3s, border 0.3s, color 0.3s;
   cursor: pointer;
+  padding: 0;
+  text-decoration: none;
 }
 
+/* Material Symbols styling */
+.post .share-btn .material-symbols-outlined {
+  font-size: 20px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Remove button-specific browser defaults */
+button.share-btn {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Base hover state */
 .post .share-btn:hover {
   background-color: #e5e7eb;
   border-color: #9ca3af;
 }
 
-.post .share-btn[aria-label="Copy link"]:hover {
-  background-color: var(--link);
+/* Copy link button - Blue */
+.post .share-btn[aria-label="Copy link"]:hover,
+.post button.share-btn[aria-label="Copy link"]:hover,
+.post button#copy-link-btn:hover {
+  background-color: #0b57d0;
   color: #fff;
-  border-color: var(--link);
+  border-color: #0b57d0;
 }
 
+/* X/Twitter button - Black */
 .post .share-btn[aria-label="Share on X"]:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
 }
 
+/* LinkedIn button - Blue */
+.post .share-btn-linkedin:hover,
 .post .share-btn[aria-label="Share on LinkedIn"]:hover {
   background-color: #0a66c2;
   color: #fff;
   border-color: #0a66c2;
 }
 
-.post .share-btn[aria-label="Share via Email"]:hover {
-  background-color: #6b7280;
+/* WhatsApp button - Green */
+.post .share-btn-whatsapp:hover,
+.post .share-btn[aria-label="Share on WhatsApp"]:hover {
+  background-color: #25D366;
   color: #fff;
-  border-color: #6b7280;
+  border-color: #25D366;
 }
 
-.post .share-btn.copy-link:hover {
-  background-color: var(--link);
+/* Email button - Blue */
+.post .share-btn-email:hover,
+.post .share-btn[aria-label="Share via Email"]:hover {
+  background-color: #0b57d0;
   color: #fff;
-  border-color: var(--link);
+  border-color: #0b57d0;
+}
+
+/* Download PDF button - Blue */
+.post .share-btn-download:hover,
+.post .share-btn[aria-label="Download as PDF"]:hover,
+.post button.share-btn[aria-label="Download as PDF"]:hover {
+  background-color: #0b57d0;
+  color: #fff;
+  border-color: #0b57d0;
+}
+
+/* Ensure SVG icons have consistent color */
+.post .share-btn svg,
+.post button.share-btn svg {
+  color: currentColor;
+  fill: currentColor;
+}
+
+/* Fix copy button icon color specifically */
+.post button.share-btn#copy-link-btn {
+  background-color: #f3f4f6 !important;
+  color: #333 !important;
+}
+
+.post button.share-btn#copy-link-btn svg {
+  color: #333 !important;
+  fill: #333 !important;
+}
+
+.post button.share-btn#copy-link-btn:hover {
+  background-color: var(--link) !important;
+  color: #fff !important;
+  border-color: var(--link) !important;
+}
+
+.post button.share-btn#copy-link-btn:hover svg {
+  color: #fff !important;
+  fill: #fff !important;
 }
 
 /* Hide copy feedback text */
@@ -155,8 +229,35 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
   display: none;
 }
 
-.post-title { margin: 0 0 0.25rem; font-size: 1.8rem; line-height: 1.2; }
-.post-meta { margin: 0 0 1rem; color: #555; }
+/* =============================== */
+/* POST STYLING                    */
+/* =============================== */
+
+.post-title { 
+  margin: 0 0 0.25rem; 
+  font-size: 1.8rem; 
+  line-height: 1.2; 
+}
+
+.post-subheading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .post-subheading {
+    font-size: 1rem;
+  }
+}
+
+.post-meta { 
+  margin: 0 0 1rem; 
+  color: #555; 
+}
 
 .post-content { 
   text-align: left;
@@ -164,7 +265,9 @@ pre{background:#f6f8fa; border:1px solid var(--border); padding:12px; border-rad
 }
 
 /* Safety: ensure nothing hides the title accidentally */
-.post h1, .post-title { display: block !important; }
+.post h1, .post-title { 
+  display: block !important; 
+}
 
 /* news update */
 .news-list { list-style: none; padding-left: 0; margin: .3rem 0 0; }
@@ -762,8 +865,12 @@ main.container > div[style*="background: #f3f4f6"] strong {
     margin-top: 1em;
   }
 }
-/* 🌐 Translation Button Styling */
-/* 🌐 Language button in top navigation */
+
+/* =============================== */
+/* TRANSLATION BUTTON STYLING      */
+/* =============================== */
+
+/* Language button in top navigation */
 .nav-lang {
   margin-left: 1rem;
   font-size: 1rem;
@@ -825,6 +932,7 @@ body {
   flex: 1 1 10%;   /* 3 per row on desktop */
   min-width: 220px;
 }
+
 /* =============================== */
 /* DOUBLE-CLICK ZOOM FEATURE       */
 /* =============================== */
@@ -851,4 +959,343 @@ body {
   inset: 0;
   background: rgba(0,0,0,0.55);
   z-index: 9998;
+}
+
+/* =============================== */
+/* PRINT TO PDF STYLING            */
+/* Makes blog posts look good when printed/saved as PDF */
+/* =============================== */
+
+@media print {
+  /* Hide unnecessary elements */
+  header,
+  nav,
+  footer,
+  .share-buttons,
+  .post-nav,
+  .post-tags {
+    display: none !important;
+  }
+  
+  /* Reset page */
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 20pt;
+    margin: 0;
+  }
+  
+  /* Article and header visible */
+  .post,
+  .post-header {
+    display: block !important;
+  }
+  
+  /* Make title and subheading look good */
+  .post-title {
+    font-size: 24pt !important;
+    margin-bottom: 0.5em !important;
+    margin-top: 0 !important;
+    color: black !important;
+    page-break-after: avoid;
+    display: block !important;
+  }
+  
+  .post-subheading {
+    font-size: 14pt !important;
+    color: #333 !important;
+    margin: 0.5em 0 1em !important;
+    font-style: italic;
+    page-break-after: avoid;
+    display: block !important;
+  }
+  
+  .post-meta {
+    font-size: 10pt !important;
+    color: #666 !important;
+    margin-bottom: 2em !important;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+    page-break-after: avoid;
+    display: block !important;
+  }
+  
+  .post-meta .meta-date,
+  .post-meta .meta-divider,
+  .post-meta .meta-updated {
+    display: inline !important;
+  }
+  
+  /* Content styling - ALL HEADINGS VISIBLE */
+  .post-content {
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+  
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    display: block !important;
+    color: black !important;
+    page-break-after: avoid;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .post-content h1 {
+    font-size: 20pt !important;
+  }
+  
+  .post-content h2 {
+    font-size: 16pt !important;
+  }
+  
+  .post-content h3 {
+    font-size: 14pt !important;
+  }
+  
+  .post-content h4 {
+    font-size: 13pt !important;
+  }
+  
+  .post-content h5,
+  .post-content h6 {
+    font-size: 12pt !important;
+  }
+  
+  .post-content p {
+    margin-bottom: 0.8em;
+    orphans: 3;
+    widows: 3;
+  }
+  
+  /* Links */
+  .post-content a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+  .post-content a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Images */
+  .post-content img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+  
+  .figure {
+    page-break-inside: avoid;
+    margin: 1em 0;
+  }
+  
+  /* Code blocks */
+  .post-content pre,
+  .post-content code {
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    page-break-inside: avoid;
+  }
+  
+  .post-content pre {
+    padding: 0.5em;
+    font-size: 9pt;
+    white-space: pre-wrap;
+  }
+  
+  .post-content code {
+    padding: 0.1em 0.3em;
+  }
+  
+  /* Lists */
+  .post-content ul,
+  .post-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .post-content li {
+    margin-bottom: 0.3em;
+  }
+  
+  /* Avoid breaking inside these */
+  .note-box,
+  blockquote {
+    page-break-inside: avoid;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    margin: 1em 0;
+  }
+  
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    page-break-inside: avoid;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+  }
+  
+  th {
+    background: #f5f5f5;
+    font-weight: bold;
+  }
+}
+
+/* =============================== */
+/* PRINT TO PDF - SAFE VERSION     */
+/* Only affects print, not website */
+/* =============================== */
+
+@media print {
+  /* Hide unnecessary elements */
+  header,
+  nav,
+  footer,
+  .share-buttons,
+  .post-nav {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  /* Don't change container on screen, only in print */
+  @page {
+    margin: 0.5in;
+  }
+  
+  /* Post header visible */
+  .post-title {
+    font-size: 24pt;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+  }
+  
+  .post-subheading {
+    font-size: 14pt;
+    font-style: italic;
+    margin-bottom: 1em;
+    page-break-after: avoid;
+  }
+  
+  .post-meta {
+    font-size: 10pt;
+    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+    page-break-after: avoid;
+  }
+  
+  .post-tags {
+    display: none;
+  }
+  
+  /* Content headings */
+  .post-content h1 { font-size: 18pt; margin-top: 1em; page-break-after: avoid; }
+  .post-content h2 { font-size: 16pt; margin-top: 1em; page-break-after: avoid; }
+  .post-content h3 { font-size: 14pt; margin-top: 0.8em; page-break-after: avoid; }
+  .post-content h4 { font-size: 12pt; margin-top: 0.8em; page-break-after: avoid; }
+  
+  .post-content p {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  .post-content a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+  
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+  
+  pre, code {
+    page-break-inside: avoid;
+    border: 1px solid #ddd;
+  }
+}
+/* Uniform styling for material icons in share buttons */
+.post .share-btn span.material-symbols-outlined {
+  font-size: 20px !important;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make stroke weight similar to SVG icons */
+.post .share-btn span.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+}
+/* Make all icons share same base color */
+.share-buttons .share-btn svg,
+.share-buttons .share-btn span.material-symbols-outlined {
+  color: var(--link);
+  fill: var(--link);
+}
+
+/* Ensure buttons (Copy ✓ Download ✓) match anchor icons */
+.share-buttons button.share-btn {
+  color: var(--link);
+  fill: var(--link);
+}
+
+/* Normal hover behaviour can be retained since overridden below */
+.share-buttons .share-btn:hover svg {
+  fill: #fff;
+}
+
+/* Make button icons match link icons: remove gray background and border */
+.share-buttons button.share-btn {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Give a unified clickable hover style */
+.share-buttons button.share-btn:hover {
+  background: transparent !important;
+  border: none !important;
+}
+.share-buttons button.share-btn:hover svg {
+  filter: brightness(0.8);
+}
+/* 👉 Hide title printed inside regular content
+👉 Insert it properly only at the top */
+@media print {
+  .post-title {
+    display: none !important;
+  }
 }
