@@ -170,7 +170,6 @@ Source: <a href="https://bsky.app/profile/did:plc:226c5ywp7yrnrp55ytdhomy3/post/
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
       </svg>
-      <span id="copy-feedback" class="copy-feedback">Copied!</span>
     </button>
     <!-- X -->
     <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F12%2F03%2FVisualOfCellularWorld4%2F&text=Weekend+Special%3A+Visuals+of+Cellular+World"
@@ -238,7 +237,6 @@ Source: <a href="https://bsky.app/profile/did:plc:226c5ywp7yrnrp55ytdhomy3/post/
 
     // Copy link functionality
     const copyLinkBtn = document.getElementById("copy-link-btn");
-    const copyFeedback = document.getElementById("copy-feedback");
     
     if (copyLinkBtn) {
       copyLinkBtn.addEventListener("click", async () => {
@@ -246,10 +244,6 @@ Source: <a href="https://bsky.app/profile/did:plc:226c5ywp7yrnrp55ytdhomy3/post/
         
         try {
           await navigator.clipboard.writeText(url);
-          copyFeedback.classList.add("show");
-          setTimeout(() => {
-            copyFeedback.classList.remove("show");
-          }, 2000);
         } catch (err) {
           // Fallback for older browsers
           const textArea = document.createElement("textarea");
@@ -260,10 +254,6 @@ Source: <a href="https://bsky.app/profile/did:plc:226c5ywp7yrnrp55ytdhomy3/post/
           textArea.select();
           try {
             document.execCommand('copy');
-            copyFeedback.classList.add("show");
-            setTimeout(() => {
-              copyFeedback.classList.remove("show");
-            }, 2000);
           } catch (err) {
             console.error('Failed to copy:', err);
           }

@@ -1813,8 +1813,8 @@ MathJax = {
       </ul>
     </section>
   
-    <section id="thoughts" class="tag-section" style="display:none;">
-      <h2>Thoughts</h2>
+    <section id="insight" class="tag-section" style="display:none;">
+      <h2>Insight</h2>
       <ul>
         
           <li>
@@ -2123,6 +2123,11 @@ MathJax = {
       </li>
     
       <li>
+        <a href="#insight" class="tag-link">Insight</a>
+        <span class="count">(1)</span>
+      </li>
+    
+      <li>
         <a href="#integrin" class="tag-link">Integrin</a>
         <span class="count">(1)</span>
       </li>
@@ -2338,11 +2343,6 @@ MathJax = {
       </li>
     
       <li>
-        <a href="#thoughts" class="tag-link">Thoughts</a>
-        <span class="count">(1)</span>
-      </li>
-    
-      <li>
         <a href="#trafficking" class="tag-link">Trafficking</a>
         <span class="count">(1)</span>
       </li>
@@ -2432,7 +2432,6 @@ window.addEventListener("hashchange", showTagSection);
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
       </svg>
-      <span id="copy-feedback" class="copy-feedback">Copied!</span>
     </button>
     <!-- X -->
     <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Ftags%2F&text=Tags"
@@ -2500,7 +2499,6 @@ window.addEventListener("hashchange", showTagSection);
 
     // Copy link functionality
     const copyLinkBtn = document.getElementById("copy-link-btn");
-    const copyFeedback = document.getElementById("copy-feedback");
     
     if (copyLinkBtn) {
       copyLinkBtn.addEventListener("click", async () => {
@@ -2508,10 +2506,6 @@ window.addEventListener("hashchange", showTagSection);
         
         try {
           await navigator.clipboard.writeText(url);
-          copyFeedback.classList.add("show");
-          setTimeout(() => {
-            copyFeedback.classList.remove("show");
-          }, 2000);
         } catch (err) {
           // Fallback for older browsers
           const textArea = document.createElement("textarea");
@@ -2522,10 +2516,6 @@ window.addEventListener("hashchange", showTagSection);
           textArea.select();
           try {
             document.execCommand('copy');
-            copyFeedback.classList.add("show");
-            setTimeout(() => {
-              copyFeedback.classList.remove("show");
-            }, 2000);
           } catch (err) {
             console.error('Failed to copy:', err);
           }
