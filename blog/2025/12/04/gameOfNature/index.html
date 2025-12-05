@@ -90,7 +90,7 @@ MathJax = {
 
 <p>Everything has a pattern. Some people develop saggy skin, a bent walking posture, and eventually stop all activities; at that point, their bodies are either burned or buried. Another pattern: someone is born, reaches childhood, adulthood, middle age, old age, and then dies. Have I seen one person go through all stages fully? No. But because I have seen different people at different points, I can extrapolate that this is the cycle.</p>
 
-<p>We see that our bodies force us to eat. Everyone cries or becomes restless if not fed. We eat plants, animals, and fruits to curb hunger. After eating, we become calmer and able to behave normally. When there is hunger, humans or animals are ruled by that feeling—more than any other sense.
+<p>We see that our bodies force us to eat. Everyone cries or becomes restless if not fed. We eat plants, animals, and fruits to curb hunger. After eating, we become calmer and able to behave normally. When there is hunger, humans or animals are ruled by that feeling more than any other sense.
 Sexual desire is similar. When the desire arises, it takes over behavior, and people behave differently. Once that need is fulfilled, the mind becomes free to think more clearly. Similarly, when danger is present, the feeling of protecting ourselves dominates everything. Until danger passes, the system does not function calmly. These seem to be priorities.
 A difficult question is: if hunger, danger, and sexual desire arise together, which one would a human satisfy first?</p>
 
@@ -112,7 +112,7 @@ There were no fixed rules; the method did not matter.
 A factual example:
 Cells and mitochondria originally existed as separate organisms. Over time, through mutually beneficial interactions, mitochondria were absorbed into larger host cells and began living symbiotically. Today, every human cell contains mitochondria, and mitochondrial DNA is inherited exclusively from the mother. To overcome increasing survival challenges, individual cells eventually formed multicellular communities, which then gave rise to tissues, organs, and coordinated systems. This evolutionary pathway ultimately led to the complex multicellular organisms we see today, including humans.</p>
 
-<p>Humans learned individually (e.g., hunting alone), then collectively (farming), which increased stability and safety. With scale, villages emerged, then cities. Religion united thousands under shared beliefs—another scaling mechanism.
+<p>Humans learned individually (e.g., hunting alone), then collectively (farming), which increased stability and safety. With scale, villages emerged, then cities. Religion united thousands under shared beliefs which is another scaling mechanism.
 A major milestone was the idea of <strong>codifying and publishing knowledge</strong>, allowing future generations and even different countries to work on the same problems.
 This dramatically increased the <em>scale of problem-solving</em>.
 Now countries work simultaneously on the same ideas, trying not to fall behind.</p>
@@ -177,23 +177,30 @@ and now AI able to bring past and power all ideas together it is like another sc
 
   <!-- Share buttons -->
   <div class="share-buttons">
+    <!-- Copy Link -->
+    <button id="copy-link-btn" class="share-btn" aria-label="Copy link" title="Copy link">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+      <span id="copy-feedback" class="copy-feedback">Copied!</span>
+    </button>
     <!-- X -->
     <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F12%2F04%2FgameOfNature%2F&text=Insight%3A+Game+of+nature-Patterns+as+Our+First+Language"
-       target="_blank" rel="noopener" class="share-btn" aria-label="Share on X">
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on X" title="Share on X">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
       </svg>
     </a>
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F12%2F04%2FgameOfNature%2F"
-       target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn">
+       target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn" title="Share on LinkedIn">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1c-1.5 0-2.6-1.1-2.6-2.6C-.2 1.9.9.8 2.4.8c1.5 0 2.58 1.1 2.58 2.7zM.4 24h4V7.9h-4V24zm7.6-16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-4V7.9z"/>
       </svg>
     </a>
     <!-- Email -->
     <a href="mailto:?subject=Insight: Game of nature-Patterns as Our First Language&body=https://sanoriamonika.github.io/blog/2025/12/04/gameOfNature/"
-       class="share-btn" aria-label="Share via Email">
+       class="share-btn" aria-label="Share via Email" title="Share via Email">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
       </svg>
@@ -240,6 +247,42 @@ and now AI able to bring past and power all ideas together it is like another sc
         menu.style.display = "none";
       }
     });
+
+    // Copy link functionality
+    const copyLinkBtn = document.getElementById("copy-link-btn");
+    const copyFeedback = document.getElementById("copy-feedback");
+    
+    if (copyLinkBtn) {
+      copyLinkBtn.addEventListener("click", async () => {
+        const url = window.location.href;
+        
+        try {
+          await navigator.clipboard.writeText(url);
+          copyFeedback.classList.add("show");
+          setTimeout(() => {
+            copyFeedback.classList.remove("show");
+          }, 2000);
+        } catch (err) {
+          // Fallback for older browsers
+          const textArea = document.createElement("textarea");
+          textArea.value = url;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-999999px";
+          document.body.appendChild(textArea);
+          textArea.select();
+          try {
+            document.execCommand('copy');
+            copyFeedback.classList.add("show");
+            setTimeout(() => {
+              copyFeedback.classList.remove("show");
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+          }
+          document.body.removeChild(textArea);
+        }
+      });
+    }
   });
 </script>
 </body>
