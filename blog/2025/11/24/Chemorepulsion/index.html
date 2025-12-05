@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Summary: Collective Cell Motility Promotes Chemotactic Prowess and Resistance to Chemorepulsion — Monika Sanoria, PhD</title>
+  <title>Weekly Paper List — Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- <link rel="stylesheet" href="/assets/css/translate.css">
@@ -51,7 +51,7 @@ MathJax = {
 <main class="container" role="main">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h2 class="post-title" itemprop="headline">Paper Summary: Collective Cell Motility Promotes Chemotactic Prowess and Resistance to Chemorepulsion</h2>
+      <h2 class="post-title" itemprop="headline">Weekly Paper List</h2>
 
       
       <p class="post-meta">
@@ -70,16 +70,6 @@ MathJax = {
         
           <a href="/tags/#ligand" class="tag">Ligand</a>
         
-          <a href="/tags/#endocytosis" class="tag">Endocytosis</a>
-        
-          <a href="/tags/#miscroscopy" class="tag">Miscroscopy</a>
-        
-          <a href="/tags/#fluorescencemicroscopy" class="tag">FluorescenceMicroscopy</a>
-        
-          <a href="/tags/#confocalmicroscopy" class="tag">ConfocalMicroscopy</a>
-        
-          <a href="/tags/#flowcytometry" class="tag">FlowCytometry</a>
-        
           <a href="/tags/#papersummary" class="tag">PaperSummary</a>
         
       </p>
@@ -87,68 +77,293 @@ MathJax = {
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      <h4 id="biological-background">Biological Background</h4>
-<div class="figure right small">
-  <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1044579X10000830-gr1.jpg" alt="Chemokine receptor–ligand interactions in CLL" />
-  <figcaption>
-    Chemokine receptors (CXCR4, CXCR5, CCR7, CXCR3) guide CLL cells toward stromal niches via their ligands (CXCL12, CXCL13, CCL19/21).  
-    Source: Burger &amp; Bürkle, <em>Seminars in Hematology</em> (2010), Elsevier.
-  </figcaption>
-</div>
-<p>CLL (Primary human malignant B lymphocytes) cells are malignant lymphocytes, which are a type of white blood cell and part of the immune system. These cells express many receptors, as shown in Figure 1, and respond to different external signals. The two most studied receptors are <em>CCR7</em> and <em>CXCR4</em> (the “R” stands for receptor, part before e.g., <em>CC</em> or <em>CXC</em> represents the families), which respond to the chemokines <em>CCL19/21</em> and <em>CXCL12</em>, respectively. These chemokines act as homing signals for the lymph nodes and bone marrow. The presence of these receptors and the state they are in (for example, ligand-bound, unbound, or internalized), as well as the downstream signaling they initiate such as ERK activation and it is crucial for understanding and predicting CLL cell behavior in more detail.</p>
+      <!-- # Cluster size dependent transition from chemorepulsion to chemoattraction in malignant lymphocytes
 
-<h4 id="central-question-and-main-findings">Central Question and Main Findings</h4>
+#### Biological Background
+CLL chronic lymphotic leuchemia are a cancer pf blood and bone marrow, soecificakky effectung b lymphocytes. This is slow progressed cancer where b lymphocytes become abnormal(melignant) and grow slowly and accumulate in bone marrow, lymph node, blood and spleen.
+To device treatement for these one need to   understand how they function so researcher study how receptor like ccr7 and cxcr4 present in these cells function in the response of these cells.
 
-<p>In this work, the authors wanted to understand <strong>the collective migration in CLL cancer cells by examining the dynamics of these receptors.</strong>
-The authors used primary CLL cells and focused on two chemokine receptors and their corresponding chemokines. They also used a theoretical model to verify the cluster state they observed experimentally. In their experimental system, they focused on:</p>
+#### Central Question and Main Findings
+Why does single cell chemorepel? if so why does cluster chemoattarct? at high concentration gradient.
+Thisis hybrid modeling used to answer this question. SO experimets whichdiscovered this phynomina and analtical couse graning modeling to comment on the role of endocytosis, erk and the chemorepulion in single cell and they using this as inpute paramter for agent based modeling to simulate the collective behaviour of tese cnacer cells. 
+In course grain modelin gthey saw that if ERK signlin gis non linear for certain paramters the front and back endocytosis can disrupt and leads to the effecting no net front migration or reverse migration  as no receptor available for sensing the gradient in front. Feding this idea into the agent based modeling they showed that the depeding on the size chemorepulsion can depapear as the presence of the access core cell will relace the cells and whihc will be sensing the anvironment and showing forward migration. 
+Size, endocytosis and erk signaling is important to decide the fait of the cell resposne tot he external cues. 
+
+#### Mechanistic Insights and Broader Impact
+* Why This Matters to the Field ( Why is this result important in the broader context? How does it connect to bigger ideas (e.g., pattern formation, chemotaxis, tissue mechanics, etc.)?)
+Chemorepuslion is an important phenomena in the immune system. Immune cells are alsways there to respond tot hte chemical gradint for th porteaction and healing of the body. SO these cell sould response the chemical gradiient whenit is low but there should be an inbuilt mechinisma which should help that to the not respond at all hwen concetration is to high to make sure there are not two many t-or b cell than nedded or not be their when healing is done. I am sure it must be truw for other type of cells as well. Together this when to respond when not to this tightly nid signaling response control system keeps up healthy. In case of the cacner cells one can understand that on the main resaone sould be this response going abnormal. So this another way of finidng if the response abnomal what it can do.
+
+* Limitations or Open Questions (Anything unclear? Any assumptions that restrict the applicability? Future directions mentioned by authors?)
+What is the role of endocytosis? Erk signalling? and recycling? what is the typical timescale for these cells? How can we compare them in simulation and experiments? For our model we are assuming hte non linear response of the erk signaling so it hold only in this case i guess this is the simplest approximation we dont know anything about it. If we know moer precise information we might be able to say more accurately whta could be the reason of these system. To axtent agent based mdeol to be able to use for single particle ad hense show resluts for it directly. one can check in ecperimently syestem erk signalling behaviour and exact recycling time? 
+
+#### Techniques, Assays, and Analysis Pipeline
+* Mathematical/Computational Framework (What equations or computational approach do they use? (e.g., reaction-diffusion PDEs, agent-based model, phase field method), Key parameters or variables in the model, Any approximations or simplifications they made)
+
+Corse grain model for receptor legand dyncamis with endocytosis recycling and assumed non linear erk siganling for single cell and response inpired from it to use in agend based modeling for cell clusetr. Key parametrs are chemical gradint, erk respnse, for agent based in addition are size, on and off rate which connect to the chemottracting cell and chemorepulsive cell. they are using cell to to be a 2d circular system whose boundaryis where fource bance is happening. In additionthey have used this idea that erk response after endocytosis is non linear. 
+
+They are woring on in vitro, cll cells and their receptor ccr7 and cxcr4 in the presnece of the ccl19/21 and cxcl12. They have looked at other type of the leucocytes like granta cells and ...
+key meaurements was the fmi plots fthe single cell an dthe cluster in the for wild type showing ht echemoreulsion and not showing it when endocytosis is knowked off. They also look ed at the tagged concetration of cclr7 and ccl19 insde the single cell and the cluster cell. which helkp us connect he expression in the model.
+Some sort of control they have used is leucyfer in comparision to the supression of other endocytotis agent like clathrin, dyn-2 and dynamin. 
+
+old paper(They used a coarse-grained mechanochemical model of a cluster represented as a 2D circular disk, where only the boundary cells sense the chemokine gradient. The ERK signaling activity in these boundary cells generates traction forces that collectively drive cluster migration in response to a linear chemokine gradient. The key parameters of the model are: cluster size, chemokine concentration profile, boundary mechanical response, and the resulting traction forces. The model explains that within a cluster, noise is averaged out, making collective sensing more accurate. Because only boundary cells generate traction, their forces add up, producing a net force pointing toward higher chemokine concentration. Receptor internalization weakens the leader cell’s traction, causing it to eventually lose polarity and drop back into the cluster.)
+
+They studied CLL cancer cells in vitro under varying chemokine concentrations. Cell migration was observed in microfluidic devices using wide-field (brightfield) microscopy. To visualize receptor and ligand distributions under fluorescence, they used wide-field fluorescence microscopy, while spinning-disk confocal microscopy was used for high-resolution receptor imaging and 3D z-stack reconstruction. Flow cytometry was used to quantify CCR7 receptor levels on the cell surface.
+
+Using brightfield/wide-field imaging, they found that at low chemokine gradients, clusters sense the gradient more effectively than single cells. At high gradients, single cells undergo chemorepulsion, whereas large clusters remain chemoattractive. Using the control Luc (luciferase siRNA) and inhibitors Dyn-2, Dynasore, and clathrin siRNA, they showed that CCR7 endocytosis is clathrin-mediated and dynamin-dependent, because chemorepulsion disappeared when either clathrin or dynamin function was inhibited. Flow cytometry showed that CCR7 surface levels drop to about 50% in 30 minutes under normal conditions, but this drop is blocked in inhibitor-treated cells.
+
+Finally, velocity measurements revealed that average cell speed remains constant across conditions, although the Forward Migration Index (FMI) varies with gradient strength and cluster size. -->
+<h2 id="biological-background"><strong>Biological Background</strong></h2>
+
+<p>Chronic Lymphocytic Leukemia (CLL) is a cancer of the blood and bone marrow that specifically affects <strong>B lymphocytes</strong>. It is a slow-progressing disease in which B cells become abnormal (malignant), survive longer than normal, and accumulate in the <strong>bone marrow, lymph nodes, blood, and spleen</strong>.</p>
+
+<p>Understanding how these malignant B cells sense their environment is essential for designing therapeutic strategies. Two major chemokine receptors—<strong>CCR7</strong> and <strong>CXCR4</strong>—play a crucial role in guiding these cells through tissues. Therefore, researchers study how these receptors internalize, recycle, and signal in response to chemokine gradients such as <strong>CCL19/CCL21</strong> (ligands for CCR7) and <strong>CXCL12</strong> (ligand for CXCR4).</p>
+
+<hr />
+
+<h2 id="central-question-and-main-findings"><strong>Central Question and Main Findings</strong></h2>
+
+<p><strong>Why do single CLL cells show chemorepulsion at high chemokine gradients, while clusters of CLL cells exhibit chemoattraction under the same conditions?</strong><em>**</em></p>
+
+<p>This study combines <strong>experiments</strong>, <strong>coarse-grained mechanochemical modeling</strong>, and <strong>agent-based simulations</strong> to answer this question.</p>
+
+<h3 id="key-findings"><strong>Key Findings</strong></h3>
+
 <ol>
-  <li>the migration of cells under a chemical gradient (CCL19),</li>
-  <li>the expression of the tagged receptor CCR7 in the presence of tagged chemokines (CCL19/CCL21), and</li>
-  <li>the receptor expression in leader cells to determine whether it differs from core cells.</li>
+  <li>
+    <p><strong>Single-cell chemorepulsion</strong> occurs at high chemokine concentrations because:</p>
+
+    <ul>
+      <li>
+        <p>Front–back asymmetry in <strong>CCR7 endocytosis</strong> is disrupted.</p>
+      </li>
+      <li>
+        <p>Nonlinear <strong>ERK signaling</strong> reduces receptor availability at the front.</p>
+      </li>
+      <li>
+        <p>The cell effectively loses its ability to sense the gradient at the leading edge.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Clusters do not chemorepel</strong> at high gradients because:</p>
+
+    <ul>
+      <li>
+        <p>Boundary cells undergo endocytosis, but <strong>core cells continuously replace</strong> them at the front.</p>
+      </li>
+      <li>
+        <p>This maintains fresh, receptor-rich cells at the leading edge.</p>
+      </li>
+      <li>
+        <p>Collective sensing averages out noise, producing robust <strong>chemoattraction</strong>.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Cluster size is a critical parameter</strong>:</p>
+
+    <p>Small clusters may still chemorepel, but <strong>large clusters always chemoattract</strong> because of this internal “cell turnover” at the boundary.</p>
+  </li>
 </ol>
 
-<p>The authors found that lymphocytes can chemotax as clusters and that their chemotactic efficiency is higher than that of single cells. In steep gradients, single cells show chemorepulsion, whereas follower cells within a cluster suppress CCL19-induced repulsion, move toward the center, and allow another cell to become the new leader. This mechanism keeps the cluster chemoattractive even when individual cells would show chemorepulsion to CCL19. They also found that clusters switch between different states random, rotational, and translational depending on cluster size and gradient strength.</p>
-
-<!-- #### **Mechanistic Insights and Broader Impact** -->
-<h4 id="broader-impact">Broader Impact</h4>
-<p>This result matters because it highlights a fundamental difference in how single cells and clusters interpret strong chemokine gradients. Single CLL cells undergo chemorepulsion at high gradient strength, which may represent a protective cue that tells them they are close to the lymph node and should stop moving. Large clusters, however, do not sense this “stop” signal and continue migrating, suggesting a possible reason why they are more invasive and able to occupy tissue niches aggressively. Understanding this distinction connects to broader ideas in chemotaxis, tissue invasion, and how collective behaviors can override single-cell regulatory mechanisms. At the same time, several open questions remain, including the need for continuous CCR7 surface measurements over the full one-hour period, clearer analysis of the timing of endocytosis versus recycling, and a better understanding of how receptor internalization in leader cells translates into specific ERK responses that regulate cluster decision-making.</p>
-
-<h4 id="techniques-assays-and-analysis-pipeline"><strong>Techniques, Assays, and Analysis Pipeline</strong></h4>
-
-<div class="figure right medium">
-  <img src="https://www.cell.com/cms/10.1016/j.cub.2014.11.030/asset/dd1c33b0-7cd5-463e-bbff-6632228b40c1/main.assets/gr4.jpg" />
-  <figcaption>
-   Endocytosis-driven CCR7 loss in leader cells triggers leader turnover, enabling clusters to maintain forward migration and resist chemorepulsion under steep CCL19 gradients.
-    Source: Haeger et al., <em>Current Biology</em> (2015). 
-  </figcaption>
-</div>
-<p>They used a coarse-grained mechanochemical model of a cluster represented as a 2D circular disk, where only the boundary cells sense the chemokine gradient. The ERK signaling activity in these boundary cells generates traction forces that collectively drive cluster migration in response to a linear chemokine gradient. The key parameters of the model are: cluster size, chemokine concentration profile, boundary mechanical response, and the resulting traction forces. The model explains that within a cluster, noise is averaged out, making collective sensing more accurate. Because only boundary cells generate traction, their forces add up, producing a net force pointing toward higher chemokine concentration. Receptor internalization weakens the leader cell’s traction, causing it to eventually lose polarity and drop back into the cluster.</p>
-
-<p>They studied CLL cancer cells in vitro under varying chemokine concentrations. Cell migration was observed in microfluidic devices using wide-field (brightfield) microscopy. To visualize receptor and ligand distributions under fluorescence, they used wide-field fluorescence microscopy, while spinning-disk confocal microscopy was used for high-resolution receptor imaging and 3D z-stack reconstruction. Flow cytometry was used to quantify CCR7 receptor levels on the cell surface.</p>
-
-<p>Using brightfield/wide-field imaging, they found that at low chemokine gradients, clusters sense the gradient more effectively than single cells. At high gradients, single cells undergo chemorepulsion, whereas large clusters remain chemoattractive. Using the control Luc (luciferase siRNA) and inhibitors Dyn-2, Dynasore, and clathrin siRNA, they showed that CCR7 endocytosis is clathrin-mediated and dynamin-dependent, because chemorepulsion disappeared when either clathrin or dynamin function was inhibited. Flow cytometry showed that CCR7 surface levels drop to about 50% in 30 minutes under normal conditions, but this drop is blocked in inhibitor-treated cells.</p>
-
-<p>Finally, velocity measurements revealed that average cell speed remains constant across conditions, although the Forward Migration Index (FMI) varies with gradient strength and cluster size.</p>
-
-<div style="clear: both;"></div>
+<p>Thus, <strong>size, endocytosis, and ERK signaling dynamics</strong> together determine whether malignant lymphocytes move toward or away from a chemokine source.</p>
 
 <hr />
-<h4 id="reflections">Reflections</h4>
-<p>I think this result may help explain why large CLL clusters behave so invasively in tissues. Unlike single cells, clusters don’t seem to respond to very high chemokine concentrations by stopping or reversing, and this continued migration appears linked to how CCR7 internalization works at the front. The paper shows that CCR7 endocytosis is clathrin-mediated and dynamin-dependent, based on the effects of Dyn-2, dynasore, and clathrin siRNA. But some important measurements are missing, especially continuous CCR7 surface levels over the full hour and the timing of recycling back to the membrane. Understanding the complete endocytic cycle from internalization to recycling and its connection to ERK response and would give a much clearer mechanistic picture. How exactly they measured CCR7 at the 30-minute point and whether they performed ligand washout or any recycling analysis?</p>
 
-<hr />
-<h4 id="resources">Resources</h4>
+<h2 id="mechanistic-insights-and-broader-impact"><strong>Mechanistic Insights and Broader Impact</strong></h2>
+
+<h3 id="why-this-matters"><strong>Why This Matters</strong></h3>
+
+<p>Chemorepulsion is a natural regulatory mechanism in immune cells. It prevents over-accumulation of cells in regions with extremely high chemokine concentrations and helps maintain tissue homeostasis.</p>
+
+<p>However, in cancer:</p>
+
 <ul>
-  <li>[1] <a href="https://www.youtube.com/watch?v=EQXPJ7eeesQ&amp;t=218s">Flow Cytometry Animation</a></li>
-  <li>[2] <a href="https://youtu.be/zwBZ3Xd8qcc?si=qaTDfSmsOt6-AO68">spinning disk confocal microscope</a></li>
-  <li>[3] <a href="https://doi.org/10.1111/febs.14466">A guide to chemokines and their receptors</a></li>
+  <li>
+    <p>Dysregulated endocytosis,</p>
+  </li>
+  <li>
+    <p>Abnormal ERK kinetics, and</p>
+  </li>
+  <li>
+    <p>Altered receptor recycling</p>
+  </li>
+</ul>
+
+<p>can cause malignant cells to <strong>sense gradients incorrectly</strong>, contributing to improper migration and potentially aiding metastasis or lymph-node infiltration.</p>
+
+<p>This work highlights a broader principle important in <strong>chemotaxis, pattern formation, and collective behavior</strong>:</p>
+
+<blockquote>
+  <p><em>The same signal can produce opposite outcomes depending on system size and internal dynamics.</em>__</p>
+</blockquote>
+
+<h3 id="limitations-and-open-questions"><strong>Limitations and Open Questions</strong></h3>
+
+<ul>
+  <li>
+    <p>The <em>exact</em> biochemical form of nonlinear ERK signaling is not measured; the model assumes a simplified nonlinear function.</p>
+  </li>
+  <li>
+    <p>Endocytosis and recycling timescales for CLL need more precise measurements.</p>
+  </li>
+  <li>
+    <p>More detailed single-cell signaling data (ERK dynamics, CCR7 turnover) would enable better quantitative matching.</p>
+  </li>
+  <li>
+    <p>Future work could extend the agent-based model to describe <strong>individual cell behavior</strong> more directly, not only clusters.</p>
+  </li>
 </ul>
 
 <hr />
-<h3 id="citation">Citation</h3>
-<p><strong>Authors</strong>: Gema Malet-Engra, Weimiao Yu, Amanda Oldani, Javier Rey-Barroso, Nir S. Gov, Giorgio Scita, and Loı ̈c Dupre
-<strong>Published in</strong>: Current Biology, January 2015
-<strong>DOI/Link</strong>: <a href="https://doi.org/10.1016/j.cub.2014.11.030">10.1016/j.cub.2014.11.030</a></p>
+
+<h2 id="techniques-assays-and-analysis-pipeline"><strong>Techniques, Assays, and Analysis Pipeline</strong></h2>
+
+<h3 id="mathematical--computational-framework"><strong>Mathematical / Computational Framework</strong></h3>
+
+<ol>
+  <li>
+    <p><strong>Coarse-Grained Single-Cell Model</strong><em>**</em></p>
+
+    <ul>
+      <li>
+        <p>Describes receptor–ligand dynamics with endocytosis, recycling, and a nonlinear ERK response.</p>
+      </li>
+      <li>
+        <p>Captures how high ligand concentrations disrupt front–back receptor asymmetry.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Agent-Based Cluster Model</strong><em>**</em></p>
+
+    <ul>
+      <li>
+        <p>Cells are arranged in a 2D circular cluster.</p>
+      </li>
+      <li>
+        <p>Only <strong>boundary cells</strong> sense the gradient and generate traction forces.</p>
+      </li>
+      <li>
+        <p>Traction is regulated by ERK activity.</p>
+      </li>
+      <li>
+        <p>Key parameters:</p>
+
+        <ul>
+          <li>
+            <p>cluster size</p>
+          </li>
+          <li>
+            <p>chemokine gradient</p>
+          </li>
+          <li>
+            <p>ERK response</p>
+          </li>
+          <li>
+            <p>on/off rates for directional bias</p>
+          </li>
+          <li>
+            <p>boundary mechanical constraints</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>This model shows that <strong>core cell turnover</strong> maintains a fresh supply of receptor-rich cells at the front, allowing persistent chemoattraction at high gradients.</p>
+
+<hr />
+
+<h2 id="experimental-techniques"><strong>Experimental Techniques</strong></h2>
+
+<ul>
+  <li>
+    <p><strong>Brightfield / wide-field microscopy</strong> to track migration of single cells and clusters.</p>
+  </li>
+  <li>
+    <p><strong>Flow cytometry</strong> to quantify CCR7 surface levels before and after chemokine exposure.</p>
+  </li>
+  <li>
+    <p><strong>Spinning-disk confocal microscopy</strong> for high-resolution receptor imaging and ligand uptake.</p>
+  </li>
+  <li>
+    <p><strong>Fluorescent tagging</strong> of both CCR7 and CCL19 to visualize receptor–ligand distributions.</p>
+  </li>
+  <li>
+    <p><strong>Pharmacological inhibition</strong> (Dyn-2, Dynasore, clathrin siRNA) to block endocytosis:</p>
+
+    <ul>
+      <li>Blocking endocytosis <strong>abolished chemorepulsion</strong>, confirming its role.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Luciferase siRNA</strong> served as a control.</p>
+  </li>
+</ul>
+
+<h3 id="key-measurements"><strong>Key Measurements</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>FMI plots</strong> (Forward Migration Index) showed:</p>
+
+    <ul>
+      <li>
+        <p>Single-cell chemorepulsion at high gradients.</p>
+      </li>
+      <li>
+        <p>Cluster chemoattraction in the same conditions.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>CCR7 internalization</strong>:</p>
+
+    <ul>
+      <li>
+        <p>~50% drop in surface CCR7 within 30 minutes.</p>
+      </li>
+      <li>
+        <p>This drop is prevented when endocytosis is inhibited.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Velocity</strong>:</p>
+
+    <ul>
+      <li>Mean speed remains essentially constant; <em>directionality</em> changes, not speed.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="final-cleaned-summary-short-version"><strong>Final Cleaned Summary (Short Version)</strong></h2>
+
+<p>This paper explains why <strong>single CLL cells chemorepel</strong> at high chemokine concentrations while <strong>large clusters chemoattract</strong>. Nonlinear ERK-dependent endocytosis disrupts gradient sensing in single cells, leading to chemorepulsion. In clusters, continuous replacement of boundary cells by core cells restores receptor availability at the leading edge, enabling robust chemoattraction. Through a combination of experiments, coarse-grained modeling, and agent-based simulations, the study identifies <strong>endocytosis, ERK signaling, and cluster size</strong> as the key determinants of migratory fate.</p>
+
+<div style="clear: both;"></div>
+<hr />
+
+<h3 id="-reflection">💭 Reflection</h3>
+<ul>
+  <li>What helped you remember this system?</li>
+  <li>What image or metaphor comes to mind?
+    <blockquote>
+      <p><em>Feels like two invisible hands steering the same cell in opposite ways.</em></p>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="-citation">📚 Citation</h3>
+<p><strong>Authors:</strong> [Names]<br />
+<strong>Journal:</strong> [Name, Year]<br />
+<strong>DOI:</strong> <a href="https://doi.org/...">https://doi.org/…</a></p>
 
     </div>
   </article>
@@ -156,17 +371,17 @@ The authors used primary CLL cells and focused on two chemokine receptors and th
   <!-- Post navigation -->
   <nav class="post-nav">
     
-      <a class="icon-nav" href="/blog/2025/11/23/ReceptorFate/" title="Previous post">←</a>
+      <a class="icon-nav" href="/blog/2025/11/24/week-papers/" title="Previous post">←</a>
     
     
-      <a class="icon-nav" href="/blog/2025/11/24/week-papers/" title="Next post">→</a>
+      <a class="icon-nav" href="/blog/2025/11/25/ccr7SensorAndSink/" title="Next post">→</a>
     
   </nav>
 
   <!-- Share buttons -->
   <div class="share-buttons">
     <!-- X -->
-    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F24%2FChemorepulsion%2F&text=Paper+Summary%3A+Collective+Cell+Motility+Promotes+Chemotactic+Prowess+and+Resistance+to+Chemorepulsion"
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F24%2FChemorepulsion%2F&text=Weekly+Paper+List"
        target="_blank" rel="noopener" class="share-btn" aria-label="Share on X">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
@@ -180,7 +395,7 @@ The authors used primary CLL cells and focused on two chemokine receptors and th
       </svg>
     </a>
     <!-- Email -->
-    <a href="mailto:?subject=Paper Summary: Collective Cell Motility Promotes Chemotactic Prowess and Resistance to Chemorepulsion&body=https://sanoriamonika.github.io/blog/2025/11/24/Chemorepulsion/"
+    <a href="mailto:?subject=Weekly Paper List&body=https://sanoriamonika.github.io/blog/2025/11/24/Chemorepulsion/"
        class="share-btn" aria-label="Share via Email">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
         <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
