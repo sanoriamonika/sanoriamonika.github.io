@@ -24,9 +24,10 @@
 
     /* Translation dropdown menu */
     #translate-menu {
-      position: fixed;
-      top: 60px;
-      right: 20px;
+      position: absolute;
+      top: 100%;
+      right: -10px;
+      margin-top: 8px;
       background: white;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -162,29 +163,31 @@ function googleTranslateElementInit() {
       <a href="/cv.html" data-nav="/cv.html">CV</a>
       <a href="/contact.html" data-nav="/contact.html">Contact</a>
 
-      <button id="translate-button" class="nav-lang share-btn" title="Change language" aria-label="Translate page">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-          <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-        </svg>
-      </button>
-      <div id="translate-menu">
-        <div class="loading">Loading languages...</div>
-        <div id="google_translate_element"></div>
-        <select id="manual-translate-select">
-          <option value="">Select Language</option>
-          <option value="en">English</option>
-          <option value="es">Spanish</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="it">Italian</option>
-          <option value="pt">Portuguese</option>
-          <option value="zh-CN">Chinese</option>
-          <option value="ja">Japanese</option>
-          <option value="ko">Korean</option>
-          <option value="hi">Hindi</option>
-          <option value="ar">Arabic</option>
-          <option value="ru">Russian</option>
-        </select>
+      <div style="position: relative; display: inline-block;">
+        <button id="translate-button" class="nav-lang share-btn" title="Change language" aria-label="Translate page">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+          </svg>
+        </button>
+        <div id="translate-menu">
+          <div class="loading">Loading languages...</div>
+          <div id="google_translate_element"></div>
+          <select id="manual-translate-select">
+            <option value="">Select Language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="pt">Portuguese</option>
+            <option value="zh-CN">Chinese</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="hi">Hindi</option>
+            <option value="ar">Arabic</option>
+            <option value="ru">Russian</option>
+          </select>
+        </div>
       </div>
     </nav>
   </div>
