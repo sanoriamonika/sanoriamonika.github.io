@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters — Monika Sanoria, PhD</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- HIDE HEADER WHEN PRINTING -->
+  <style>
+    @media print {
+      .post-header {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <!-- Google Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- MathJax Configuration -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+
+      <a id="translate-button" class="nav-lang" title="Change language">🌐</a>
+      <div id="translate-menu">
+        <div id="google_translate_element"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 class="post-title" itemprop="headline">Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters</h2>
+
+      
+
+      
+      <p class="post-meta">
+        <span class="meta-date">January 12, 2026</span>
+        
+          <span class="meta-divider"> • </span>
+          <span class="meta-updated">Updated January 14, 2026</span>
+        
+      </p>
+      
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      <p>Why do cells move in the first place? What triggers movement? At the most basic level, it comes down to survival. Cells sense their environment through chemical signals that tell them where nutrients are, where danger lies, and where they need to go. They then use physical forces—such as contraction and adhesion—to generate movement.</p>
+<div class="figure right medium">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Chemotaxis_simple_diagram.svg" alt="Simple diagram showing a cell moving along a chemical gradient" />
+  <figcaption>
+    Cells move by sensing chemical signals in their environment, a process known as chemotaxis. 
+    The cell detects higher signal concentrations and generates forces such as contraction and adhesion to move in that direction.  
+    Source: Wikimedia Commons (CC BY-SA 3.0).  
+    <a href="https://commons.wikimedia.org/wiki/File:Chemotaxis_simple_diagram.svg" target="_blank">
+      Reference link
+    </a>
+  </figcaption>
+</div>
+
+<p>Cell movement is essential for normal biological function. Cells move collectively to transport material, perform specialized tasks, and maintain tissue integrity. However, these same cellular programs can become harmful when they are dysregulated. Some cells evade normal death mechanisms and continue to proliferate uncontrollably, sometimes remaining localized and forming tumors, and in other cases acquiring invasive migratory behavior. When these processes disrupt tissue organization and harm the organism as a whole, we recognize this as cancer. While such traits may be advantageous at the level of individual cells, they disturb balance and function at the level of the entire body.</p>
+<div class="figure right medium">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Collective_cell_migration_wound_healing.svg" alt="Illustration of collective cell migration during wound healing" />
+  <figcaption>
+    In healthy biological systems, cells often move together as a coordinated group.
+    Collective migration plays a key role in wound healing, tissue maintenance, and normal development.  
+    Source: Wikimedia Commons (CC BY 4.0).  
+    <a href="https://commons.wikimedia.org/wiki/File:Collective_cell_migration_wound_healing.svg" target="_blank">
+      Reference link
+    </a>
+  </figcaption>
+</div>
+
+<p><!-- _Understanding this transition requires studying collective movement—specifically, what changes when cells come together and behave as a group._ **While localized tumors are often easier to treat, migratory cancer cells—and especially migrating clusters—pose a greater challenge because they can spread and establish new tumors.** --></p>
+
+<div class="figure right medium">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Metastasis_diagram_simple.svg" alt="Diagram showing localized tumor versus metastatic cancer spread" />
+  <figcaption>
+    Cancer can remain localized, forming a tumor in one place, or become migratory and spread to distant organs.
+    Migratory (metastatic) cancer is more dangerous because it can establish new tumors throughout the body.  
+    Source: Wikimedia Commons (CC BY-SA 3.0).  
+    <a href="https://commons.wikimedia.org/wiki/File:Metastasis_diagram_simple.svg" target="_blank">
+      Reference link
+    </a>
+  </figcaption>
+</div>
+<p>To understand how this transition occurs, it is important to study collective movement—specifically, what changes when cells come together and behave as a group. Localized tumors, where cells remain confined, are generally easier to treat. In contrast, migratory cancer cells are more dangerous because they can spread to new locations and initiate secondary tumors. Even within migratory cancers, important differences exist: single migrating cells are often more vulnerable to treatment than their clustered counterparts.</p>
+
+<div class="figure right medium">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Circulating_tumor_cell_clusters.svg" alt="Illustration comparing single circulating tumor cells and clusters" />
+  <figcaption>
+    Cancer cells can migrate as single cells or as clusters.
+    Clusters behave differently from individual cells: they can protect each other, respond differently to signals, and often survive better, making them harder to treat.  
+    Source: Wikimedia Commons (CC BY 4.0).  
+    <a href="https://commons.wikimedia.org/wiki/File:Circulating_tumor_cell_clusters.svg" target="_blank">
+      Reference link
+    </a>
+  </figcaption>
+</div>
+<p>Cell clusters exhibit behaviors that are fundamentally different from those of single cells, which is one reason they are much harder to treat. Collective migration can provide mechanical protection, altered signal sensing, and enhanced survival compared to isolated cells.</p>
+
+<p>In this work, we focus specifically on the behavior of migratory cancer cell clusters to gain a clearer understanding of how they move and respond to chemical cues. Experiments were performed using human cells exposed to gradients of CCL19, a chemokine present in lymph nodes. We find that migration depends strongly on cluster size: small clusters behave differently from larger ones, and there exists a critical size at which their dynamics change. The strength of the chemical gradient also plays a key role.</p>
+
+<p>Overall, our goal is to understand the collective behavior of migratory clusters so that we can make more informed decisions about how to interpret and potentially control their behavior.</p>
+
+<hr />
+<h3 id="citation">Citation</h3>
+<p><strong>Authors</strong>: Monika Sanoria, Gema Malet-Engra, Giorgio Scita, Nir Gov and Ajay Gopinathan
+<strong>Published in</strong>: PRX Life <strong>4</strong>, 013004 – <strong>Published 9 January, 2026</strong> 
+<strong>DOI/Link</strong>: <a href="https://doi.org/10.1103/fxvc-cxy8">10.1103/fxvc-cxy8</a></p>
+
+
+    </div>
+  </article>
+
+
+  <!-- SHARE BUTTONS -->
+  <div class="share-buttons">
+
+    <!-- Copy link -->
+    <button id="copy-link-btn" class="share-btn" aria-label="Copy link" title="Copy link">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 
+          0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 
+          2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+    </button>
+
+    <!-- X -->
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F&text=Paper+Summary%3A+Chemotaxis-driven+Instabilities+govern+size%2C+shape+and+migration+efficiency+of+multicellular+clusters"
+       target="_blank" rel="noopener" class="share-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
+      </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F"
+       target="_blank" class="share-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1C.9 6.1-.2 5 .8 3.5c1.5 0 2.58 1.1 2.58 2.6zM.4 24h4V7.9h-4V24zm7.6 
+        -16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2c4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3c-2.6 0-3 
+        2-3 4.1V24h-4V7.9z"/>
+      </svg>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:?subject=Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters&body=https://sanoriamonika.github.io/blog/2026/01/12/MyPaper/"
+       class="share-btn mail">
+      <span class="material-symbols-outlined">mail</span>
+    </a>
+
+     <!-- WhatsApp -->
+    <a href="https://wa.me/?text=Paper+Summary%3A+Chemotaxis-driven+Instabilities+govern+size%2C+shape+and+migration+efficiency+of+multicellular+clusters%20https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F"
+       target="_blank" rel="noopener" class="share-btn share-btn-whatsapp" aria-label="Share on WhatsApp" title="Share on WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
+    <!-- PDF Print -->
+    <button onclick="window.print()" class="share-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M5 20h14v-2H5v2zM11 4v9.17L8.41 10.6 7 12l5 5 5-5-1.41-1.4L13 
+        13.17V4h-2z"/>
+      </svg>
+    </button>
+
+  </div>
+  <!-- Post navigation -->
+  <nav class="post-nav">
+    
+      <a class="icon-nav" href="/blog/2025/12/10/EndocytosisChemorepulsion/" title="Previous post">←</a>
+    
+    
+  </nav>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // COPY BUTTON
+  const copyLinkBtn = document.getElementById("copy-link-btn");
+  if (copyLinkBtn) {
+    copyLinkBtn.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(window.location.href);
+    });
+  }
+
+  // PRINT HEADER
+  let printHeader = null;
+
+  window.addEventListener('beforeprint', function() {
+    const title = document.querySelector('.post-title');
+    const postContent = document.querySelector('.post-content');
+
+    if (!title || !postContent) return;
+
+    printHeader = document.createElement('div');
+    printHeader.id = 'print-header-inject';
+
+    const titleClone = document.createElement('h1');
+    titleClone.textContent = title.textContent;
+    titleClone.style.cssText = 'font-size:28pt;font-weight:bold;margin:0 0 10pt 0;color:black;';
+    printHeader.appendChild(titleClone);
+
+
+    // Spacer after header
+    const spacer = document.createElement('div');
+    spacer.style.cssText = 'height: 16pt;';
+    printHeader.appendChild(spacer);
+
+    postContent.insertBefore(printHeader, postContent.firstChild);
+  });
+
+  window.addEventListener('afterprint', function() {
+    if (printHeader && printHeader.parentNode) {
+      printHeader.parentNode.removeChild(printHeader);
+    }
+  });
+
+});
+</script>
+
+</body>
+</html>
+
+
