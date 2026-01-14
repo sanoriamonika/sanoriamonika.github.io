@@ -16,10 +16,19 @@
     }
 
     /* Translation button - uses share-btn styling */
-    .nav-lang.share-btn {
-      background: none;
-      border: none;
-      margin-left: 8px;
+    #translate-button.share-btn {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    #translate-button.share-btn svg {
+      color: var(--link);
+      fill: var(--link);
+    }
+
+    #translate-button.share-btn:hover svg {
+      filter: brightness(0.8);
     }
 
     /* Translation dropdown menu */
@@ -140,7 +149,7 @@ MathJax = {
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
-    includedLanguages: 'en,es,fr,de,it,pt,zh-CN,ja,ko,hi,ar,ru',
+    includedLanguages: 'en,hi,pa,mr,es,de,fr,it,pt,zh-CN,ja,ko',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
   }, 'google_translate_element');
 }
@@ -162,33 +171,6 @@ function googleTranslateElementInit() {
       <a href="/blog/" data-nav="/blog/">Blog</a>
       <a href="/cv.html" data-nav="/cv.html">CV</a>
       <a href="/contact.html" data-nav="/contact.html">Contact</a>
-
-      <div style="position: relative; display: inline-block;">
-        <button id="translate-button" class="nav-lang share-btn" title="Change language" aria-label="Translate page">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-          </svg>
-        </button>
-        <div id="translate-menu">
-          <div class="loading">Loading languages...</div>
-          <div id="google_translate_element"></div>
-          <select id="manual-translate-select">
-            <option value="">Select Language</option>
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="it">Italian</option>
-            <option value="pt">Portuguese</option>
-            <option value="zh-CN">Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="ko">Korean</option>
-            <option value="hi">Hindi</option>
-            <option value="ar">Arabic</option>
-            <option value="ru">Russian</option>
-          </select>
-        </div>
-      </div>
     </nav>
   </div>
 </header>
@@ -267,56 +249,86 @@ function googleTranslateElementInit() {
 
 
   <!-- SHARE BUTTONS -->
-  <div class="share-buttons">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem;">
+    <div class="share-buttons" style="margin: 0;">
 
-    <!-- Copy link -->
-    <button id="copy-link-btn" class="share-btn" aria-label="Copy link" title="Copy link">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 
-          0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 
-          2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-      </svg>
-    </button>
+      <!-- Copy link -->
+      <button id="copy-link-btn" class="share-btn" aria-label="Copy link" title="Copy link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 
+            0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 
+            2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+        </svg>
+      </button>
 
-    <!-- X -->
-    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F&text=Paper+Summary%3A+Opposite+Fate+of+Endocytosed+CCR7+and+Its+Ligands%3A+Recycling+versus+Degradation"
-       target="_blank" rel="noopener" class="share-btn">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
-      </svg>
-    </a>
+      <!-- X -->
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F&text=Paper+Summary%3A+Opposite+Fate+of+Endocytosed+CCR7+and+Its+Ligands%3A+Recycling+versus+Degradation"
+         target="_blank" rel="noopener" class="share-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
+        </svg>
+      </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F"
-       target="_blank" class="share-btn">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1C.9 6.1-.2 5 .8 3.5c1.5 0 2.58 1.1 2.58 2.6zM.4 24h4V7.9h-4V24zm7.6 
-        -16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2c4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3c-2.6 0-3 
-        2-3 4.1V24h-4V7.9z"/>
-      </svg>
-    </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F"
+         target="_blank" class="share-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1C.9 6.1-.2 5 .8 3.5c1.5 0 2.58 1.1 2.58 2.6zM.4 24h4V7.9h-4V24zm7.6 
+          -16.1h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2c4.3 0 5.1 2.8 5.1 6.4V24h-4v-7.9c0-1.9 0-4.3-2.6-4.3c-2.6 0-3 
+          2-3 4.1V24h-4V7.9z"/>
+        </svg>
+      </a>
 
-    <!-- Email -->
-    <a href="mailto:?subject=Paper Summary: Opposite Fate of Endocytosed CCR7 and Its Ligands: Recycling versus Degradation&body=https://sanoriamonika.github.io/blog/2025/11/23/ReceptorFate/"
-       class="share-btn mail">
-      <span class="material-symbols-outlined">mail</span>
-    </a>
+      <!-- Email -->
+      <a href="mailto:?subject=Paper Summary: Opposite Fate of Endocytosed CCR7 and Its Ligands: Recycling versus Degradation&body=https://sanoriamonika.github.io/blog/2025/11/23/ReceptorFate/"
+         class="share-btn mail">
+        <span class="material-symbols-outlined">mail</span>
+      </a>
 
-     <!-- WhatsApp -->
-    <a href="https://wa.me/?text=Paper+Summary%3A+Opposite+Fate+of+Endocytosed+CCR7+and+Its+Ligands%3A+Recycling+versus+Degradation%20https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F"
-       target="_blank" rel="noopener" class="share-btn share-btn-whatsapp" aria-label="Share on WhatsApp" title="Share on WhatsApp">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-      </svg>
-    </a>
-    <!-- PDF Print -->
-    <button onclick="window.print()" class="share-btn">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M5 20h14v-2H5v2zM11 4v9.17L8.41 10.6 7 12l5 5 5-5-1.41-1.4L13 
-        13.17V4h-2z"/>
-      </svg>
-    </button>
+       <!-- WhatsApp -->
+      <a href="https://wa.me/?text=Paper+Summary%3A+Opposite+Fate+of+Endocytosed+CCR7+and+Its+Ligands%3A+Recycling+versus+Degradation%20https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2025%2F11%2F23%2FReceptorFate%2F"
+         target="_blank" rel="noopener" class="share-btn share-btn-whatsapp" aria-label="Share on WhatsApp" title="Share on WhatsApp">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+      <!-- PDF Print -->
+      <button onclick="window.print()" class="share-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M5 20h14v-2H5v2zM11 4v9.17L8.41 10.6 7 12l5 5 5-5-1.41-1.4L13 
+          13.17V4h-2z"/>
+        </svg>
+      </button>
 
+    </div>
+
+    <!-- Translate button (extreme right, separate from share buttons) -->
+    <div style="position: relative;">
+      <button id="translate-button" class="share-btn" title="Change language" aria-label="Translate page">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+        </svg>
+      </button>
+      <div id="translate-menu">
+        <div class="loading">Loading languages...</div>
+        <div id="google_translate_element"></div>
+        <select id="manual-translate-select">
+          <option value="">Select Language</option>
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="pa">Punjabi</option>
+          <option value="mr">Marathi</option>
+          <option value="es">Spanish</option>
+          <option value="de">German</option>
+          <option value="fr">French</option>
+          <option value="it">Italian</option>
+          <option value="pt">Portuguese</option>
+          <option value="zh-CN">Chinese</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+        </select>
+      </div>
+    </div>
   </div>
   <!-- Post navigation -->
   <nav class="post-nav">
