@@ -50,7 +50,33 @@
       display: block;
     }
 
+    /* Loading state */
+    #translate-menu .loading {
+      color: #666;
+      font-size: 14px;
+      padding: 8px;
+    }
+
     /* Style the Google Translate widget */
+    #google_translate_element {
+      min-height: 40px;
+    }
+
+    #google_translate_element .goog-te-gadget {
+      font-family: inherit !important;
+      font-size: 14px !important;
+    }
+
+    #google_translate_element select {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 14px;
+      cursor: pointer;
+      background: white;
+    }
+
     .goog-te-combo {
       padding: 8px;
       border: 1px solid #ddd;
@@ -62,10 +88,37 @@
 
     .goog-te-gadget {
       font-size: 0 !important;
+      line-height: 1 !important;
     }
 
     .goog-te-gadget > span {
       display: none !important;
+    }
+
+    .goog-te-gadget > div {
+      display: inline-block !important;
+    }
+
+    /* Hide the "Powered by" text */
+    .goog-te-gadget .goog-te-gadget-simple {
+      background-color: transparent !important;
+      border: none !important;
+      font-size: 14px !important;
+    }
+
+    .goog-te-gadget .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+      display: inline !important;
+    }
+
+    /* Alternative: Simple select if Google Translate fails */
+    #manual-translate-select {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
     }
 
     /* Position translate button container */
@@ -120,7 +173,23 @@ function googleTranslateElementInit() {
 
       <a id="translate-button" class="nav-lang" title="Change language">🌐</a>
       <div id="translate-menu">
+        <div class="loading">Loading languages...</div>
         <div id="google_translate_element"></div>
+        <select id="manual-translate-select">
+          <option value="">Select Language</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="it">Italian</option>
+          <option value="pt">Portuguese</option>
+          <option value="zh-CN">Chinese</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="hi">Hindi</option>
+          <option value="ar">Arabic</option>
+          <option value="ru">Russian</option>
+        </select>
       </div>
     </nav>
   </div>
@@ -2608,6 +2677,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // TRANSLATE MENU TOGGLE
   const translateBtn = document.getElementById("translate-button");
   const translateMenu = document.getElementById("translate-menu");
+  const loadingMsg = translateMenu.querySelector(".loading");
+  const manualSelect = document.getElementById("manual-translate-select");
   
   if (translateBtn && translateMenu) {
     translateBtn.addEventListener("click", function(e) {
@@ -2622,6 +2693,41 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // Check if Google Translate loaded successfully
+  let translateCheckInterval = setInterval(function() {
+    const googleWidget = document.querySelector('.goog-te-combo');
+    const googleGadget = document.querySelector('.goog-te-gadget-simple');
+    
+    if (googleWidget || googleGadget) {
+      // Google Translate loaded successfully
+      if (loadingMsg) loadingMsg.style.display = 'none';
+      clearInterval(translateCheckInterval);
+    }
+  }, 100);
+
+  // Fallback: Show manual select after 3 seconds if Google Translate didn't load
+  setTimeout(function() {
+    const googleWidget = document.querySelector('.goog-te-combo');
+    const googleGadget = document.querySelector('.goog-te-gadget-simple');
+    
+    if (!googleWidget && !googleGadget) {
+      if (loadingMsg) loadingMsg.textContent = 'Using fallback translator:';
+      if (manualSelect) manualSelect.style.display = 'block';
+      
+      // Manual translate function
+      manualSelect.addEventListener('change', function() {
+        const lang = this.value;
+        if (lang && lang !== 'en') {
+          window.location.href = 'https://translate.google.com/translate?sl=en&tl=' + lang + '&u=' + encodeURIComponent(window.location.href);
+        } else if (lang === 'en') {
+          // Remove any translation parameters
+          window.location.href = window.location.href.split('#')[0].split('?')[0];
+        }
+      });
+    }
+    clearInterval(translateCheckInterval);
+  }, 3000);
 
   // COPY BUTTON
   const copyLinkBtn = document.getElementById("copy-link-btn");
