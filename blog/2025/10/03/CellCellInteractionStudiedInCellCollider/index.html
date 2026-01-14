@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Summary: Learning the dynamics of cell–cell interactions in confined cell migration — Monika Sanoria, PhD</title>
+  <title>Paper Summary: Learning the dynamics of cell–cell interactions in confined cell migration – Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -13,6 +13,64 @@
       .post-header {
         display: none !important;
       }
+    }
+
+    /* Translation button styling */
+    .nav-lang {
+      cursor: pointer;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .nav-lang:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    /* Translation dropdown menu */
+    #translate-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 8px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 12px;
+      display: none;
+      z-index: 1000;
+      min-width: 200px;
+    }
+
+    #translate-menu.show {
+      display: block;
+    }
+
+    /* Style the Google Translate widget */
+    .goog-te-combo {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .goog-te-gadget {
+      font-size: 0 !important;
+    }
+
+    .goog-te-gadget > span {
+      display: none !important;
+    }
+
+    /* Position translate button container */
+    nav {
+      position: relative;
     }
   </style>
 
@@ -31,6 +89,18 @@ MathJax = {
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,es,fr,de,it,pt,zh-CN,ja,ko,hi,ar,ru',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
 
@@ -251,7 +321,7 @@ MathJax = {
 
 <footer>
   <div class="container">
-    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+    © 2025 • Monika Sanoria – Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
 
@@ -259,6 +329,24 @@ MathJax = {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  // TRANSLATE MENU TOGGLE
+  const translateBtn = document.getElementById("translate-button");
+  const translateMenu = document.getElementById("translate-menu");
+  
+  if (translateBtn && translateMenu) {
+    translateBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      translateMenu.classList.toggle("show");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function(e) {
+      if (!translateBtn.contains(e.target) && !translateMenu.contains(e.target)) {
+        translateMenu.classList.remove("show");
+      }
+    });
+  }
 
   // COPY BUTTON
   const copyLinkBtn = document.getElementById("copy-link-btn");
@@ -305,5 +393,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
-
-
