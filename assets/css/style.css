@@ -934,6 +934,25 @@ body {
 }
 
 /* =============================== */
+/* FIGCAPTION CITATION LINK        */
+/* Keeps source links subtle within inline captions */
+/* =============================== */
+
+.figure figcaption a,
+.video-figure figcaption a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+.figure figcaption a:hover,
+.video-figure figcaption a:hover {
+  color: var(--link);
+  text-decoration-style: solid;
+}
+
+/* =============================== */
 /* DOUBLE-CLICK ZOOM FEATURE       */
 /* =============================== */
 
