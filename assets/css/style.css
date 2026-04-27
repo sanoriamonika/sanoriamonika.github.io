@@ -382,6 +382,7 @@ main.container td:nth-child(4) { width: 35% !important; }
   margin-top: 8px;
   line-height: 1.4;
   font-style: italic;
+  text-align: justify;
 }
 
 /* Auto-numbering for video captions */
@@ -530,6 +531,7 @@ main.container td:nth-child(4) { width: 35% !important; }
   margin-top: 0.4em;
   line-height: 1.4;
   font-style: italic;
+  text-align: justify;
 }
 
 /* Regular image figures auto-numbering */
