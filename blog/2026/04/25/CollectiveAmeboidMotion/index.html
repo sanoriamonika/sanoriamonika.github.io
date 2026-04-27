@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters – Monika Sanoria, PhD</title>
+  <title>Paper Summary: Cell clusters adopt a collective amoeboid mode of migration in confined nonadhesive environments – Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -178,53 +178,63 @@ function googleTranslateElementInit() {
 <main class="container" role="main">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h2 class="post-title" itemprop="headline">Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters</h2>
+      <h2 class="post-title" itemprop="headline">Paper Summary: Cell clusters adopt a collective amoeboid mode of migration in confined nonadhesive environments</h2>
 
       
 
       
       <p class="post-meta">
-        <span class="meta-date">January 12, 2026</span>
+        <span class="meta-date">April 25, 2026</span>
         
           <span class="meta-divider"> • </span>
-          <span class="meta-updated">Updated January 14, 2026</span>
+          <span class="meta-updated">Updated April 26, 2026</span>
         
       </p>
       
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      <p>Why do cells move in the first place? What triggers movement? At the most basic level, it comes down to survival. Cells sense their environment through chemical signals that tell them where nutrients are, where danger lies, and where they need to go. They then use physical forces—such as contraction and adhesion—to generate movement.</p>
-<div class="figure right">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Lamellipodium.png" alt="Microscopy image showing lamellipodia at the leading edge of a migrating cell" />
+      <p>Collective migration is everywhere starting from embryogenesis to wound healing and cancer progression. Authors suggest that cluster migration is usually thought of as adhesion-based, traction-force dependent migration, but here they explore whether another mechanism can exist.</p>
+
+<div class="figure right medium">
+  <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/10c0/9524834/371d2c1dfe8c/sciadv.abp8416-f5.jpg" alt="Myosin cortical flows and migration in cell cluster" />
   <figcaption>
-       Cells move by sensing chemical signals in their environment, a process known as chemotaxis. 
-    The cell detects higher signal concentrations and generates forces such as contraction and adhesion to move in that direction.
-    Thin, sheet-like protrusions at the leading edge of a migrating cell, called <em>lamellipodia</em> (indicated by arrows). 
-    Lamellipodia play a key role in cell movement by driving forward extension during migration.  
-    Source: Yang TD et al.; Alexandre Saez, Wikimedia Commons (2022), CC BY-SA 3.0.  
-    <a href="https://commons.wikimedia.org/wiki/File:Lamellipodium.png" target="_blank">
-      Reference link
-    </a>
+    Spatial organization of myosin cortical flows correlates with migration direction in confined cell clusters, showing how internal actomyosin dynamics drive motion without adhesion.  
+    Source: Pagès et al., <em>Science Advances</em> (2022), CC BY 4.0.
   </figcaption>
 </div>
-<p>Cell movement is essential for normal biological function. Cells move collectively to transport material, perform specialized tasks, and maintain tissue integrity. However, these same cellular programs can become harmful when they are dysregulated. Some cells evade normal death mechanisms and continue to proliferate uncontrollably, sometimes remaining localized and forming tumors, and in other cases acquiring invasive migratory behavior. When these processes disrupt tissue organization and harm the organism as a whole, we recognize this as cancer. While such traits may be advantageous at the level of individual cells, they disturb balance and function at the level of the entire body.</p>
 
-<p><!-- _Understanding this transition requires studying collective movement—specifically, what changes when cells come together and behave as a group._ **While localized tumors are often easier to treat, migratory cancer cells—and especially migrating clusters—pose a greater challenge because they can spread and establish new tumors.** --></p>
+<p>Their suspicion arose from cancer systems where there was no adhesion source (ECM), yet clusters were still present and moving. They built a microfluidic channel to answer this question. They studied different cancer clusters in a non-adhesive substrate and indeed found that clusters can migrate even in the absence of adhesion. However, this migration is not completely frictionless; confinement provides effective friction with the walls, allowing internal stresses to be converted into net motion.</p>
 
-<p>To understand how this transition occurs, it is important to study collective movement—specifically, what changes when cells come together and behave as a group. Localized tumors, where cells remain confined, are generally easier to treat. In contrast, migratory cancer cells are more dangerous because they can spread to new locations and initiate secondary tumors. Even within migratory cancers, important differences exist: single migrating cells are often more vulnerable to treatment than their clustered counterparts.</p>
+<p>They say that these clusters, at a physical level, show wetting and dewetting-like behavior, behaving similar to active droplets, where surface tension (actomyosin contractility[ &lt;p&gt; See actomyosin cortex schematic here:  <a href="https://link.springer.com/article/10.1007/s41745-020-00220-2/figures/1" target="_blank">
+Springer Figure 1
+</a> &lt;/p&gt; ]) regulates their shape and motion. When confined, they found migration with significant persistence, showing that clusters can migrate in non-adhesive environments.</p>
 
-<p>Cell clusters exhibit behaviors that are fundamentally different from those of single cells, which is one reason they are much harder to treat. Collective migration can provide mechanical protection, altered signal sensing, and enhanced survival compared to isolated cells.</p>
+<p>To investigate the mechanism, they used optogenetics to upregulate RhoA locally. By shining light, they could change RhoA activity, which changed the direction of migration, showing that contractility controls direction. They then looked at myosin flows in the cluster and found retrograde cortical flows that fluctuate but also become spatially organized and polarized, leading to spontaneous symmetry breaking and front–back polarity in the cluster. These flows correlate with migration velocity and direction, indicating that organized cortical flows are a key driver of motion. However, since clusters remain persistent for long times, this indicates a sustained internal mechanism rather than only short-time fluctuations. Another key factor is actomyosin contractility, which generates internal stresses. These internal stresses, together with confinement-induced friction, drive the migration even without adhesion.</p>
 
-<p>In this work, we focus specifically on the behavior of migratory cancer cell clusters to gain a clearer understanding of how they move and respond to chemical cues. Experiments were performed using human cells exposed to gradients of CCL19, a chemokine present in lymph nodes. We find that migration depends strongly on cluster size: small clusters behave differently from larger ones, and there exists a critical size at which their dynamics change. The strength of the chemical gradient also plays a key role.</p>
+<p>To test their hypothesis, they created a minimal active matter model including polarity, contractility, and friction, and showed that this is sufficient to reproduce cluster migration. What they are saying is that myosin dynamics (flows) and actomyosin contractility are sufficient to produce friction-based cluster migration without any adhesive environment, with confinement enabling this mechanism.</p>
 
-<p>Overall, our goal is to understand the collective behavior of migratory clusters so that we can make more informed decisions about how to interpret and potentially control their behavior.</p>
+<hr />
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+  <li>Cells move, and so do cell clusters. Cancer cell clusters can be a bigger problem for metastasis than their single-cell counterparts. So, I want to know everything about them: why they are difficult to treat, how they move, what mechanisms they use for propagation, how they survive, and how they protect themselves. How much is one cluster different from another? Can the same cell type have diversity? If so, how much? What genes or epigenetic changes lead to these differences? How does the environment affect them? How are they affected by the part of the body they are in? Do we have cancer in animals and birds? Are there animals that rarely get cancer, and why?</li>
+</ul>
+
+<hr />
+<h4 id="resources">Resources</h4>
+<ul>
+  <li><a href="https://pmgbiology.com/2015/02/15/blood-vessels-a-understanding-for-igcse-biology/">What is Lumen?</a></li>
+  <li><a href="https://uen.pressbooks.pub/expertneuro/chapter/anterograde-and-retrograde-transport-mechanisms-in-neurons/">Retrogate and Anterograte</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Cell_cortex">Actomyosin Cortex</a></li>
+</ul>
 
 <hr />
 <h3 id="citation">Citation</h3>
-<p><strong>Authors</strong>: Monika Sanoria, Gema Malet-Engra, Giorgio Scita, Nir Gov and Ajay Gopinathan
-<strong>Published in</strong>: PRX Life <strong>4</strong>, 013004 – <strong>Published 9 January, 2026</strong> 
-<strong>DOI/Link</strong>: <a href="https://doi.org/10.1103/fxvc-cxy8">10.1103/fxvc-cxy8</a></p>
+<p><strong>Authors</strong>: Diane-Laure Pagès, Emmanuel Dornier, et al.
+<strong>Published in</strong>: Science Advances
+<strong>DOI/Link</strong>: <a href="https://doi.org/10.1126/sciadv.abp8416">10.1126/sciadv.abp8416</a></p>
 
 
     </div>
@@ -245,7 +255,7 @@ function googleTranslateElementInit() {
       </button>
 
       <!-- X -->
-      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F&text=Paper+Summary%3A+Chemotaxis-driven+Instabilities+govern+size%2C+shape+and+migration+efficiency+of+multicellular+clusters"
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F04%2F25%2FCollectiveAmeboidMotion%2F&text=Paper+Summary%3A+Cell+clusters+adopt+a+collective+amoeboid+mode+of+migration+in+confined+nonadhesive+environments"
          target="_blank" rel="noopener" class="share-btn">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M18.36 2.64h3.18l-7.01 8.01 8.24 10.71H16.8l-5.2-6.79-6 6.79H2.42l7.48-8.46L2 2.64h6.64l4.68 6.19z"/>
@@ -253,7 +263,7 @@ function googleTranslateElementInit() {
       </a>
 
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F"
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F04%2F25%2FCollectiveAmeboidMotion%2F"
          target="_blank" class="share-btn">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M4.98 3.5C4.98 5 3.9 6.1 2.4 6.1C.9 6.1-.2 5 .8 3.5c1.5 0 2.58 1.1 2.58 2.6zM.4 24h4V7.9h-4V24zm7.6 
@@ -263,13 +273,13 @@ function googleTranslateElementInit() {
       </a>
 
       <!-- Email -->
-      <a href="mailto:?subject=Paper Summary: Chemotaxis-driven Instabilities govern size, shape and migration efficiency of multicellular clusters&body=https://sanoriamonika.github.io/blog/2026/01/12/MyPaper/"
+      <a href="mailto:?subject=Paper Summary: Cell clusters adopt a collective amoeboid mode of migration in confined nonadhesive environments&body=https://sanoriamonika.github.io/blog/2026/04/25/CollectiveAmeboidMotion/"
          class="share-btn mail">
         <span class="material-symbols-outlined">mail</span>
       </a>
 
        <!-- WhatsApp -->
-      <a href="https://wa.me/?text=Paper+Summary%3A+Chemotaxis-driven+Instabilities+govern+size%2C+shape+and+migration+efficiency+of+multicellular+clusters%20https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F01%2F12%2FMyPaper%2F"
+      <a href="https://wa.me/?text=Paper+Summary%3A+Cell+clusters+adopt+a+collective+amoeboid+mode+of+migration+in+confined+nonadhesive+environments%20https%3A%2F%2Fsanoriamonika.github.io%2Fblog%2F2026%2F04%2F25%2FCollectiveAmeboidMotion%2F"
          target="_blank" rel="noopener" class="share-btn share-btn-whatsapp" aria-label="Share on WhatsApp" title="Share on WhatsApp">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -316,10 +326,8 @@ function googleTranslateElementInit() {
   <!-- Post navigation -->
   <nav class="post-nav">
     
-      <a class="icon-nav" href="/blog/2025/12/10/EndocytosisChemorepulsion/" title="Previous post">←</a>
+      <a class="icon-nav" href="/blog/2026/01/12/MyPaper/" title="Previous post">←</a>
     
-    
-      <a class="icon-nav" href="/blog/2026/04/25/CollectiveAmeboidMotion/" title="Next post">→</a>
     
   </nav>
 </main>
