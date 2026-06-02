@@ -382,7 +382,6 @@ main.container td:nth-child(4) { width: 35% !important; }
   margin-top: 8px;
   line-height: 1.4;
   font-style: italic;
-  text-align: justify;
 }
 
 /* Auto-numbering for video captions */
@@ -531,7 +530,6 @@ main.container td:nth-child(4) { width: 35% !important; }
   margin-top: 0.4em;
   line-height: 1.4;
   font-style: italic;
-  text-align: justify;
 }
 
 /* Regular image figures auto-numbering */
@@ -933,25 +931,6 @@ body {
 .panel-row .figure.small {
   flex: 1 1 10%;   /* 3 per row on desktop */
   min-width: 220px;
-}
-
-/* =============================== */
-/* FIGCAPTION CITATION LINK        */
-/* Keeps source links subtle within inline captions */
-/* =============================== */
-
-.figure figcaption a,
-.video-figure figcaption a {
-  color: var(--muted);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 2px;
-}
-
-.figure figcaption a:hover,
-.video-figure figcaption a:hover {
-  color: var(--link);
-  text-decoration-style: solid;
 }
 
 /* =============================== */
