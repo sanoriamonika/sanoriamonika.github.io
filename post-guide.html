@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post Writing Guide — Monika Sanoria, PhD</title>
+  <meta name="description" content="Internal reference: embed shortcodes and ethical image usage guidelines.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .guide-section { margin: 2.5rem 0; }
+    .guide-section h2 { border-bottom: 2px solid var(--border); padding-bottom: 6px; }
+    .guide-section h3 { margin-top: 1.8rem; color: var(--fg); }
+
+    .param-table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.9rem; }
+    .param-table th { background: #f3f4f6; font-weight: 600; }
+    .param-table th, .param-table td { border: 1px solid var(--border); padding: 7px 10px; vertical-align: top; }
+    .param-table td:first-child { font-family: ui-monospace, monospace; font-size: 0.85rem; white-space: nowrap; }
+    .param-table .req { color: #dc2626; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+    .param-table .opt { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+
+    .example-block { background: #f6f8fa; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px 16px; margin: 0.6rem 0 1.6rem; overflow-x: auto; }
+    .example-block pre { margin: 0; font-size: 0.85rem; line-height: 1.6; white-space: pre-wrap; word-break: break-all; }
+
+    .ethics-table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.9rem; }
+    .ethics-table th { background: #f3f4f6; font-weight: 600; }
+    .ethics-table th, .ethics-table td { border: 1px solid var(--border); padding: 8px 12px; vertical-align: top; }
+    .safe { color: #16a34a; font-weight: 600; }
+    .risky { color: #dc2626; font-weight: 600; }
+    .caution { color: #d97706; font-weight: 600; }
+
+    .tip-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #16a34a; border-radius: 8px; padding: 12px 16px; margin: 1rem 0; }
+    .warn-box { background: #fff7ed; border: 1px solid #fed7aa; border-left: 4px solid #ea580c; border-radius: 8px; padding: 12px 16px; margin: 1rem 0; }
+    .info-box { background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid var(--accent); border-radius: 8px; padding: 12px 16px; margin: 1rem 0; }
+
+    .toc { background: #f9fafb; border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin: 1.5rem 0; display: inline-block; min-width: 260px; }
+    .toc h4 { margin: 0 0 8px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+    .toc ol { margin: 0; padding-left: 1.2rem; }
+    .toc li { margin: 4px 0; font-size: 0.9rem; }
+
+    .include-name { font-size: 1rem; font-weight: 700; font-family: ui-monospace, monospace; color: var(--accent); }
+    .badge { display: inline-block; padding: 2px 7px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+    .badge-new { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a href="/" data-nav="/">Home</a>
+      <a href="/research.html" data-nav="/research.html">Research</a>
+      <a href="/publications.html" data-nav="/publications.html">Publications</a>
+      <a href="/talks.html" data-nav="/talks.html">Talks</a>
+      <a href="/resources.html" data-nav="/resources.html">Resources</a>
+      <a href="/blog/" data-nav="/blog/">Blog</a>
+      <a href="/cv.html" data-nav="/cv.html">CV</a>
+      <a href="/contact.html" data-nav="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+
+  <h1>Post Writing Guide</h1>
+  <p style="color: var(--muted); margin-top: 0;">Internal reference — embed shortcodes &amp; ethical media usage.</p>
+
+  <div class="toc">
+    <h4>Contents</h4>
+    <ol>
+      <li><a href="#embeds">Embed Shortcodes</a>
+        <ul style="padding-left:1rem; margin:2px 0;">
+          <li><a href="#img">img</a></li>
+          <li><a href="#youtube">youtube</a></li>
+          <li><a href="#vimeo">vimeo</a></li>
+          <li><a href="#video">video (HTML5)</a></li>
+          <li><a href="#tweet">tweet</a></li>
+          <li><a href="#linkedin">linkedin</a></li>
+          <li><a href="#gallery">gallery layout</a></li>
+        </ul>
+      </li>
+      <li><a href="#ethics">Ethical Media Usage</a>
+        <ul style="padding-left:1rem; margin:2px 0;">
+          <li><a href="#safe-sources">Safe vs risky sources</a></li>
+          <li><a href="#paper-figures">Using paper figures</a></li>
+          <li><a href="#elsevier">Elsevier note</a></li>
+          <li><a href="#caption-format">Citation format</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 1: EMBEDS                                            -->
+  <!-- ============================================================ -->
+
+  <div class="guide-section" id="embeds">
+    <h2>1. Embed Shortcodes</h2>
+    <p>Use these Jekyll includes in any post markdown file. All files live in <code>_includes/</code>.</p>
+
+    <!-- IMG -->
+    <h3 id="img"><span class="include-name">img.html</span> <span class="badge badge-new">new</span></h3>
+    <p>For local and external images.</p>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>src</td><td><span class="req">required</span></td><td>Image URL or local path</td><td>—</td></tr>
+        <tr><td>alt</td><td><span class="opt">optional</span></td><td>Alt text for accessibility</td><td>caption value</td></tr>
+        <tr><td>size</td><td><span class="opt">optional</span></td><td>small · medium · large</td><td>full block</td></tr>
+        <tr><td>align</td><td><span class="opt">optional</span></td><td>left · right</td><td>centered</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption text</td><td>—</td></tr>
+        <tr><td>author</td><td><span class="opt">optional</span></td><td>Author or source name</td><td>—</td></tr>
+        <tr><td>url</td><td><span class="opt">optional</span></td><td>DOI or source link</td><td>—</td></tr>
+        <tr><td>license</td><td><span class="opt">optional</span></td><td>CC BY 4.0 · Public Domain · etc.</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="example-block"><pre>{% include img.html
+   src="https://upload.wikimedia.org/wikipedia/commons/..."
+   caption="Collective migration of epithelial cells during wound healing."
+   author="Smith et al., Nature 2023"
+   url="https://doi.org/10.xxx/xxx"
+   license="CC BY 4.0" %}
+
+{% include img.html src="/assets/img/blogImg/myfig.png" size="medium" align="left"
+   caption="Simulation snapshot at t=100." %}</pre></div>
+
+    <!-- YOUTUBE -->
+    <h3 id="youtube"><span class="include-name">youtube.html</span> <span class="badge badge-new">new</span></h3>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>id</td><td><span class="req">required</span></td><td>YouTube video ID (from URL)</td><td>—</td></tr>
+        <tr><td>size</td><td><span class="opt">optional</span></td><td>small · medium · large · xlarge</td><td>medium</td></tr>
+        <tr><td>aspect</td><td><span class="opt">optional</span></td><td>16x9 · 9x16 · 1x1 · 4x3 · 21x9</td><td>16x9</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption text</td><td>—</td></tr>
+        <tr><td>channel</td><td><span class="opt">optional</span></td><td>Channel or creator name</td><td>—</td></tr>
+        <tr><td>url</td><td><span class="opt">optional</span></td><td>Full YouTube link</td><td>—</td></tr>
+        <tr><td>title</td><td><span class="opt">optional</span></td><td>Accessibility title for iframe</td><td>caption value</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <strong>Finding the video ID:</strong> In <code>https://www.youtube.com/watch?v=<strong>uhP0bI-h5VQ</strong></code>, the ID is <code>uhP0bI-h5VQ</code>. For Shorts: <code>https://youtube.com/shorts/<strong>ID</strong></code> — use <code>aspect="9x16"</code>.
+    </div>
+
+    <div class="example-block"><pre>{% include youtube.html id="uhP0bI-h5VQ" size="large"
+   caption="Macrophages engulfing bacteria in real time."
+   channel="CellBioLab" url="https://youtu.be/uhP0bI-h5VQ" %}
+
+{% include youtube.html id="..." size="small" aspect="9x16"
+   caption="Short: actin wave propagation." channel="LabName" %}</pre></div>
+
+    <!-- VIMEO -->
+    <h3 id="vimeo"><span class="include-name">vimeo.html</span> <span class="badge badge-new">new</span></h3>
+    <p>Better than YouTube for research footage — no ads, cleaner player.</p>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>id</td><td><span class="req">required</span></td><td>Vimeo video ID (from URL)</td><td>—</td></tr>
+        <tr><td>size</td><td><span class="opt">optional</span></td><td>small · medium · large · xlarge</td><td>medium</td></tr>
+        <tr><td>aspect</td><td><span class="opt">optional</span></td><td>16x9 · 9x16 · 1x1 · 4x3</td><td>16x9</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption text</td><td>—</td></tr>
+        <tr><td>author</td><td><span class="opt">optional</span></td><td>Creator name</td><td>—</td></tr>
+        <tr><td>url</td><td><span class="opt">optional</span></td><td>Full Vimeo link</td><td>—</td></tr>
+        <tr><td>license</td><td><span class="opt">optional</span></td><td>CC BY 4.0 · etc.</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="example-block"><pre>{% include vimeo.html id="123456789" size="large"
+   caption="3D reconstruction of a migrating cell."
+   author="Jan Löber" url="https://vimeo.com/123456789"
+   license="CC BY 4.0" %}</pre></div>
+
+    <!-- VIDEO HTML5 -->
+    <h3 id="video"><span class="include-name">video.html</span> — HTML5 <span class="badge badge-new">new</span></h3>
+    <p>For self-hosted files, direct mp4 links, or HLS streams (.m3u8).</p>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>src</td><td><span class="req">required</span></td><td>Direct URL to video file</td><td>—</td></tr>
+        <tr><td>type</td><td><span class="opt">optional</span></td><td>video/mp4 · video/webm · application/x-mpegURL</td><td>video/mp4</td></tr>
+        <tr><td>size</td><td><span class="opt">optional</span></td><td>small · medium · large · xlarge</td><td>medium</td></tr>
+        <tr><td>aspect</td><td><span class="opt">optional</span></td><td>16x9 · 9x16 · 1x1 · 4x3</td><td>16x9</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption text</td><td>—</td></tr>
+        <tr><td>author</td><td><span class="opt">optional</span></td><td>Creator or source name</td><td>—</td></tr>
+        <tr><td>url</td><td><span class="opt">optional</span></td><td>Link to original source</td><td>—</td></tr>
+        <tr><td>license</td><td><span class="opt">optional</span></td><td>License string</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="example-block"><pre>{% include video.html
+   src="https://example.com/cilia-beating.mp4"
+   caption="Quantized wave patterns in cilia beating."
+   author="DW Documentary" url="https://dw.com/..."
+   license="CC BY-SA 4.0" %}
+
+{% include video.html
+   src="https://hlsvod.example.com/stream/master.m3u8"
+   type="application/x-mpegURL"
+   size="large" aspect="16x9"
+   caption="Live-cell imaging of neutrophil chemotaxis." %}</pre></div>
+
+    <!-- TWEET -->
+    <h3 id="tweet"><span class="include-name">tweet.html</span> <span class="badge badge-new">new</span></h3>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>url</td><td><span class="req">required</span></td><td>Full URL to the tweet/X post</td><td>—</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption shown below embed</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="example-block"><pre>{% include tweet.html
+   url="https://twitter.com/MAG2ART/status/1868006213306495165"
+   caption="Art inspired by collective cell dynamics." %}</pre></div>
+
+    <!-- LINKEDIN -->
+    <h3 id="linkedin"><span class="include-name">linkedin.html</span> <span class="badge badge-new">new</span></h3>
+
+    <table class="param-table">
+      <thead><tr><th>Parameter</th><th></th><th>Values</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td>urn</td><td><span class="req">required</span></td><td>LinkedIn post URN</td><td>—</td></tr>
+        <tr><td>caption</td><td><span class="opt">optional</span></td><td>Caption shown below embed</td><td>—</td></tr>
+        <tr><td>height</td><td><span class="opt">optional</span></td><td>iframe height in px</td><td>548</td></tr>
+        <tr><td>width</td><td><span class="opt">optional</span></td><td>iframe width in px</td><td>504</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <strong>Finding the URN:</strong> In the LinkedIn share embed code, look for <code>urn:li:ugcPost:7366860905050984452</code> or <code>urn:li:share:...</code>. Go to the post → Share → Embed post → copy the src URL.
+    </div>
+
+    <div class="example-block"><pre>{% include linkedin.html
+   urn="urn:li:ugcPost:7366860905050984452"
+   caption="Macrophages engulf and eliminate dying cells." %}</pre></div>
+
+    <!-- GALLERY -->
+    <h3 id="gallery">Gallery layout — side by side</h3>
+    <p>Wrap multiple includes in a <code>.gallery</code> div to place them side by side.</p>
+
+    <div class="example-block"><pre>&lt;div class="gallery"&gt;
+  {% include youtube.html id="ID1" size="medium" caption="..." %}
+  {% include youtube.html id="ID2" size="medium" caption="..." %}
+&lt;/div&gt;
+
+&lt;div style="clear:both"&gt;&lt;/div&gt;</pre></div>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 2: ETHICAL MEDIA USAGE                               -->
+  <!-- ============================================================ -->
+
+  <div class="guide-section" id="ethics">
+    <h2>2. Ethical Media Usage</h2>
+    <p>This blog is public, educational, and non-commercial. That helps — but "educational" alone is not a free pass on copyright. Follow these guidelines for every post.</p>
+
+    <!-- SAFE VS RISKY -->
+    <h3 id="safe-sources">Safe vs risky sources</h3>
+
+    <table class="ethics-table">
+      <thead><tr><th>Source type</th><th>Status</th><th>What to do</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Wikimedia Commons (CC-licensed)</td>
+          <td><span class="safe">✓ Safe</span></td>
+          <td>Use freely. Always note the specific license (CC BY, CC BY-SA, etc.) and link to the source.</td>
+        </tr>
+        <tr>
+          <td>Open-access papers (CC BY)</td>
+          <td><span class="safe">✓ Safe</span></td>
+          <td>Embed figures freely. Cite authors, journal, year, DOI, and license.</td>
+        </tr>
+        <tr>
+          <td>NIH / PubMed Central open-access</td>
+          <td><span class="safe">✓ Usually safe</span></td>
+          <td>Most are CC BY. Verify the license on the paper page before using.</td>
+        </tr>
+        <tr>
+          <td>Your own figures / simulations</td>
+          <td><span class="safe">✓ Safe</span></td>
+          <td>No restrictions. Still caption clearly.</td>
+        </tr>
+        <tr>
+          <td>bioRxiv preprints</td>
+          <td><span class="safe">✓ Usually safe</span></td>
+          <td>Most preprints are CC BY. Use the preprint figure + cite as preprint. Safer than journal version.</td>
+        </tr>
+        <tr>
+          <td>YouTube / Vimeo embeds</td>
+          <td><span class="safe">✓ Safe</span></td>
+          <td>Embedding is permitted by platform ToS. Credit channel name and link to video.</td>
+        </tr>
+        <tr>
+          <td>Twitter / LinkedIn embeds</td>
+          <td><span class="safe">✓ Safe</span></td>
+          <td>Platform-sanctioned embedding. Attribution is visible in the embed itself.</td>
+        </tr>
+        <tr>
+          <td>Paywalled journal figures (non-Elsevier)</td>
+          <td><span class="caution">⚠ Gray area</span></td>
+          <td>Fair use likely applies when discussing the exact paper. Always link to DOI, cite fully, add fair use note in caption. Prefer to link rather than embed if unsure.</td>
+        </tr>
+        <tr>
+          <td>Hotlinking from journal servers</td>
+          <td><span class="caution">⚠ Avoid</span></td>
+          <td>Uses their bandwidth. URLs break when journals change servers. Download and re-host, or link instead.</td>
+        </tr>
+        <tr>
+          <td>Elsevier journal figures</td>
+          <td><span class="risky">✗ Risky</span></td>
+          <td>Elsevier is the most aggressive publisher on copyright. Safer to describe the figure in words and link to it. See note below.</td>
+        </tr>
+        <tr>
+          <td>Full paper copies / PDFs</td>
+          <td><span class="risky">✗ Do not host</span></td>
+          <td>Never host full PDFs of papers you don't own. Link to the DOI instead.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- BIORXIV TIP -->
+    <div class="tip-box">
+      <strong>bioRxiv first rule:</strong> Before embedding a journal figure, check if the paper has a preprint on bioRxiv. If it does, use the preprint figure — it's almost always CC BY and legally safer, even if the journal version is paywalled. The figures are usually identical.
+    </div>
+
+    <!-- PAPER FIGURES -->
+    <h3 id="paper-figures">Using a figure when discussing the same paper</h3>
+    <p>This is your strongest fair use case. When you are summarizing or commenting on a specific paper, using one of its figures works in your favor on all four fair use factors:</p>
+
+    <table class="ethics-table">
+      <thead><tr><th>Fair use factor</th><th>Your situation</th></tr></thead>
+      <tbody>
+        <tr><td>Purpose</td><td>Educational, non-commercial, direct commentary on the work ✓</td></tr>
+        <tr><td>Nature of the work</td><td>Scientific / factual — easier to use than creative fiction ✓</td></tr>
+        <tr><td>Amount used</td><td>One figure from a multi-figure paper ✓</td></tr>
+        <tr><td>Market effect</td><td>You drive readers to the paper — not replacing it ✓</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>What strengthens the case further:</strong></p>
+    <ul>
+      <li>Always include the DOI link</li>
+      <li>Credit authors, journal, year, and figure number</li>
+      <li>Add your own analysis — don't just re-caption their figure</li>
+      <li>If open-access, note the license explicitly</li>
+    </ul>
+
+    <!-- ELSEVIER NOTE -->
+    <h3 id="elsevier">Elsevier note</h3>
+
+    <div class="warn-box">
+      <strong>Elsevier is the exception.</strong> They have sued Sci-Hub ($15M, 2017), sent DMCA takedowns to ResearchGate, and even sent takedowns to researchers hosting their <em>own</em> papers on personal websites. While they are unlikely to pursue a small educational blog, the risk is real enough to avoid. For papers published in Elsevier journals (Cell Press, Biophysical Journal, Current Biology, Physica A, Journal of Theoretical Biology, etc.):
+      <ul style="margin-top: 8px;">
+        <li>Describe the figure in your own words rather than embedding it</li>
+        <li>Link directly to the figure on the journal's website</li>
+        <li>Check if the paper has a bioRxiv preprint and use that figure instead</li>
+      </ul>
+    </div>
+
+    <p><strong>Main Elsevier journals in your area (Active Matter / Biophysics):</strong></p>
+    <ul>
+      <li><em>Cell</em>, <em>Current Biology</em>, <em>Developmental Cell</em>, <em>Biophysical Journal</em>, <em>Cell Reports</em> — Cell Press (owned by Elsevier)</li>
+      <li><em>Physica A</em>, <em>Journal of Theoretical Biology</em>, <em>Progress in Biophysics and Molecular Biology</em></li>
+    </ul>
+
+    <p><strong>Safer alternatives in your field:</strong> Physical Review journals (APS), eLife (CC BY), PLOS Biology (CC BY), Nature/Science (not Elsevier), bioRxiv preprints.</p>
+
+    <!-- CAPTION FORMAT -->
+    <h3 id="caption-format">Citation format in captions</h3>
+    <p>Use the <code>author</code>, <code>url</code>, and <code>license</code> parameters in the includes. The rendered caption will look like:</p>
+
+    <div class="example-block"><pre>Figure 1: Actin filament organization during collective migration.
+— Smith et al., Nature 2023 (CC BY 4.0)
+
+Figure 2: Schematic of self-propelled particle model.
+— Jones &amp; Lee, PRX Life 2024 (CC BY 4.0)
+
+Figure 3: Wound-healing assay showing leader cells.
+— Chen et al., Biophysical Journal 2022. Used for commentary under fair use.
+All rights remain with the authors and Elsevier.</pre></div>
+
+    <div class="tip-box">
+      <strong>For Elsevier specifically,</strong> replace the <code>license</code> parameter with: <code>license="Used for commentary under fair use. Rights remain with authors/Elsevier."</code>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p style="margin:0; font-size:0.85rem;">Internal reference page — not linked in main navigation.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

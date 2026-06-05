@@ -1,74 +1,8 @@
 #!/bin/bash
-set -e  # Exit on any error
-
-# -------------------------------
-# Defaults
-# -------------------------------
-CLEAN_BUILD=false
-SYNC_FIRST=false
-
-# -------------------------------
-# Parse arguments (ONCE)
-# -------------------------------
-while [[ $# -gt 0 ]]; do
-    case $1 in
-        --clean)
-            CLEAN_BUILD=true
-            shift
-            ;;
-        --sync)
-            SYNC_FIRST=true
-            shift
-            ;;
-        *)
-            echo "Unknown option: $1"
-            echo "Usage: ./deploy_update.sh [--clean] [--sync]"
-            exit 1
-            ;;
-    esac
-done
-
-# -------------------------------
-# Paths
-# -------------------------------
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PRIVATE_DIR="$SCRIPT_DIR"
-PUBLIC_DIR="${PUBLIC_DIR:-$SCRIPT_DIR/../sanoriamonika.github.io}"
-BUILD_DIR="$SCRIPT_DIR/_site"
-GITHUB_REPO="git@github.com:sanoriamonika/sanoriamonika.github.io.git"
-
-
-main() {
-    print_status "Starting build and deploy process..."
-
-    if [ "$SYNC_FIRST" = true ]; then
-        print_status "Syncing source repository before deploy..."
-
-        if [ ! -x "$PRIVATE_DIR/sync_src.sh" ]; then
-            print_error "sync_src.sh not found or not executable"
-            exit 1
-        fi
-
-        "$PRIVATE_DIR/sync_src.sh"
-    fi
-
-    if [ "$CLEAN_BUILD" = true ]; then
-        print_status "Clean build requested - will remove old build artifacts"
-    fi
-
-    check_directories
-    build_website
-    deploy_to_github
-    cleanup
-
-    print_status "Build and deploy completed successfully!"
-    print_status "Your website should be available at: https://sanoriamonika.github.io"
-}
-
 
 # Website Build and Deploy Script
 # This script builds your website locally and deploys it to GitHub Pages
-# Usage: ./deploy_update.sh [--clean]
+# Usage: ./deploy.sh [--clean]
 
 set -e  # Exit on any error
 
@@ -89,7 +23,11 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Configuration - Update these paths according to your setup
-
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PRIVATE_DIR="$SCRIPT_DIR"  # Current directory (monikaWebsite-src)
+PUBLIC_DIR="$SCRIPT_DIR/../sanoriamonika.github.io"  # Sibling directory
+BUILD_DIR="$SCRIPT_DIR/_site"  # Jekyll builds to _site
+GITHUB_REPO="https://github.com/sanoriamonika/sanoriamonika.github.io.git"
 
 # Colors for output
 RED='\033[0;31m'
@@ -157,8 +95,7 @@ build_website() {
         
         # Check if bundler is available
         if command -v bundle &> /dev/null; then
-           # bundle install
-	bundle check || bundle install
+            bundle install
             JEKYLL_ENV=production bundle exec jekyll build
         else
             JEKYLL_ENV=production jekyll build
@@ -212,15 +149,8 @@ build_website() {
     cd - > /dev/null
 }
 
-
 # Deploy to GitHub Pages
 deploy_to_github() {
-# Absolute safety check
-if [[ "$PUBLIC_DIR" == "/" || "$PUBLIC_DIR" == "$HOME" ]]; then
-    print_error "PUBLIC_DIR is unsafe: $PUBLIC_DIR"
-    exit 1
-fi
-
     print_status "Deploying to GitHub Pages..."
     
     # Check if build directory exists
@@ -280,11 +210,7 @@ fi
     ls -la "$BUILD_DIR"
     
     # Copy all files from _site, excluding problematic files
-   # find "$BUILD_DIR" -mindepth 1 -maxdepth 1 ! -name "deploy.sh" ! -name "monikaWebsite-src" ! -name #"sanoriamonika.github.io" -exec cp -r {} . \;
-rsync -av --delete \
-  --exclude='.git' \
-  "$BUILD_DIR"/ .
-
+    find "$BUILD_DIR" -mindepth 1 -maxdepth 1 ! -name "deploy.sh" ! -name "monikaWebsite-src" ! -name "sanoriamonika.github.io" -exec cp -r {} . \;
     
     print_status "Files copied. Current directory contents:"
     ls -la .
