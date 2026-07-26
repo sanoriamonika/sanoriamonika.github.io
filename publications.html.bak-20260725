@@ -53,15 +53,13 @@
   <p>Investigates how interaction softness changes phase separation behavior in active particles.</p>
 </div>
 
-<h2>Preprints</h2>
+<h2>Under Preparation</h2>
 
 <div class="pub">
-  <div class="title">Cell Cluster Geometry and Fluidity Control the Transition from Single-Cell Chemorepulsion to Collective Chemotaxis</div>
-  <div class="meta"><strong>Monika Sanoria</strong>, Gema Malet-Engra, Giorgio Scita, Nir Gov, Ajay Gopinathan • <em>bioRxiv (2026)</em> • <a href="https://doi.org/10.64898/2026.07.04.736449">Link</a></div>
-  <p>Resolves the paradox of why single leukemia cells move away from a chemical gradient while clusters of the same cells move toward it. A receptor trafficking model and an agent based simulation show that cell to cell contacts raise the concentration threshold for chemorepulsion, and that cluster fluidity keeps clusters chemoattractive by continuously redistributing repulsive cells away from the leading edge.</p>
+  <div class="title">Geometry and Fluidity of Cell Clusters Reverse Single-Cell Chemorepulsion into Collective Chemotaxis</div>
+  <div class="meta"><strong>Monika Sanoria</strong>, Gema Malet-Engra, Giorgio Scita, Nir Gov, Ajay Gopinathan • <a>(Under Preparation, 2026)</a></div>
+  <p>We study how leukemia cells move in response to chemical signals, finding that alone, cells reverse direction at high concentrations by losing their surface receptors, but in clusters, cells shield each other's receptors and keep moving toward the source. This single mechanism explains the switch between attraction and repulsion depending on whether cells travel solo or in groups.</p>
 </div>
-
-<h2>Under Preparation</h2>
 
 <div class="pub">
   <div class="title">Chiral Follower Forces Govern Active Polymer Phase Behavior: Compaction, Arrest, and a Universal Scaling Collapse</div>
