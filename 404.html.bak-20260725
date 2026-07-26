@@ -12,7 +12,7 @@
 <header>
   <div class="container">
     <nav>
-      <a class="brand" href="/" data-nav="/">Monika Sanoria, PhD</a>
+      <a class="brand" href="/" data-nav="/">Dr. Monika Sanoria</a>
       <a href="/" data-nav="/">Home</a>
       <a href="/research.html" data-nav="/research.html">Research</a>
       <a href="/publications.html" data-nav="/publications.html">Publications</a>
@@ -31,7 +31,7 @@
 
 <footer>
   <div class="container">
-    © 2025 • Monika Sanoria, PhD — Center for Cellular and Biomolecular Machines, UC Merced
+    © 2025 • Dr. Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>

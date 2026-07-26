@@ -28,6 +28,22 @@
   </div>
 </header>
 
+<!-- <main class="container">
+
+<h1>Resources & Reading</h1>
+<h3>Learning Resources</h3>
+<table>
+  <thead><tr><th>Title</th><th>Author</th><th>Type</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html">The Day You Became A Better Writer</a></td><td>Scott Adams</td><td>Essay</td></tr>
+    <tr><td><a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">You and Your Research</a></td><td>Richard Hamming</td><td>Talk/Essay</td></tr>
+  </tbody>
+</table>
+
+<h3>What I'm Reading</h3>
+<p>Paper Summaries &amp; Science Insights — see the <a href="/blog/">Blog</a>.</p>
+
+</main> -->
 <main class="container">
 
 <h2>Resources & Reading</h2>
@@ -106,6 +122,9 @@
     </tr>
   </tbody>
 </table>
+
+<!-- <h3>What I'm Reading</h3>
+<p>Paper Summaries &amp; Science Insights — see the <a href="/blog/">Blog</a>.</p> -->
 
 </main>
 <footer>

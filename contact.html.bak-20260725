@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 — Not Found</title>
+  <title>Contact — Monika Sanoria, PhD</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -26,12 +26,22 @@
 </header>
 
 <main class="container">
-<h1>404 — Not Found</h1><p>The page you're looking for doesn't exist.</p>
+
+<h2>Contact</h2>
+<p><strong>Address:</strong> 264‑B, Arts and Computational Sciences (ACS), University of California, Merced, CA 95343</p>
+<p><strong>Email:</strong> <a href="mailto:sanoriamonika@gmail.com">sanoriamonika@gmail.com</a> &nbsp;|&nbsp; <a href="mailto:msanoria@ucmerced.edu">msanoria@ucmerced.edu</a></p>
+
+<ul>
+  <li><a href="https://github.com/">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+  <li><a href="https://x.com/">X (Twitter)</a></li>
+</ul>
+
 </main>
 
 <footer>
   <div class="container">
-    © 2025 • Monika Sanoria, PhD — Center for Cellular and Biomolecular Machines, UC Merced
+    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>
