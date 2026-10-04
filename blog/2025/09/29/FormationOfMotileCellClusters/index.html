@@ -128,20 +128,8 @@
     }
   </style>
 
-  <!-- Google Material Symbols -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- MathJax: only load on posts that contain math ($, \(, \[) -->
 
-  <!-- MathJax Configuration -->
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  },
-  svg: { fontCache: 'global' }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- Google Translate Script -->
 <script type="text/javascript">
@@ -195,7 +183,7 @@ function googleTranslateElementInit() {
 </div>
 <p>Cancer, the abnormal growth and functioning of cells, has captured our attention for more than a century. Why does it occur? Why does it spread to different parts of the body (a process called metastasis)? Why are some types of cancer easier to cure if the cancerous tissue is removed, while in other cases the disease reappears? It has been observed that circulating tumor cell clusters (CTCs) have a much higher potential for metastasis than their single-cell counterparts. So how does the process progress from the epithelial layer to the stage of CTCs?</p>
 <div class="figure left small">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Cpm_layout.pdf" alt="Cellular Potts Model" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Cpm_layout.pdf/page1-800px-Cpm_layout.pdf.jpg" alt="Cellular Potts Model" />
   <em class="figcaption">Schematic of the Cellular Potts Model (CPM) layout</em>
 </div>
 <p>Epithelial cells undergo <strong>epithelial–mesenchymal transition (EMT)</strong>, in which non-motile epithelial cells transition into motile mesenchymal cells. This is one of the central questions the authors aim to understand more deeply. They argue that the <strong>alignment strength</strong> of the cells plays an important role, in addition to adhesion and self-polarity. They suggest that while self-alignment and alignment with neighbors influence the direction of migration, these mechanisms can also lead to different collective behaviors. To explore this, they used <strong>Cellular Potts Model (CPM)</strong> simulations.</p>
@@ -259,7 +247,7 @@ function googleTranslateElementInit() {
       <!-- Email -->
       <a href="mailto:?subject=Paper Summary: Formation of Motile Cell Clusters in Heterogeneous Model Tumors: The Role of Cell-Cell Alignment&body=https://sanoriamonika.github.io/blog/2025/09/29/FormationOfMotileCellClusters/"
          class="share-btn mail">
-        <span class="material-symbols-outlined">mail</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
       </a>
 
        <!-- WhatsApp -->
@@ -328,6 +316,12 @@ function googleTranslateElementInit() {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  // LAZY-LOAD post images and iframes (browser-native)
+  document.querySelectorAll(".post-content img, .post-content iframe").forEach(function (el) {
+    if (!el.hasAttribute("loading")) el.setAttribute("loading", "lazy");
+    if (el.tagName === "IMG" && !el.hasAttribute("decoding")) el.setAttribute("decoding", "async");
+  });
 
   // TRANSLATE MENU TOGGLE
   const translateBtn = document.getElementById("translate-button");
