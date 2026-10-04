@@ -1416,3 +1416,19 @@ body {
   font-size: 0.9em;
   color: var(--link);
 }
+
+/* "Watch on ..." fallback link under an embed */
+.embed-link {
+  margin: 0.3em 0 0;
+  font-size: 0.85em;
+  text-align: left;
+}
+
+.embed-link a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.embed-link a:hover {
+  text-decoration: underline;
+}
