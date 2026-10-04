@@ -500,6 +500,25 @@ main.container td:nth-child(4) { width: 35% !important; }
   }
 }
 
+/* Floated video figures (same left/right words as image figures) */
+.video-figure.left {
+  float: left;
+  margin: 0.8em 1.5em 0.8em 0;
+}
+
+.video-figure.right {
+  float: right;
+  margin: 0.8em 0 0.8em 1.5em;
+}
+
+@media (max-width: 700px) {
+  .video-figure.left,
+  .video-figure.right {
+    float: none;
+    margin: 1em auto;
+  }
+}
+
 /* =============================== */
 /* REGULAR IMAGE FIGURES           */
 /* (Keep your existing figure styles) */
@@ -1319,4 +1338,35 @@ body {
   .post-title {
     display: none !important;
   }
+}
+
+/* =============================== */
+/* SOCIAL EMBEDS (tweet / LinkedIn / Bluesky) */
+/* Same figure box, but no auto-numbered "Figure N:" label */
+/* =============================== */
+
+.figure.social figcaption::before {
+  content: none;
+}
+
+.figure.social iframe {
+  max-width: 100%;
+  border: 0;
+}
+
+/* =============================== */
+/* UTILITIES                       */
+/* =============================== */
+
+.clear {
+  clear: both;
+}
+
+/* <video> element inside a .video box fills it like an iframe does */
+.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
