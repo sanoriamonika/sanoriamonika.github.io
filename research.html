@@ -29,9 +29,9 @@
 
 <h2>Research</h2>
 
-<p>My research asks how collective dynamics emerge from many interacting particles and cells: how simple local rules give rise to self-organization, phase transitions, and coordinated motion at the group level. I build computational models, grounded in statistical physics and tested against quantitative experiments, to connect these local interaction rules to the collective behavior that emerges at the population or tissue scale. This work spans active matter physics and collective cancer cell migration, and I'm now looking to bring geometry more directly into this picture, extending toward the physical principles that guide embryonic tissue folding and organoid self-organization.</p>
+<p>My research asks how motion and collective behavior emerge from many interacting particles and cells: how simple local rules give rise to coordinated migration, self-organization, and phase transitions at the group level. I build computational models, grounded in statistical physics and tested against quantitative experiments, to connect local interaction rules to behavior at the population or tissue scale. The thread running through this work is migration, from single cells and clusters to active particles and polymers, and I am now extending it to how geometry and mechanics shape tissues during development.</p>
 
-<h3>Chemotactic Migration and the Chemorepulsion to Chemoattraction Transition in Cell Clusters</h3>
+<h3>1. Collective Cell Migration: Chemotaxis and the Chemorepulsion Paradox</h3>
 
 <p>My postdoctoral research focuses on understanding how multicellular clusters migrate in response to chemical gradients. Using particle-based computational models informed by experimental observations of malignant lymphocyte clusters, I study chemotactic instabilities where clusters exhibit shape deformations, rotation, and fragmentation depending on gradient strength and cluster size. A particularly striking aspect of this work is a counterintuitive behavior observed at high gradient strengths: while single cells exhibit chemorepulsion and move away from the gradient source, larger clusters display chemoattraction and migrate up the gradient. I investigated the physical mechanisms underlying this size-dependent reversal, showing how collective effects and intercellular interactions enable clusters to maintain forward migration even under conditions that repel individual cells. This behavior has direct implications for understanding cancer metastasis and immune cell trafficking.</p>
 
@@ -42,7 +42,7 @@
 
 <div style="clear: both;"></div>
 
-<p>In a follow-up study just posted to bioRxiv, I traced this reversal to its molecular origin. Single cells repel from the gradient because high ligand concentration drives a feedback loop in CCR7 receptor trafficking, depleting surface receptors and flipping the cell's polarity. Cell-cell contacts within a cluster change the geometry: each cell has less exposed membrane relative to its volume, which raises the concentration needed to trigger that same feedback and keeps clustered cells chemoattractive. Using an agent based model calibrated on receptor trafficking kinetics, I showed that cluster fluidity, cells continuously swapping between the rim and the core, further stabilizes this collective behavior by preventing repulsive cells from building up at the leading edge.</p>
+<p>In a follow-up bioRxiv preprint, <em>Solving the Chemorepulsive Paradox</em>, I traced this reversal to its molecular origin. Single cells repel from the gradient because high ligand concentration drives a feedback loop in CCR7 receptor trafficking, depleting surface receptors and flipping the cell's polarity. Cell-cell contacts within a cluster change the geometry: each cell has less exposed membrane relative to its volume, which raises the concentration needed to trigger that same feedback and keeps clustered cells chemoattractive. Using an agent based model calibrated on receptor trafficking kinetics, I showed that cluster fluidity, cells continuously swapping between the rim and the core, further stabilizes this collective behavior by preventing repulsive cells from building up at the leading edge.</p>
 
 <figure class="figure large left">
   <img src="/assets/img/ChemorepulsionParadox.png" alt="Single cell chemorepulsion and cluster chemoattraction with receptor trafficking model">
@@ -51,15 +51,9 @@
 
 <div style="clear: both;"></div>
 
-<h3>Future Directions</h3>
+<h3>2. Active Matter: Self-Propulsion, Phase Separation, and Coordinated Motion</h3>
 
-<p>Looking ahead, I want to understand how geometry and mechanics regulate self-organization across many cells, and turn that understanding into design principles for biomaterials, organoids, and engineered tissues. Inspired by embryogenesis-on-chip studies that recreate neural tube and gut tube formation in micropatterned stem cell cultures, I'm building cell-based computational models that include adhesion, migration, cell-type specification, and spatial confinement to understand how physical constraints guide tissue folding. In parallel, I'm extending my cluster migration models from simple confined geometries to more realistic tissue architectures, to understand how the physical microenvironment shapes collective cancer invasion.</p>
-
-<h3>Active Polymers and Coordinated Motion</h3>
-
-<p>In parallel, I develop simple active-polymer and follower-chain models to understand how coordinated locomotion emerges in elongated active systems, including the effects of chirality and geometric confinement, with applications to biological filaments and robotic systems.</p>
-
-<h3>Softness-Dependent Phase Separation in Active Brownian Particles</h3>
+<h4>Softness-dependent phase separation in active Brownian particles</h4>
 
 <p>During my PhD, I investigated how particle softness fundamentally alters motility-induced phase separation (MIPS) in active Brownian particles. While hard active particles form dense, compact clusters, I discovered that soft particles create porous, interconnected networks that continuously reorganize. My work revealed that the interplay between elasticity and self-propulsion controls transitions between compact, fluid-like, and percolating states. Using Brownian dynamics simulations and statistical analysis, I identified a novel percolation transition in these systems and characterized it by comparing critical exponents with literature values, confirming its distinct universality class.</p>
 
@@ -75,23 +69,19 @@
 
 <div style="clear: both;"></div>
 
-<h3>Research Focus Areas</h3>
-<ul>
-  <li><strong>Collective Dynamics & Self-Organization</strong>: Understanding how simple local interactions give rise to emergent, group-level behavior</li>
-  <li><strong>Collective Cell Migration</strong>: Modeling chemotactic behavior in multicellular clusters, including the receptor trafficking and cluster geometry that drive the transition from single-cell chemorepulsion to collective chemoattraction</li>
-  <li><strong>Motility-Induced Phase Separation (MIPS)</strong>: Understanding how self-propulsion drives spontaneous clustering and phase separation</li>
-  <li><strong>Percolation Transitions</strong>: Characterizing connectivity and structural transitions in active matter systems</li>
-  <li><strong>Soft Active Particles</strong>: Exploring how particle deformability creates porous, network-like structures</li>
-  <li><strong>Active Polymers</strong>: Investigating coordination mechanisms and locomotion strategies in flexible active chains</li>
-  <li><strong>Tissue Morphogenesis (future direction)</strong>: Understanding how geometry and mechanics guide embryonic tissue folding</li>
-  <li><strong>Biomaterials & Engineered Tissues (future direction)</strong>: Translating physical principles into design principles for organoids and living materials</li>
-</ul>
+<h4>Active polymers and coordinated motion</h4>
+
+<p>In parallel, I develop simple active-polymer and follower-chain models to understand how coordinated locomotion emerges in elongated active systems, including the effects of chirality and geometric confinement, with applications to biological filaments and robotic systems.</p>
+
+<h3>3. Morphogenesis and Mechanics: Future Direction</h3>
+
+<p>Looking ahead, I want to understand how geometry and mechanics regulate self-organization across many cells, and turn that understanding into design principles for biomaterials, organoids, and engineered tissues. Inspired by embryogenesis-on-chip studies that recreate neural tube and gut tube formation in micropatterned stem cell cultures, I'm building cell-based computational models that include adhesion, migration, cell-type specification, and spatial confinement to understand how physical constraints guide tissue folding. In parallel, I'm extending my cluster migration models from simple confined geometries to more realistic tissue architectures, to understand how the physical microenvironment shapes collective cancer invasion.</p>
 
 </main>
 
 <footer>
   <div class="container">
-    © 2025 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
+    © 2026 • Monika Sanoria — Center for Cellular and Biomolecular Machines, UC Merced
   </div>
 </footer>
 
